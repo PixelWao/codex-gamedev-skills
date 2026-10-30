@@ -1,0 +1,88 @@
+{
+  "start": "entry",
+  "goal": "boss",
+  "rooms": {
+    "entry": {
+      "exits": [
+        {
+          "to": "hall"
+        }
+      ]
+    },
+    "hall": {
+      "exits": [
+        {
+          "to": "side"
+        },
+        {
+          "to": "vista",
+          "requiresAbilities": [
+            "double_jump"
+          ]
+        }
+      ]
+    },
+    "side": {
+      "grants": [
+        "double_jump"
+      ],
+      "keys": {
+        "red_key": 1
+      },
+      "destroys": [
+        "breakable_wall"
+      ],
+      "exits": [
+        {
+          "to": "hall"
+        }
+      ]
+    },
+    "vista": {
+      "exits": [
+        {
+          "to": "boss",
+          "consumesKeys": {
+            "red_key": 1
+          },
+          "requiresDestroyed": [
+            "breakable_wall"
+          ]
+        }
+      ]
+    },
+    "boss": {
+      "exits": [],
+      "checkpoint": true
+    }
+  },
+  "beats": [
+    {
+      "room": "entry",
+      "type": "teach",
+      "mechanic": "double_jump",
+      "intensity": 0.1
+    },
+    {
+      "room": "vista",
+      "type": "rest",
+      "intensity": 0.2
+    },
+    {
+      "room": "boss",
+      "type": "climax",
+      "intensity": 0.95
+    }
+  ],
+  "jumps": [
+    {
+      "from": "hall",
+      "to": "vista",
+      "runSpeed": 250,
+      "jumpSpeed": 480,
+      "gravity": 1200,
+      "deltaX": 125,
+      "deltaY": 90
+    }
+  ]
+}

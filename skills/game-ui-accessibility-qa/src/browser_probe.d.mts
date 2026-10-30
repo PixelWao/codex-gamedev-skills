@@ -1,0 +1,3 @@
+export interface UIControlSnapshot {id:string;name:string;rect:{x:number;y:number;width:number;height:number};visible:boolean;interactive:boolean;critical:boolean;keyboardReachable?:boolean;focusIndicator?:boolean;text:boolean;foreground:string;background:string;largeText:boolean;textOverflow:boolean}
+export interface UISnapshot {viewport:{width:number;height:number;insets:Record<string,number>;visualViewport:{width:number|null;height:number|null;scale:number|null}};controls:UIControlSnapshot[]}
+export function snapshotUI(options?:{root?:Document|Element;insets?:Record<string,number>}):UISnapshot;

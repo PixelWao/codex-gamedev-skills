@@ -1,0 +1,30 @@
+{
+  "player": {
+    "runSpeed": 250,
+    "jumpSpeed": 480,
+    "gravity": 1200
+  },
+  "platforms": [
+    {
+      "id": "start",
+      "x": 0,
+      "y": 0,
+      "width": 40,
+      "height": 8
+    },
+    {
+      "id": "upper",
+      "x": 160,
+      "y": 90,
+      "width": 50,
+      "height": 8
+    },
+    {
+      "id": "lower",
+      "x": 270,
+      "y": -25,
+      "width": 65,
+      "height": 8
+    }
+  ]
+}

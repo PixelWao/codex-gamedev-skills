@@ -1,0 +1,1 @@
+{"renderer":{"backend":"WebGLRenderer","outputColorSpace":"SRGBColorSpace","toneMapping":"ACESFilmicToneMapping","toneMappingExposure":1},"postprocessing":{"enabled":true,"outputPassCount":1,"manualGammaPass":false},"textures":[{"name":"brick","role":"albedo","colorSpace":"SRGBColorSpace"},{"name":"roughness","role":"roughness","colorSpace":"NoColorSpace"}]}

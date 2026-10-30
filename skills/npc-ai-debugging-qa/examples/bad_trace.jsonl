@@ -1,0 +1,5 @@
+{"agent":"guard01","t":0,"kind":"start","node":"patrol"}
+{"agent":"guard01","t":0.1,"kind":"start","node":"patrol"}
+{"agent":"guard01","t":0.2,"kind":"decision","action":"patrol"}
+{"agent":"guard01","t":0.21,"kind":"decision","action":"chase"}
+{"agent":"guard01","t":0.3,"kind":"complete","node":"other"}

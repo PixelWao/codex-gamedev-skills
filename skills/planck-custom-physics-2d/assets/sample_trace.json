@@ -1,0 +1,44 @@
+{
+  "samples": [
+    {
+      "tick": 0,
+      "body": "anchor",
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "step_ms": 0.4,
+      "joint_error": 0.0,
+      "penetration": 0.0
+    },
+    {
+      "tick": 0,
+      "body": "weight",
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "step_ms": 0.4,
+      "joint_error": 0.008,
+      "penetration": 0.0
+    },
+    {
+      "tick": 1,
+      "body": "anchor",
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "step_ms": 0.42,
+      "joint_error": 0.0,
+      "penetration": 0.0
+    },
+    {
+      "tick": 1,
+      "body": "weight",
+      "x": 0.01,
+      "y": 0.99,
+      "z": 0,
+      "step_ms": 0.42,
+      "joint_error": 0.01,
+      "penetration": 0.002
+    }
+  ]
+}

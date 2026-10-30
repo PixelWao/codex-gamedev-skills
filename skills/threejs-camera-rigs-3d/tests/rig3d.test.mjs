@@ -1,0 +1,20 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {OrbitCameraRig,groupFraming,applyPoseToThreeCamera,resizeThreeCamera} from '../scripts/rig3d.mjs';
+const near=(x,y)=>assert.ok(Math.abs(x-y)<1e-6,`${x} != ${y}`);
+test('yaw and pitch yield unit direction',()=>{const r=new OrbitCameraRig();for(let yaw=-3;yaw<3;yaw+=.3){r.setAngles(yaw,.3);const d=r.getDirection();near(Math.hypot(d.x,d.y,d.z),1)}});
+test('pitch clamped, no flipping',()=>{const r=new OrbitCameraRig();r.setAngles(0,200);near(r.pitch,1.35)});
+test('separate yaw and pitch produce expected pose',()=>{const r=new OrbitCameraRig({pitch:0,idealDistance:10});r.setAngles(Math.PI/2,0);const p=r.pose();near(p.position.x,10);near(p.position.z,0)});
+test('camera obstruction pulls in immediately, moves out smoothly',()=>{const r=new OrbitCameraRig({idealDistance:10,collisionMargin:.2});r.update(1/60,{collisionQuery:()=>3});near(r.distance,2.8);r.update(1/60,{collisionQuery:()=>null});assert.ok(r.distance>2.8&&r.distance<10)});
+test('does not hit own body when adapter honors excludePlayer',()=>{const r=new OrbitCameraRig();let called=false;r.update(.1,{collisionQuery:args=>{assert.equal(args.excludePlayer,true);called=true;return null}});assert.ok(called)});
+test('no collision query leaves free orbit at desired distance',()=>{const r=new OrbitCameraRig({idealDistance:8});near(r.update(1).distance,8)});
+test('teleport hard cut resets smoothing',()=>{const r=new OrbitCameraRig();r.setTarget({x:900,y:0,z:-1},{cut:true});assert.deepEqual(r.focus,{x:900,y:0,z:-1})});
+test('constant-target follow FPS invariant',()=>{const nums=[30,60,144].map(f=>{const r=new OrbitCameraRig({target:{x:0,y:0,z:0}});r.setTarget({x:100,y:0,z:0});for(let i=0;i<f;i++)r.update(1/f);return r.focus.x});for(const x of nums)near(x,nums[0])});
+test('bounds clamp strategic focus',()=>{const r=new OrbitCameraRig({bounds:{minX:-5,maxX:5,minY:0,maxY:5,minZ:-2,maxZ:2}});r.setTarget({x:100,y:-100,z:50},{cut:true});r.update(10);near(r.focus.x,5);near(r.focus.y,0);near(r.focus.z,2)});
+test('group framing respects aspect, padding, target extent',()=>{const t=[{x:-5,y:0,z:0},{x:5,y:2,z:0}];const a=groupFraming(t,{aspect:1}),b=groupFraming(t,{aspect:2});assert.ok(a.distance>b.distance);assert.deepEqual(a.center,{x:0,y:1,z:0});assert.ok(groupFraming(t,{padding:2}).distance>groupFraming(t,{padding:1}).distance)});
+test('group framing rejects missing target',()=>{assert.throws(()=>groupFraming([]));assert.throws(()=>groupFraming([{x:NaN,y:0,z:1}]))});
+test('camera pose applies without new renderer',()=>{const obj={position:{set:(...v)=>{obj.xyz=v}},lookAt:(...v)=>{obj.look=v}};const p=new OrbitCameraRig().pose();applyPoseToThreeCamera(obj,p);assert.equal(obj.xyz.length,3);assert.equal(obj.look.length,3)});
+test('perspective resize updates projection',()=>{let n=0;const c={isPerspectiveCamera:true,updateProjectionMatrix:()=>n++};resizeThreeCamera(c,800,400);near(c.aspect,2);assert.equal(n,1)});
+test('ortho resize preserves vertical span',()=>{let n=0;const c={isOrthographicCamera:true,left:-2,right:2,top:5,bottom:-5,updateProjectionMatrix:()=>n++};resizeThreeCamera(c,800,400);near(c.right-c.left,20);near(c.top-c.bottom,10);assert.equal(n,1)});
+test('invalid collision outputs rejected',()=>{const r=new OrbitCameraRig();assert.throws(()=>r.update(.2,{collisionQuery:()=>-3}));assert.throws(()=>r.update(.2,{collisionQuery:()=>NaN}))});
+
+test('cut respects strategic bounds immediately',()=>{const r=new OrbitCameraRig({bounds:{minX:-3,maxX:3}});r.setTarget({x:200,y:0,z:0},{cut:true});near(r.focus.x,3)});
+test('framing rejects infinite FOV and perspective rejects infinite resize',()=>{assert.throws(()=>groupFraming([{x:0,y:0,z:0}],{minDistance:Infinity}));assert.throws(()=>resizeThreeCamera({isPerspectiveCamera:true,updateProjectionMatrix(){}},Infinity,100))});

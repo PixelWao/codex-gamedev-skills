@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "name": "adaptive-music-systems",
+      "description": "Use for beat- or bar-synced adaptive game music, Web Audio stem layers, intensity transitions and music scheduling; not ordinary SFX playback.",
+      "path": "skills/adaptive-music-systems",
+      "upstreamNotices": true
+    },
+    {
+      "name": "audio-mixing-qa",
+      "description": "Use to audit game audio loudness, WAV peaks, loops, clipping, silence or audio event logs; not to implement the playback engine.",
+      "path": "skills/audio-mixing-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "behavior-tree-runtime",
+      "description": "Use to implement or debug Behavior Tree nodes, blackboards, abort cleanup and NPC task lifecycle; not Utility AI scoring or navigation.",
+      "path": "skills/behavior-tree-runtime",
+      "upstreamNotices": true
+    },
+    {
+      "name": "browser-camera-2d",
+      "description": "Use for Canvas 2D or pixel-art camera follow, deadzones, look-ahead, zoom, bounds and teleport handling; not 3D camera rigs.",
+      "path": "skills/browser-camera-2d",
+      "upstreamNotices": true
+    },
+    {
+      "name": "browser-game-audio",
+      "description": "Use for HTML5 Web Audio SFX playback, buses, spatial sound, autoplay unlock, pause and voice limits; not adaptive composition.",
+      "path": "skills/browser-game-audio",
+      "upstreamNotices": true
+    },
+    {
+      "name": "browser-game-saves",
+      "description": "Use for reliable browser game saves, IndexedDB, slots, autosave, cross-tab conflicts and import/export; not desktop file saves.",
+      "path": "skills/browser-game-saves",
+      "upstreamNotices": true
+    },
+    {
+      "name": "browser-input-action-system",
+      "description": "Use for browser keyboard, mouse, gamepad or multitouch action mapping, rebinding and device lifecycle; not jump timing.",
+      "path": "skills/browser-input-action-system",
+      "upstreamNotices": true
+    },
+    {
+      "name": "camera-debugging-qa",
+      "description": "Use to measure camera jitter, follow errors, bounds, occlusion and teleport regressions from traces; not to build a camera rig.",
+      "path": "skills/camera-debugging-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "destructible-world-engineering",
+      "description": "Use for structural damage graphs, collapsing supports and dirty navigation regions in destructible worlds; not rigid-body solver tuning.",
+      "path": "skills/destructible-world-engineering",
+      "upstreamNotices": false
+    },
+    {
+      "name": "dynamic-navmesh-steering",
+      "description": "Use for 3D NavMesh navigation, dynamic obstacle invalidation, crowd steering and Rapier movement adapters; not grid A*.",
+      "path": "skills/dynamic-navmesh-steering",
+      "upstreamNotices": true
+    },
+    {
+      "name": "fps-shooter",
+      "description": "Use to implement or debug FPS weapons, hitscan, projectiles, ammo, reload, spread, damage and Rapier raycasts; not camera controls.",
+      "path": "skills/fps-shooter",
+      "upstreamNotices": true
+    },
+    {
+      "name": "game-build-release-engineering",
+      "description": "Use to package and verify browser game releases, HTML5 assets, ZIPs, hashes and platform requirements; not gameplay development.",
+      "path": "skills/game-build-release-engineering",
+      "upstreamNotices": false
+    },
+    {
+      "name": "game-e2e-integration-qa",
+      "description": "Use to run browser game Playwright scenarios, screenshots and full-flow regression checks after changes; not unit-level tests.",
+      "path": "skills/game-e2e-integration-qa",
+      "upstreamNotices": false
+    },
+    {
+      "name": "game-editor-authoring-tools",
+      "description": "Use to build game level editors with object IDs, snapping, undo/redo, prefab edits and Three.js tooling; not procedural generation.",
+      "path": "skills/game-editor-authoring-tools",
+      "upstreamNotices": false
+    },
+    {
+      "name": "game-feel-debugging-qa",
+      "description": "Use to audit hit-stop, camera impulse, VFX budgets, flash accessibility and feedback traces; not to create visual effects.",
+      "path": "skills/game-feel-debugging-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "game-feel-event-orchestration",
+      "description": "Use to coordinate hit-stop, camera impulses and prioritized feedback events without owning camera, audio or physics systems.",
+      "path": "skills/game-feel-event-orchestration",
+      "upstreamNotices": true
+    },
+    {
+      "name": "game-hud-responsive-layout",
+      "description": "Use for responsive HUD placement, safe areas, DPR, Canvas/DOM overlays and world-space labels; not screen navigation.",
+      "path": "skills/game-hud-responsive-layout",
+      "upstreamNotices": true
+    },
+    {
+      "name": "game-menu-navigation-flow",
+      "description": "Use for game menus, screen stacks, dialogs, focus restoration, pause UI and gamepad menu navigation; not gameplay input mapping.",
+      "path": "skills/game-menu-navigation-flow",
+      "upstreamNotices": true
+    },
+    {
+      "name": "game-ui-accessibility-qa",
+      "description": "Use to audit game UI contrast, touch targets, safe areas, overflow, text clipping and focus; not to implement menus.",
+      "path": "skills/game-ui-accessibility-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "gltf-asset-pipeline-qa",
+      "description": "Use to inspect, validate and optimize glTF/GLB files, compression, assets and export pipeline; not runtime animations.",
+      "path": "skills/gltf-asset-pipeline-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "grid-pathfinding-strategy",
+      "description": "Use for grid A*, Dijkstra, BFS, flow fields, terrain costs and tactical movement routes; not 3D NavMesh steering.",
+      "path": "skills/grid-pathfinding-strategy",
+      "upstreamNotices": true
+    },
+    {
+      "name": "impact-animation-vfx",
+      "description": "Use for hit flashes, squash/stretch, tweens, damage numbers, particles and Canvas/Three.js impact effects; not hit-stop timing.",
+      "path": "skills/impact-animation-vfx",
+      "upstreamNotices": true
+    },
+    {
+      "name": "input-accessibility-qa",
+      "description": "Use to audit keyboard/gamepad/multitouch input traces, stuck buttons, rebinding conflicts and accessibility; not implement controls.",
+      "path": "skills/input-accessibility-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "level-blockout-playability",
+      "description": "Use for 2D/3D blockouts, player movement metrics, jump reachability and physical space validation; not story progression.",
+      "path": "skills/level-blockout-playability",
+      "upstreamNotices": true
+    },
+    {
+      "name": "level-design-debugging-qa",
+      "description": "Use to test level solvability, unreachable goals, soft-locks, invalid rooms and progression regressions; not author level pacing.",
+      "path": "skills/level-design-debugging-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "level-progression-pacing",
+      "description": "Use to design key/ability gates, puzzle progression, critical routes, challenge pacing and checkpoints; not geometry collision metrics.",
+      "path": "skills/level-progression-pacing",
+      "upstreamNotices": true
+    },
+    {
+      "name": "native-game-saves",
+      "description": "Use for desktop game save files, atomic writes, backups, checksums and crash recovery on Windows/macOS/Linux; not IndexedDB.",
+      "path": "skills/native-game-saves",
+      "upstreamNotices": true
+    },
+    {
+      "name": "navigation-debugging-qa",
+      "description": "Use to validate agent routes, path costs, navigation versions and stuck movement from telemetry; not to implement pathfinding.",
+      "path": "skills/navigation-debugging-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "npc-ai-debugging-qa",
+      "description": "Use to audit NPC decisions, Behavior Tree traces, abort cleanup and action oscillation; not to implement NPC decision models.",
+      "path": "skills/npc-ai-debugging-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "performance-optimization",
+      "description": "Use to profile and improve game FPS, CPU/GPU cost, frame pacing, memory, Canvas or Three.js rendering without gameplay changes.",
+      "path": "skills/performance-optimization",
+      "upstreamNotices": true
+    },
+    {
+      "name": "physics-core",
+      "description": "Use to diagnose general fixed-step physics, collision timing, interpolation, determinism and jitter; not engine-specific joints.",
+      "path": "skills/physics-core",
+      "upstreamNotices": true
+    },
+    {
+      "name": "planck-custom-physics-2d",
+      "description": "Use for Planck.js 2D bodies, contacts, ropes, buoyancy, tiles and coupled particle simulations; not Rapier 3D.",
+      "path": "skills/planck-custom-physics-2d",
+      "upstreamNotices": true
+    },
+    {
+      "name": "procedural-generation-qa",
+      "description": "Use to test procedural seeds, map validity, connectivity, reachability and generator regressions; not write generators.",
+      "path": "skills/procedural-generation-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "procedural-level-design",
+      "description": "Use to generate seeded playable levels, rooms, corridors, caves and puzzle layouts; not whole-world terrain or QA reports.",
+      "path": "skills/procedural-level-design",
+      "upstreamNotices": true
+    },
+    {
+      "name": "procedural-world-generation",
+      "description": "Use for seeded terrain, biomes, islands, heightmaps, chunks and large game worlds; not room-by-room level pacing.",
+      "path": "skills/procedural-world-generation",
+      "upstreamNotices": true
+    },
+    {
+      "name": "rapier-physics-3d",
+      "description": "Use for Rapier 3D rigid bodies, contacts, joints, CCD, cranes, ropes and mass tuning in Three.js; not 2D Planck physics.",
+      "path": "skills/rapier-physics-3d",
+      "upstreamNotices": true
+    },
+    {
+      "name": "responsive-input-timing",
+      "description": "Use for jump buffering, coyote time, subframe input edges and fixed-timestep input replay; not browser device bindings.",
+      "path": "skills/responsive-input-timing",
+      "upstreamNotices": true
+    },
+    {
+      "name": "save-schema-migrations-qa",
+      "description": "Use to design, test and migrate versioned game save schemas and corruption fixtures; not platform-specific storage APIs.",
+      "path": "skills/save-schema-migrations-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "shader-core-glsl",
+      "description": "Use to write or debug GLSL shaders, uniforms, ShaderMaterial and WebGL color/UV bugs; not WebGPU TSL or shader QA.",
+      "path": "skills/shader-core-glsl",
+      "upstreamNotices": true
+    },
+    {
+      "name": "shader-effects-qa",
+      "description": "Use to validate visual shader effects, screenshots, color correctness, regressions and GPU budgets; not write base GLSL pipelines.",
+      "path": "skills/shader-effects-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-animation-systems",
+      "description": "Use for Three.js AnimationMixer, clips, skeletal animation, blending and runtime animation lifecycle; not GLB export validation.",
+      "path": "skills/threejs-animation-systems",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-camera-rigs-3d",
+      "description": "Use for Three.js orbit, third-person, RTS, cinematic framing, collision-aware 3D cameras and Rapier adapters; not Canvas 2D.",
+      "path": "skills/threejs-camera-rigs-3d",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-environment-color-qa",
+      "description": "Use for Three.js HDR environments, PMREM, exposure, tone mapping and color QA; not individual PBR surface design.",
+      "path": "skills/threejs-environment-color-qa",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-gltf-runtime",
+      "description": "Use to load, clone, dispose and manage glTF/GLB assets in a Three.js scene; not skeletal blending or file compression.",
+      "path": "skills/threejs-gltf-runtime",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-lighting-shadows",
+      "description": "Use for Three.js light placement, shadow maps, shadow acne and lighting performance; not material or environment QA.",
+      "path": "skills/threejs-lighting-shadows",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-pbr-materials",
+      "description": "Use for Three.js PBR materials, metalness, roughness, transmission and texture role debugging; not light placement.",
+      "path": "skills/threejs-pbr-materials",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-scene-setup",
+      "description": "Use to configure or debug Three.js renderer, scene, camera defaults, resize handling, render loop and resource ownership.",
+      "path": "skills/threejs-scene-setup",
+      "upstreamNotices": true
+    },
+    {
+      "name": "threejs-tsl-webgpu",
+      "description": "Use for Three.js TSL nodes, WebGPURenderer, WGSL and WebGL fallback migration; not WebGL GLSL-only effects.",
+      "path": "skills/threejs-tsl-webgpu",
+      "upstreamNotices": true
+    },
+    {
+      "name": "utility-ai-decision-systems",
+      "description": "Use for NPC Utility AI considerations, scores, stable softmax, seeded choice and hysteresis; not Behavior Tree execution.",
+      "path": "skills/utility-ai-decision-systems",
+      "upstreamNotices": true
+    }
+  ]
+}

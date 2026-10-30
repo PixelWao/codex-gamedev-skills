@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "file": "legacy_v1.json",
+      "expected": "accept"
+    },
+    {
+      "file": "legacy_v2.json",
+      "expected": "accept"
+    },
+    {
+      "file": "current_v3.json",
+      "expected": "accept"
+    },
+    {
+      "file": "future_v4.json",
+      "expected": "reject"
+    },
+    {
+      "file": "invalid_health.json",
+      "expected": "reject"
+    },
+    {
+      "file": "missing_version.json",
+      "expected": "reject"
+    },
+    {
+      "file": "corrupt_text.json",
+      "expected": "reject"
+    },
+    {
+      "file": "duplicate_keys.json",
+      "expected": "reject"
+    }
+  ]
+}

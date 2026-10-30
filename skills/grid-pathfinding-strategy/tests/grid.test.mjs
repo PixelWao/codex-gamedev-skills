@@ -1,0 +1,17 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {DynamicGrid,findPath,buildFlowField} from '../scripts/grid-navigation.mjs';
+test('exact 4-way A*',()=>{let g=new DynamicGrid(3,3);g.setBlocked([1,1]);let a=findPath(g,[0,1],[2,1]);assert.equal(a.status,'ok');assert.equal(a.cost,4);assert.deepEqual(a.path[0],[0,1]);});
+test('weighted graph prefers detour; Dijkstra agrees',()=>{let g=new DynamicGrid(3,3);g.setCost([1,1],20);let a=findPath(g,[0,1],[2,1]),b=findPath(g,[0,1],[2,1],{algorithm:'dijkstra'});assert.equal(a.cost,4);assert.equal(a.cost,b.cost);});
+test('no corner cutting',()=>{let g=new DynamicGrid(2,2,{diagonal:true});g.setBlocked([1,0]);g.setBlocked([0,1]);assert.equal(findPath(g,[0,0],[1,1]).status,'unreachable');});
+test('diagonal octile',()=>{let g=new DynamicGrid(4,4,{diagonal:true});assert.ok(Math.abs(findPath(g,[0,0],[3,3]).cost-3*Math.SQRT2)<1e-10);});
+test('directed portal does not violate heuristic',()=>{let g=new DynamicGrid(10,2);g.addLink([0,1],[9,1],0.5);assert.equal(findPath(g,[0,1],[9,1]).cost,0.5);assert.notEqual(findPath(g,[9,1],[0,1]).cost,0.5);});
+test('flow directed reverse links',()=>{let g=new DynamicGrid(10,2);g.addLink([0,1],[9,1],0.5);let f=buildFlowField(g,[[9,1]]);assert.equal(f.route([0,1]).status,'ok');assert.equal(f.route([0,1]).cost,.5);});
+test('flow respects destination terrain weight',()=>{let g=new DynamicGrid(3,3);g.setCost([1,1],100);let f=buildFlowField(g,[[2,1]]);assert.equal(f.route([0,1]).cost,4);});
+test('flow invalidated by destructible terrain update',()=>{let g=new DynamicGrid(4,1);let f=buildFlowField(g,[[3,0]]);g.setBlocked([2,0]);assert.equal(f.route([0,0]).status,'stale');});
+test('unreachable and blocked',()=>{let g=new DynamicGrid(2,1);g.setBlocked([1,0]);assert.equal(findPath(g,[0,0],[1,0]).status,'blocked');assert.equal(buildFlowField(g,[[0,0]]).route([1,0]).status,'unreachable');});
+test('budget',()=>{let g=new DynamicGrid(30,30);assert.equal(findPath(g,[0,0],[29,29],{maxExpansions:1}).status,'budget');});
+test('reject negative NaN zero costs',()=>{let g=new DynamicGrid(2,2);for(const n of [-1,0,NaN,Infinity])assert.throws(()=>g.setCost([0,0],n));});
+test('large grid setCost avoids argument limits',()=>{let g=new DynamicGrid(400,400);g.setCost([399,399],2);assert.equal(g.minCost,1);});
+test('unit footprint prevents too-narrow corridors',()=>{let g=new DynamicGrid(5,5);assert.equal(findPath(g,[0,0],[2,2],{footprint:1}).status,'blocked');assert.equal(findPath(g,[2,2],[3,3],{footprint:1}).status,'ok');});
+test('BFS steps vs weighted cost',()=>{let g=new DynamicGrid(3,2);g.setCost([1,0],20);assert.equal(findPath(g,[0,0],[2,0],{algorithm:'bfs'}).cost,2);assert.equal(findPath(g,[0,0],[2,0]).cost,4);});
+test('identical queries deterministic',()=>{let g=new DynamicGrid(5,5);let a=findPath(g,[0,0],[4,4]),b=findPath(g,[0,0],[4,4]);assert.deepEqual(a,b);});

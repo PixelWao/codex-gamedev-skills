@@ -1,0 +1,1 @@
+import {TraceRecorder} from '../src/trace.mjs';const r=new TraceRecorder();r.push({type:'feedback_accepted',eventId:'hit',atMs:0,channels:['audio']});r.push({type:'hitstop_start',eventId:'hit',atMs:0,untilMs:50});r.push({type:'hitstop_end',eventId:'hit',atMs:50});console.log(r.jsonl());

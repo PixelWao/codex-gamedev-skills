@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "file": "sample.wav",
+      "sample_rate": 16000,
+      "channels": 1,
+      "frames": 16000,
+      "sample_width_bytes": 2,
+      "seconds": 1.0,
+      "sample_peak_dbfs": -11.224148510407861,
+      "rms_dbfs": -14.235035251399754,
+      "dc_offset": 0.0,
+      "max_loop_edge_jump": 0.047210693359375,
+      "zero_crossing_rate": 0.05494093380836302,
+      "warnings": [],
+      "limitations": [
+        "No LUFS measurement",
+        "No oversampled true-peak measurement",
+        "Loop edge heuristic is not a listening test"
+      ],
+      "ebur128": {
+        "available": true,
+        "integrated_lufs": -14.8,
+        "max_true_peak_dbtp": -11.2,
+        "backend": "ffmpeg ebur128=peak=true"
+      }
+    }
+  ],
+  "has_errors": false
+}

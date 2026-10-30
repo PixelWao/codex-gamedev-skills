@@ -1,0 +1,19 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {easing,TweenDirector,ParticlePool,renderCanvasParticles,syncThreeInstances,damagePop} from '../src/vfx.mjs';
+test('all easing endpoints',()=>{for(const f of Object.values(easing)){assert.ok(Math.abs(f(0))<1e-9);assert.ok(Math.abs(f(1)-1)<1e-9);}});
+test('out back overshoot exists',()=>assert.ok(easing.outBack(.8)>1));
+test('tween same at 30 and 144fps',()=>{let a={x:0},b={x:0};const x=new TweenDirector(),y=new TweenDirector();x.play(a,'x',{to:10,durationMs:1000,atMs:0});y.play(b,'x',{to:10,durationMs:1000,atMs:0});for(let i=0;i<30;i++)x.tick(i*(1000/30));for(let i=0;i<144;i++)y.tick(i*(1000/144));x.tick(750);y.tick(750);assert.ok(Math.abs(a.x-b.x)<1e-9);});
+test('vector squash restores exact baseline',()=>{const s={scale:[2,2]},t=new TweenDirector();t.play(s,'scale',{from:[2.6,1.4],to:[2,2],durationMs:180,atMs:0});t.tick(180);assert.deepEqual(s.scale,[2,2]);});
+test('new tween replaces old owner',()=>{const o={x:1},t=new TweenDirector();t.play(o,'x',{to:0,durationMs:100,atMs:0});t.tick(50);t.play(o,'x',{to:1,durationMs:50,atMs:50});t.tick(100);assert.equal(o.x,1);assert.equal(t.active.size,0);});
+test('cancel restores original baseline across replacements',()=>{const o={x:2},t=new TweenDirector();t.play(o,'x',{to:0,durationMs:100,atMs:0});t.tick(50);t.play(o,'x',{to:3,durationMs:100,atMs:50});t.cancel(o,'x');assert.equal(o.x,2);});
+test('dispose removes all active and restores',()=>{const o={a:1,b:[2,3]},t=new TweenDirector();t.play(o,'a',{to:0,durationMs:100,atMs:0});t.play(o,'b',{to:[0,0],durationMs:100,atMs:0});t.dispose();assert.deepEqual(o,{a:1,b:[2,3]});assert.equal(t.active.size,0);});
+test('zero duration applies endpoint',()=>{const o={x:2},t=new TweenDirector();t.play(o,'x',{to:4,durationMs:0,atMs:0});assert.equal(o.x,4);});
+test('reject incompatible vectors',()=>{const t=new TweenDirector();assert.throws(()=>t.play({scale:[1,2]},'scale',{to:1,durationMs:1,atMs:0}));});
+test('particle budget enforced',()=>{const p=new ParticlePool({capacity:2});assert.deepEqual(p.spawn({count:5}),{accepted:2,rejected:3});assert.equal(p.particles.length,2);});
+test('particles age and expire',()=>{const p=new ParticlePool({random:()=>0});p.spawn({ttlMs:100});p.update(50);assert.equal(p.particles.length,1);p.update(50);assert.equal(p.particles.length,0);});
+test('particle movement framerate independent',()=>{const a=new ParticlePool({random:()=>0}),b=new ParticlePool({random:()=>0});a.spawn({ttlMs:2000});b.spawn({ttlMs:2000});a.update(1000);for(let i=0;i<10;i++)b.update(100);assert.ok(Math.abs(a.particles[0].x-b.particles[0].x)<1e-7);});
+test('canvas restores graphics state after callback failure',()=>{let s=0,r=0;const ctx={save:()=>s++,restore:()=>r++};assert.throws(()=>renderCanvasParticles(ctx,[{ageMs:0,ttlMs:10}],{draw:()=>{throw Error('oops');}}));assert.deepEqual([s,r],[1,1]);});
+test('reduced motion skips render',()=>{let s=0;assert.equal(renderCanvasParticles({save:()=>s++},[],{reducedMotion:true}),0);assert.equal(s,0);});
+test('Three.js-style adapter caps instance count and dirty flag',()=>{const writes=[],m={count:10,instanceMatrix:{count:2,needsUpdate:false},setMatrixAt:(i,x)=>writes.push([i,x])};assert.equal(syncThreeInstances(m,[{x:1},{x:2},{x:3}],x=>x.x),2);assert.deepEqual(writes,[[0,1],[1,2]]);assert.equal(m.instanceMatrix.needsUpdate,true);});
+test('damage pop returns to end',()=>{const d=damagePop({x:0,y:10,value:20,startedMs:0,nowMs:600});assert.equal(d.alpha,0);assert.equal(d.done,true);assert.equal(d.y,-22);});
+
+test('visual particles recycle objects rather than allocating forever',()=>{const p=new ParticlePool({capacity:2,random:()=>0});p.spawn({count:2,ttlMs:10});assert.equal(p.created,2);p.update(10);p.spawn({count:2,ttlMs:10});assert.equal(p.created,2);});

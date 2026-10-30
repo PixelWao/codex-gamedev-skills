@@ -1,0 +1,20 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {Tree,Sequence,Selector,ReactiveSelector,ParallelAll,Wait,Action,Condition,Cooldown,Guard,Inverter,Repeat,Status} from '../scripts/bt.mjs';
+const bb=new Map(),ctx=(t=0,dt=.1)=>({bb,time:t,dt});
+test('wait resets after success',()=>{const tree=new Tree(new Wait(.2));assert.equal(tree.tick(ctx()),Status.RUNNING);assert.equal(tree.tick(ctx(.1)),Status.SUCCESS);assert.equal(tree.tick(ctx(.2)),Status.RUNNING);});
+test('memory sequence latches one shot',()=>{let n=0;const t=new Tree(new Sequence([new Action('once',()=>{n++;return Status.SUCCESS;}),new Wait(.5)]));for(let i=0;i<3;i++)t.tick(ctx(i*.1));assert.equal(n,1);});
+test('selector fallback',()=>{const t=new Tree(new Selector([new Condition('no',()=>false),new Condition('yes',()=>true)]));assert.equal(t.tick(ctx()),Status.SUCCESS);});
+test('reactive interrupts patrol',()=>{let threat=false,n=0;const t=new Tree(new ReactiveSelector([new Sequence([new Condition('threat',()=>threat),new Action('attack',()=>Status.RUNNING)]),new Action('patrol',()=>Status.RUNNING,()=>n++)]));t.tick(ctx());threat=true;t.tick(ctx(1));assert.equal(n,1);});
+test('reactive returns to patrol after threat gone',()=>{let threat=true,n=0;const t=new Tree(new ReactiveSelector([new Guard('threat',()=>threat,new Action('attack',()=>Status.RUNNING,()=>n++)),new Action('patrol',()=>Status.RUNNING)]));t.tick(ctx());threat=false;t.tick(ctx(1));assert.equal(n,1);});
+test('parallel latches success',()=>{let n=0;const t=new Tree(new ParallelAll([new Action('once',()=>{n++;return Status.SUCCESS;}),new Wait(.5)]));for(let i=0;i<3;i++)t.tick(ctx(i*.1));assert.equal(n,1);});
+test('parallel fail-fast aborts running task',()=>{let n=0;const t=new Tree(new ParallelAll([new Action('run',()=>Status.RUNNING,()=>n++),new Action('fail',()=>Status.FAILURE)]));assert.equal(t.tick(ctx()),Status.FAILURE);assert.equal(n,1);});
+test('cooldown persists across reset',()=>{let n=0;const t=new Tree(new Cooldown(new Action('attack',()=>{n++;return Status.SUCCESS;}),2));t.tick(ctx(0));t.reset(ctx(.5));assert.equal(t.tick(ctx(1)),Status.FAILURE);assert.equal(t.tick(ctx(2)),Status.SUCCESS);assert.equal(n,2);});
+test('empty composites',()=>{assert.equal(new Tree(new Sequence([])).tick(ctx()),Status.SUCCESS);assert.equal(new Tree(new Selector([])).tick(ctx()),Status.FAILURE);assert.equal(new Tree(new ParallelAll([])).tick(ctx()),Status.SUCCESS);});
+test('invalid timing rejected',()=>assert.throws(()=>new Tree(new Wait(1)).tick({bb,time:0,dt:NaN})));
+test('abort cleanup exactly once',()=>{let n=0;const t=new Tree(new Action('run',()=>Status.RUNNING,()=>n++));t.tick(ctx());t.abort(ctx());t.abort(ctx());assert.equal(n,1);});
+test('terminal root starts clean next run',()=>{let n=0;const t=new Tree(new Action('once',()=>{n++;return Status.SUCCESS;}));t.tick(ctx());t.tick(ctx(1));assert.equal(n,2);});
+
+test('inverter swaps terminal result',()=>{const t=new Tree(new Inverter(new Condition('true',()=>true)));assert.equal(t.tick(ctx()),Status.FAILURE);});
+test('repeat executes exactly count times across ticks',()=>{let n=0;const t=new Tree(new Repeat(new Action('do',()=>{n++;return Status.SUCCESS;}),3));assert.equal(t.tick(ctx(0)),Status.RUNNING);assert.equal(t.tick(ctx(1)),Status.RUNNING);assert.equal(t.tick(ctx(2)),Status.SUCCESS);assert.equal(n,3);});
+test('reactive guard checks every tick',()=>{let flag=true,abort=0;const t=new Tree(new ReactiveSelector([new Guard('guard',()=>flag,new Action('run',()=>Status.RUNNING,()=>abort++)),new Action('idle',()=>Status.RUNNING)]));t.tick(ctx());flag=false;t.tick(ctx(.1));assert.equal(abort,1);});
+test('repeat empty count completes',()=>assert.equal(new Tree(new Repeat(new Wait(2),0)).tick(ctx()),Status.SUCCESS));

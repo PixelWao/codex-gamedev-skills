@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>WGSL compile test</title>
+<h1>WGSL compilation status</h1><pre id="out">Waiting</pre>
+<script>
+const shader = "struct VertexOut {\n  @builtin(position) position: vec4f,\n  @location(0) uv: vec2f,\n};\n\n@vertex fn vs_main(@location(0) position: vec2f, @location(1) uv: vec2f) -> VertexOut {\n  var out: VertexOut;\n  out.position = vec4f(position, 0.0, 1.0);\n  out.uv = uv;\n  return out;\n}\n\n@fragment fn fs_main(in: VertexOut) -> @location(0) vec4f {\n  return vec4f(in.uv, 0.25, 1.0);\n}\n";
+async function run(){
+ if (!isSecureContext || !navigator.gpu) return {status:'NOT_TESTED',reason:'Secure-context WebGPU unavailable'};
+ const adapter=await navigator.gpu.requestAdapter();
+ if(!adapter) return {status:'NOT_TESTED',reason:'No GPUAdapter'};
+ const device=await adapter.requestDevice();
+ const module=device.createShaderModule({code:shader});
+ const info=await module.getCompilationInfo();
+ const diagnostics=[...info.messages].map(m=>({type:m.type,message:m.message,line:m.lineNum}));
+ // Compile module only. Does not validate link/layout of a complete pipeline.
+ return {status:diagnostics.some(x=>x.type==='error')?'FAIL':'PASS_MODULE_ONLY', diagnostics};
+}
+run().then(x=>{window.__wgslQA=x;document.querySelector('#out').textContent=JSON.stringify(x,null,2)}).catch(e=>{
+ window.__wgslQA={status:'FAIL',reason:String(e)};document.querySelector('#out').textContent=JSON.stringify(window.__wgslQA);
+});
+</script></html>

@@ -1,0 +1,1 @@
+{"name":"fps-shooter-skill-runtime","private":true,"version":"2.0.0","type":"module","description":"Dependency-free examples and QA for the Codex fps-shooter skill","scripts":{"test":"node --test tests/*.test.mjs","typecheck":"tsc -p tsconfig.json","example":"node examples/integration.mjs"}}

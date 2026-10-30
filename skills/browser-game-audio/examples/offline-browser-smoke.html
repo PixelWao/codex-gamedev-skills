@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Game audio OfflineAudioContext smoke</title><body><pre id="result">PENDING</pre>
+<script type="module">
+import {BrowserGameAudio} from '../scripts/audio-engine.mjs';
+try {
+ const rate=44100;
+ const ctx=new OfflineAudioContext(1,rate/2,rate);
+ const buffer=ctx.createBuffer(1,rate/4,rate);
+ const data=buffer.getChannelData(0);
+ for (let i=0;i<data.length;i++) data[i]=.15*Math.sin(i*440*2*Math.PI/rate);
+ const sound=new BrowserGameAudio({context:ctx,maxVoices:2});
+ sound.setMasterLevel(1);
+ sound.play(buffer,{bus:'sfx'});
+ const output=await ctx.startRendering();
+ const audio=output.getChannelData(0);
+ const energy=audio.reduce((sum,x)=>sum+x*x,0);
+ const result={ok:energy>1,energy,frames:audio.length};
+ document.getElementById('result').textContent=JSON.stringify(result);
+ sound.dispose();
+} catch (error) {document.getElementById('result').textContent=JSON.stringify({ok:false,error:String(error)});}
+</script></body></html>

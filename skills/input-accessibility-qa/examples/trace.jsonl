@@ -1,0 +1,8 @@
+{"time":10,"type":"down","device":"keyboard","control":"Space"}
+{"time":20,"type":"up","device":"keyboard","control":"Space"}
+{"time":30,"type":"pointerdown","pointerId":11,"zone":"stick"}
+{"time":31,"type":"pointerdown","pointerId":12,"zone":"jump"}
+{"time":42,"type":"axis","x":0.6,"y":0.8}
+{"time":50,"type":"pointerup","pointerId":12}
+{"time":51,"type":"pointercancel","pointerId":11}
+{"time":60,"type":"consume","inputId":"jump-1"}

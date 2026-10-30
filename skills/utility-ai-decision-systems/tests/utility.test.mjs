@@ -1,0 +1,18 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {clamp01,inverseLerp,combine,curves,mulberry32,Evaluator} from '../scripts/utility.mjs';
+test('exponential at zero steepness is linear',()=>assert.equal(curves.exponential(.4,0),.4));
+test('exponential finite negative steepness',()=>assert.ok(curves.exponential(.8,-4)>0));
+test('nonfinite facts rejected',()=>assert.throws(()=>clamp01(NaN)));
+test('reversed inverseLerp',()=>assert.equal(inverseLerp(2,20,2),1));
+test('equal inverseLerp bounds',()=>assert.equal(inverseLerp(3,3,3),1));
+test('zero factor veto survives compensation',()=>assert.equal(combine([0,1],'compensated-product'),0));
+test('mean and product differ',()=>assert.ok(combine([.5,.5],'mean')>combine([.5,.5],'product')));
+test('empty eligible returns null',()=>assert.equal(new Evaluator([{name:'a',available:()=>false,score:()=>1}]).choose({}),null));
+test('invalid score throws',()=>assert.throws(()=>new Evaluator([{name:'bad',score:()=>Infinity}]).choose({})));
+test('stable very low temperature',()=>{const chosen=new Evaluator([{name:'a',score:()=>1},{name:'b',score:()=>0}],{rng:mulberry32(1)}).choose({}, {strategy:'softmax',temperature:1e-10});assert.equal(chosen.name,'a');});
+test('invalid temperature rejected',()=>assert.throws(()=>new Evaluator([{name:'a',score:()=>1}]).choose({},{strategy:'softmax',temperature:0})));
+test('seed reproduces picks',()=>{const a=[{name:'a',score:()=>.5},{name:'b',score:()=>.5}];const f=()=>{const e=new Evaluator(a,{rng:mulberry32(314),hysteresis:0});return Array.from({length:20},()=>e.choose({}, {strategy:'weighted'}).name).join(',');};assert.equal(f(),f());});
+test('hysteresis reduces near tie flip',()=>{let a=.6,b=.59;const e=new Evaluator([{name:'a',score:()=>a},{name:'b',score:()=>b}],{hysteresis:.04});assert.equal(e.choose({}).name,'a');a=.59;b=.61;assert.equal(e.choose({}).name,'a');});
+test('ineligible current action never sticks',()=>{let can=true;const e=new Evaluator([{name:'a',score:()=>1,available:()=>can},{name:'b',score:()=>.1}]);e.choose({});can=false;assert.equal(e.choose({}).name,'b');});
+test('bad RNG rejected for stochastic pick',()=>{const e=new Evaluator([{name:'a',score:()=>1}],{rng:()=>1});assert.throws(()=>e.choose({},{strategy:'weighted'}));});
+test('finite softmax under score tie',()=>{const e=new Evaluator([{name:'a',score:()=>1},{name:'b',score:()=>1}],{rng:()=>.2});assert.ok(e.choose({}, {strategy:'softmax',temperature:.1}));});

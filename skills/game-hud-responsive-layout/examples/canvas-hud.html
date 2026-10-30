@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><title>Responsive Canvas HUD</title><link rel="stylesheet" href="../src/hud.css"/><style>body{margin:0;background:#081627;color:white;font:16px system-ui}.stage{height:100dvh;position:relative}canvas{display:block}.hud-panel{background:#203a54;color:#fff;padding:12px;border-radius:8px}button{min-height:44px;background:#234867;color:#fff;font:inherit;border:2px solid white;border-radius:8px;padding:8px}</style></head><body><div class="stage" id="stage"><canvas id="world"></canvas><div class="game-ui-root"><div class="game-hud"><div class="hud-panel" aria-live="polite">HP <span id="health">80</span></div><div class="hud-panel"><button id="damage">Hit -10</button></div></div></div></div><script type="module">
+import {configureCanvas,watchViewport,makeHudStore,bindHud} from '../src/hud.mjs';
+const canvas=document.querySelector('#world');const stage=document.querySelector('#stage');
+const unwatch=watchViewport(stage,({width,height,dpr})=>{const {ctx}=configureCanvas(canvas,width,height,dpr);ctx.fillStyle='#12243d';ctx.fillRect(0,0,width,height);ctx.fillStyle='#4ac5bd';ctx.fillRect(width/2-20,height/2-20,40,40);});
+const store=makeHudStore({hp:80});const stop=bindHud({store,select:s=>s.hp,render:hp=>document.querySelector('#health').textContent=String(hp)});
+document.querySelector('#damage').onclick=()=>store.patch({hp:Math.max(0,store.getSnapshot().hp-10)});
+window.addEventListener('pagehide',()=>{stop();unwatch();},{once:true});
+</script></body></html>

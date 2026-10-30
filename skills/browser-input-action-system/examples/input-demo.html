@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Action Input Demo</title>
+<style>body{font:16px system-ui;background:#171c27;color:#fff;margin:1rem}#game{position:relative;background:#303b53;width:min(95vw,720px);height:290px;touch-action:none;border-radius:8px}.touch{position:absolute;border:1px solid #bed7ff;background:#334a72;color:#fff;border-radius:50%;width:116px;height:116px;display:grid;place-items:center;user-select:none;touch-action:none}#stick{bottom:10px;left:10px}#jump{bottom:10px;right:10px}pre{white-space:pre-wrap}</style>
+<h1>Browser Input Actions</h1><p>Space / A,D / gamepad button 0 / stick; touch both zones simultaneously. Blur page to clear state.</p>
+<div id="game" aria-label="Demo game control surface"><button class="touch" data-input-zone="stick" id="stick">MOVE</button><button class="touch" data-input-zone="jump" id="jump">JUMP</button></div><pre id="stats" aria-live="polite"></pre>
+<script type="module">
+import {InputActions} from '../src/input.mjs';
+const bindings=[
+ {context:'gameplay',type:'key',action:'jump',code:'Space'},
+ {context:'gameplay',type:'key',action:'moveX',code:'KeyA',scale:-1},
+ {context:'gameplay',type:'key',action:'moveX',code:'KeyD'},
+ {context:'gameplay',type:'gamepad-axis',action:'moveX',axis:0},
+ {context:'gameplay',type:'gamepad-button',action:'jump',button:0},
+ {context:'gameplay',type:'touch-button',action:'jump',zone:'jump'},
+ {context:'gameplay',type:'touch-axis',action:'moveX',zone:'stick',axis:'x'},
+ {context:'menu',type:'key',action:'back',code:'Escape'},
+];
+const input=new InputActions(bindings);input.attachBrowser({window,document,element:document.querySelector('#game')});
+let eventCount=0;
+// This demo has its own rAF for illustration ONLY. Real Codex integration hooks into existing game loop.
+function frame(){input.pollGamepads(navigator.getGamepads?.()??[]);eventCount+=input.drain().length;
+ document.querySelector('#stats').textContent=JSON.stringify({jump:input.get('jump'),moveX:input.get('moveX'),device:input.activeDevice,edges:eventCount},null,2);
+ requestAnimationFrame(frame);}
+requestAnimationFrame(frame);
+</script></html>

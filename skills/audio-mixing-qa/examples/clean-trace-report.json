@@ -1,0 +1,16 @@
+{
+  "events": 5,
+  "peak_simultaneous_voices": 1,
+  "event_counts": {
+    "voice_start": 1,
+    "duck": 2,
+    "music_event": 1,
+    "voice_end": 1
+  },
+  "errors": 0,
+  "warnings": 0,
+  "issues": [],
+  "limitations": [
+    "Trace validates reported events only; cannot prove audible timing or loudness"
+  ]
+}

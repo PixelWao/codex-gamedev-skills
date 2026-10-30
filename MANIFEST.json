@@ -1,0 +1,4180 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "skills/adaptive-music-systems/assets/INTEGRATION_CHECKLIST.md",
+      "bytes": 507,
+      "sha256": "fbde356b50636a1045caf8094e964b9e2fe0c0acdf91b4de43a2d251d0c1aeec"
+    },
+    {
+      "path": "skills/adaptive-music-systems/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/adaptive-music-systems/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/adaptive-music-systems/CHANGELOG.md",
+      "bytes": 212,
+      "sha256": "41daa9e8c8b59b0e17fe63ec9907e876b954c1893fb58a2e4cba27103ac48f4b"
+    },
+    {
+      "path": "skills/adaptive-music-systems/examples/music-integration.mjs",
+      "bytes": 820,
+      "sha256": "6b7e5847937f5c2f6fa9a6dd2e75df0f938ef37a6449efa7cf64fadbd4f276ac"
+    },
+    {
+      "path": "skills/adaptive-music-systems/examples/typed-example.mts",
+      "bytes": 282,
+      "sha256": "2422ac7349bf3c1e4a92d49b520a496f7b12fbf7b8a7ac8c38ed20e244e037d6"
+    },
+    {
+      "path": "skills/adaptive-music-systems/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/adaptive-music-systems/PROVENANCE.md",
+      "bytes": 1943,
+      "sha256": "8e8a94b2bf5b7af1bcbe550b9b7d540d867f5cd326070a24014e2da34d4bbaa3"
+    },
+    {
+      "path": "skills/adaptive-music-systems/references/composition-and-assets.md",
+      "bytes": 920,
+      "sha256": "b56e5ac8c17cb5b7bf52f283c292ec9b8d62118cf449ded6614fba0cdac1b56d"
+    },
+    {
+      "path": "skills/adaptive-music-systems/references/godot-interop.md",
+      "bytes": 924,
+      "sha256": "b77fe860cb7f3244c7ab394c6e31f50d4107a83235bb8876591a0eef593c7412"
+    },
+    {
+      "path": "skills/adaptive-music-systems/references/scheduling-and-quantization.md",
+      "bytes": 1084,
+      "sha256": "0f8041107aef8917202f860c94ed57978ce2f0471450a3732c44b4237c9aa8dc"
+    },
+    {
+      "path": "skills/adaptive-music-systems/scripts/adaptive-music.d.mts",
+      "bytes": 1157,
+      "sha256": "68ad560b5f3a7310067426094fc2f1c80a6f7536591ac3b7d3a72057cc9f212e"
+    },
+    {
+      "path": "skills/adaptive-music-systems/scripts/adaptive-music.mjs",
+      "bytes": 7199,
+      "sha256": "40b380416f196c514acd1b265d3b6e2ed89cf723a4551c53d45b5aa3e55c49c9"
+    },
+    {
+      "path": "skills/adaptive-music-systems/SKILL.md",
+      "bytes": 2911,
+      "sha256": "4d42537e51463f9f11b8581a7940cd27aeb8540e46560f62159f68cdba36ec6f"
+    },
+    {
+      "path": "skills/adaptive-music-systems/tests/music.test.mjs",
+      "bytes": 3493,
+      "sha256": "738b01406f5e275f3f1e39d1852d3ad9d78ba1275be770c29fa2024f5f510ecf"
+    },
+    {
+      "path": "skills/adaptive-music-systems/tsconfig.json",
+      "bytes": 188,
+      "sha256": "de2c732044aca10795627d935545ae95608f61ff275053a8cf3df9e04f1c8899"
+    },
+    {
+      "path": "skills/audio-mixing-qa/assets/AUDIO_QA_REPORT_TEMPLATE.md",
+      "bytes": 607,
+      "sha256": "072726c191dbee971ccdbd6e857d09b249fe7b1a41ca0f21ae6028d7d490a40a"
+    },
+    {
+      "path": "skills/audio-mixing-qa/assets/INTEGRATION_CHECKLIST.md",
+      "bytes": 507,
+      "sha256": "fbde356b50636a1045caf8094e964b9e2fe0c0acdf91b4de43a2d251d0c1aeec"
+    },
+    {
+      "path": "skills/audio-mixing-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/audio-mixing-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/audio-mixing-qa/CHANGELOG.md",
+      "bytes": 212,
+      "sha256": "41daa9e8c8b59b0e17fe63ec9907e876b954c1893fb58a2e4cba27103ac48f4b"
+    },
+    {
+      "path": "skills/audio-mixing-qa/examples/broken_trace.jsonl",
+      "bytes": 259,
+      "sha256": "d4cd8dcb3fd2e4f0e7f41c856a42eb743f2981f61f29df11b0015f7d1874e003"
+    },
+    {
+      "path": "skills/audio-mixing-qa/examples/clean-trace-report.json",
+      "bytes": 310,
+      "sha256": "9d3b27ea282068124b23aefa901fbcfbe79428243acb121867c2a1fd88c80ec0"
+    },
+    {
+      "path": "skills/audio-mixing-qa/examples/clean_trace.jsonl",
+      "bytes": 248,
+      "sha256": "716978a7c9d19aede808f97f2c3cf263852f74adb55da9d612bf049ee14b3013"
+    },
+    {
+      "path": "skills/audio-mixing-qa/examples/sample-audit.json",
+      "bytes": 796,
+      "sha256": "972b64bed74d7f27356ca40dece54d6b51c409d7980b13fc80de67743ceb4b2e"
+    },
+    {
+      "path": "skills/audio-mixing-qa/examples/sample.wav",
+      "bytes": 32044,
+      "sha256": "13adab0a810c3e6a0eec4f3fcd896fc208e78f65c7b62af5e8bbc22ec0986032"
+    },
+    {
+      "path": "skills/audio-mixing-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/audio-mixing-qa/PROVENANCE.md",
+      "bytes": 1943,
+      "sha256": "8e8a94b2bf5b7af1bcbe550b9b7d540d867f5cd326070a24014e2da34d4bbaa3"
+    },
+    {
+      "path": "skills/audio-mixing-qa/QA_REPORT.md",
+      "bytes": 291,
+      "sha256": "7783ec0fb6ecb1843bd514208f2f8a8ae2f58f1331414fcf9f3528bdfea257fe"
+    },
+    {
+      "path": "skills/audio-mixing-qa/references/metrics.md",
+      "bytes": 1196,
+      "sha256": "4a155c3e15e03668173a4df9f6a32053692d2d42d2f1d8ae106ade68f8482ba0"
+    },
+    {
+      "path": "skills/audio-mixing-qa/references/qa-scenarios.md",
+      "bytes": 920,
+      "sha256": "30a3ea42dbe14fb89958f595b111b7c6a7215ee1fcf3ce3cab6d966a9e5a2585"
+    },
+    {
+      "path": "skills/audio-mixing-qa/scripts/audio_audit.py",
+      "bytes": 4891,
+      "sha256": "2bf1cec031cd41ad11f5ffb140e63637a5bede343117ffc1c81c86caadc3be36"
+    },
+    {
+      "path": "skills/audio-mixing-qa/scripts/audio_event_qa.py",
+      "bytes": 3651,
+      "sha256": "b3dce9d2d224b4b6daddbff5937be20e8223dd353decb200d4551eb57359d9f5"
+    },
+    {
+      "path": "skills/audio-mixing-qa/SKILL.md",
+      "bytes": 2535,
+      "sha256": "cd276727346323ede68f27f7eabb04f4653aece864e283857f727b149553c72c"
+    },
+    {
+      "path": "skills/audio-mixing-qa/tests/test_audio_audit.py",
+      "bytes": 3335,
+      "sha256": "08276a21e8cc764b0dbbb4945630019807a9a839c9f31982daed79d4aa6b8af0"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/CHANGELOG.md",
+      "bytes": 254,
+      "sha256": "6b674c848ba229133c7327c170bb8ed1f9ddd2542770b413e43f7f7f5b1d5271"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/examples/guard.mjs",
+      "bytes": 596,
+      "sha256": "05b8afab8ab6f243965c2d8df6dc9452f64d4bc13cb36f4b8c4251add596cf07"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/examples/typed-example.mts",
+      "bytes": 337,
+      "sha256": "7f958ce82307cf9060d87180f18b54feb145a51260c9cb431709f62cd50fbc4a"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/PROVENANCE.md",
+      "bytes": 821,
+      "sha256": "6fc6d6441c7b17d20a21c6f85f806943e51b9e7bea5d777bc6d33f88781338fe"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/QA_REPORT.md",
+      "bytes": 476,
+      "sha256": "b5c57b49a6c748308b9a6aac09a194a17b45903808404d9b10708096195d9fee"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/references/csharp-interop.md",
+      "bytes": 1277,
+      "sha256": "6f40df8be5cd7c79c9f3088befac9009178ced350d51bc274daceb88f1ce3763"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/references/integration.md",
+      "bytes": 1423,
+      "sha256": "7831082e787c15ad3888421424cedf98c72558a2a7c54c19d2d2c551ef994fcd"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/references/lifecycle.md",
+      "bytes": 1548,
+      "sha256": "5a0db24546ad78c685535550cb4ada718537fb95c020af88f1663ec1e8bd9bf9"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/references/sources.md",
+      "bytes": 715,
+      "sha256": "f32bee5e0ed0f1aedf8e1ed029ad9305b5796e9f9669e022b2ad44ee7d9c722c"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/scripts/bt.d.mts",
+      "bytes": 1834,
+      "sha256": "931657c7aa3d7d0efb3596685cf02904efc55d37e267ac522060c39f525d36e0"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/scripts/bt.mjs",
+      "bytes": 6426,
+      "sha256": "2f63f707c172041996f7c418995f5a1bb0853359958071b442f928b0bbcc473f"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/SKILL.md",
+      "bytes": 2833,
+      "sha256": "ea5f9a3dcba7f859acdcf11ac4f953534d651a9757a8ef876e17d0a05910c271"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/tests/bt.test.mjs",
+      "bytes": 3775,
+      "sha256": "1173e039b319442f635242b374f50b261991a73377ae83ef33a96c3166d9721f"
+    },
+    {
+      "path": "skills/behavior-tree-runtime/tsconfig.json",
+      "bytes": 195,
+      "sha256": "56fab7f135f7b6c912b45cb46adde859abe1964df3df9fb7a755538b37c995c4"
+    },
+    {
+      "path": "skills/browser-camera-2d/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/browser-camera-2d/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/browser-camera-2d/CHANGELOG.md",
+      "bytes": 563,
+      "sha256": "db37a9f60075b942ffc856fa4f52980b20b4fad06f2115eed8682140296ef631"
+    },
+    {
+      "path": "skills/browser-camera-2d/examples/canvas-integration.mts",
+      "bytes": 718,
+      "sha256": "d1cffff948d3ae6474de050bdc2f159ddda302c99124013c180afc3b4762de68"
+    },
+    {
+      "path": "skills/browser-camera-2d/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/browser-camera-2d/PROVENANCE.md",
+      "bytes": 1272,
+      "sha256": "442662afbf4eaf50cb070383a75f1cf78a0c7fd0a68d68874a1ccf28cea8cc23"
+    },
+    {
+      "path": "skills/browser-camera-2d/README.md",
+      "bytes": 730,
+      "sha256": "58e431d9a26f01966f88e0e28d46cf7687fc11de8dd30905849707c2d69cc966"
+    },
+    {
+      "path": "skills/browser-camera-2d/references/canvas-integration.md",
+      "bytes": 3044,
+      "sha256": "ae42b236a7602d8699059adbf1521ced0354404009ae24bdf3635b4b791be3e6"
+    },
+    {
+      "path": "skills/browser-camera-2d/references/godot-unity.md",
+      "bytes": 1308,
+      "sha256": "0a1a7841336158af5e5321418814b5116c08f2dc2faad45dd1b25a518b0a50e0"
+    },
+    {
+      "path": "skills/browser-camera-2d/scripts/camera2d.d.mts",
+      "bytes": 987,
+      "sha256": "652d8161374eb6a0297d5e5c699456e6070d83d0bf74e5c1d0fc253a26cc9b10"
+    },
+    {
+      "path": "skills/browser-camera-2d/scripts/camera2d.d.ts",
+      "bytes": 987,
+      "sha256": "652d8161374eb6a0297d5e5c699456e6070d83d0bf74e5c1d0fc253a26cc9b10"
+    },
+    {
+      "path": "skills/browser-camera-2d/scripts/camera2d.mjs",
+      "bytes": 4447,
+      "sha256": "ba31f2119ac48301c5fd25b601a131b86e37c821a4a78026f1d73ee84bef5df7"
+    },
+    {
+      "path": "skills/browser-camera-2d/SKILL.md",
+      "bytes": 3403,
+      "sha256": "ceaea978f6b8a691c928463c5e9341d5a6129c4ee7570a72c09e4f5806ba9551"
+    },
+    {
+      "path": "skills/browser-camera-2d/tests/camera2d.test.mjs",
+      "bytes": 2854,
+      "sha256": "b7121f25a0f9a385e0f74297e9d919a3a250f1bfab064c0db25643de42b17e89"
+    },
+    {
+      "path": "skills/browser-game-audio/assets/INTEGRATION_CHECKLIST.md",
+      "bytes": 507,
+      "sha256": "fbde356b50636a1045caf8094e964b9e2fe0c0acdf91b4de43a2d251d0c1aeec"
+    },
+    {
+      "path": "skills/browser-game-audio/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/browser-game-audio/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/browser-game-audio/CHANGELOG.md",
+      "bytes": 212,
+      "sha256": "41daa9e8c8b59b0e17fe63ec9907e876b954c1893fb58a2e4cba27103ac48f4b"
+    },
+    {
+      "path": "skills/browser-game-audio/examples/integrate.mjs",
+      "bytes": 987,
+      "sha256": "a7bb1eefea3747cf88c24908d8d5d143de18c745b8da7a97c555d2317be6df3e"
+    },
+    {
+      "path": "skills/browser-game-audio/examples/offline-browser-smoke.html",
+      "bytes": 995,
+      "sha256": "4c61e63565d57a6941632f6b74f9977fd8d7bcd3d7edd41cb1c37f2a06b106fb"
+    },
+    {
+      "path": "skills/browser-game-audio/examples/typed-example.mts",
+      "bytes": 252,
+      "sha256": "08935fe93b09a33d44585d5453e5cb3be9ceda5b797d95e73d98aa6783b4c47a"
+    },
+    {
+      "path": "skills/browser-game-audio/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/browser-game-audio/PROVENANCE.md",
+      "bytes": 1943,
+      "sha256": "8e8a94b2bf5b7af1bcbe550b9b7d540d867f5cd326070a24014e2da34d4bbaa3"
+    },
+    {
+      "path": "skills/browser-game-audio/references/browser-lifecycle.md",
+      "bytes": 1118,
+      "sha256": "2baa0818250f404dbd5733308b410e0ba36c07be5426c109b51fc00b2ce88824"
+    },
+    {
+      "path": "skills/browser-game-audio/references/bus-and-sfx.md",
+      "bytes": 1229,
+      "sha256": "73eb4082015629391d26f5b3fb3815b68a4aac1764489dc80f79eb138a9c160a"
+    },
+    {
+      "path": "skills/browser-game-audio/scripts/audio-engine.d.mts",
+      "bytes": 1441,
+      "sha256": "91d701e50188a59ba801cb87fb6b3eeddde6bdd9fdd223ef9a0a4bbfef598cb8"
+    },
+    {
+      "path": "skills/browser-game-audio/scripts/audio-engine.mjs",
+      "bytes": 7713,
+      "sha256": "5227c2b7be783ee90ea30cb9947fd2a7e944b4bc4d1d09d8a763fe2fa613fc0a"
+    },
+    {
+      "path": "skills/browser-game-audio/SKILL.md",
+      "bytes": 3506,
+      "sha256": "28eb1d241b044b42b3bc54a3a9231555878dfc231eba528ce3eb1035e1d72675"
+    },
+    {
+      "path": "skills/browser-game-audio/tests/audio-engine.test.mjs",
+      "bytes": 4368,
+      "sha256": "6edd78bbfaf675b2024b2d6f375843d90489c172576aa722a4e49999041cb156"
+    },
+    {
+      "path": "skills/browser-game-audio/tsconfig.json",
+      "bytes": 209,
+      "sha256": "d80c71d8fcda95ae653e4f96aa1e2e6c16a0416118aa9600938e2917391d1914"
+    },
+    {
+      "path": "skills/browser-game-saves/assets/qa-report.md",
+      "bytes": 766,
+      "sha256": "74cd45de7c9b6be1ea53b96f990f599abcc006eabd2b318fcdca25f3b66dbe51"
+    },
+    {
+      "path": "skills/browser-game-saves/attribution/APACHE-2.0-UPSTREAM-LICENSE.txt",
+      "bytes": 11362,
+      "sha256": "5b18b7660a16d6a804b927935d8a21fcacef1daa680c90756903a2bed4bcff9b"
+    },
+    {
+      "path": "skills/browser-game-saves/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/browser-game-saves/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/browser-game-saves/attribution/UPSTREAM-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/browser-game-saves/CHANGELOG.md",
+      "bytes": 269,
+      "sha256": "3cce26b4fb6bb4c1a55b6c195b3af695ac44b677b2e111ca65b4794cb3d7ebdd"
+    },
+    {
+      "path": "skills/browser-game-saves/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/browser-game-saves/PROVENANCE.md",
+      "bytes": 932,
+      "sha256": "757e62051cc650ccf3c0389e11cb70c2a50b49220be153f1d5c7ac0810fa2a64"
+    },
+    {
+      "path": "skills/browser-game-saves/README.md",
+      "bytes": 575,
+      "sha256": "8affbeb532fb183291036ed10bc7ee67f8b9d06e4201e5b3c603c9537aed5a3d"
+    },
+    {
+      "path": "skills/browser-game-saves/references/browser-recovery.md",
+      "bytes": 1287,
+      "sha256": "29a547e9495ddaa58e53cc016b46eccce431a07803ccf7439efa1159211c4304"
+    },
+    {
+      "path": "skills/browser-game-saves/references/indexeddb-architecture.md",
+      "bytes": 2415,
+      "sha256": "4ee9b9f7098394a407d27f781ebf34f9632a5ea50116dc8f64e75f456d389c97"
+    },
+    {
+      "path": "skills/browser-game-saves/references/sources.md",
+      "bytes": 797,
+      "sha256": "c014a1cce7d0c596029090236180d8a869387874cf26240114a078813e1379ba"
+    },
+    {
+      "path": "skills/browser-game-saves/scripts/indexeddb_save_store.mjs",
+      "bytes": 8522,
+      "sha256": "c4500f9531c8b714f44a3a1266714333a184b0389be4ad71515c71852b2fde8c"
+    },
+    {
+      "path": "skills/browser-game-saves/scripts/tests/browser_tests.html",
+      "bytes": 4067,
+      "sha256": "722dae12fc8c3e6ddffc4bce5b8b5616cc7de30eaaa309368bbab9ab272277ef"
+    },
+    {
+      "path": "skills/browser-game-saves/scripts/tests/run_browser_tests.py",
+      "bytes": 1920,
+      "sha256": "97f0e8e80d6fc8bf9cc52f1e561739e43902eddf19eb35f1a36cb545ffc01fbb"
+    },
+    {
+      "path": "skills/browser-game-saves/scripts/tests/test_indexeddb_mock.mjs",
+      "bytes": 5810,
+      "sha256": "a158b37174907f791f40f5dfe0b7ec057e2dfe5be6b2387a7b0d39bb03210cd4"
+    },
+    {
+      "path": "skills/browser-game-saves/SKILL.md",
+      "bytes": 3560,
+      "sha256": "5544e102044d2ff8b04b12ae4ad2997ce12696e957f3870093d815cb9fc7bef1"
+    },
+    {
+      "path": "skills/browser-input-action-system/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/browser-input-action-system/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/browser-input-action-system/CHANGELOG.md",
+      "bytes": 157,
+      "sha256": "23c6d20e200db24e66e051ae3e31cbd7badaba69a72b9c0e0466a146f3f893aa"
+    },
+    {
+      "path": "skills/browser-input-action-system/examples/input-demo.html",
+      "bytes": 2206,
+      "sha256": "66b946fcbd4fe75fcf92e56c4e01d9ea938d5a353fd2eb27d9e6e01d823cb632"
+    },
+    {
+      "path": "skills/browser-input-action-system/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/browser-input-action-system/PROVENANCE.md",
+      "bytes": 882,
+      "sha256": "4924c0f756d9c403f217d11944201e35adeaa527f5a0cbed0c8b4cc8940ef55d"
+    },
+    {
+      "path": "skills/browser-input-action-system/references/integration.md",
+      "bytes": 3128,
+      "sha256": "1036bc6fcd678a830a2f92bb4688b080b80915ade404eb1c68a76b5c9b73d6ad"
+    },
+    {
+      "path": "skills/browser-input-action-system/SKILL.md",
+      "bytes": 6033,
+      "sha256": "d20f899f447b0e1229aee190e5121d00fefbe928f6986e0f3e62456f9f75f9ec"
+    },
+    {
+      "path": "skills/browser-input-action-system/src/input.d.mts",
+      "bytes": 2498,
+      "sha256": "c888f72158535abff1faf55e2d5875c66eba2c930288e29e5bffa3831fae8c3c"
+    },
+    {
+      "path": "skills/browser-input-action-system/src/input.mjs",
+      "bytes": 12610,
+      "sha256": "60976e39dc9f24fe733f08b363f003058f15b883eb781adc1fb2635bae7d6dba"
+    },
+    {
+      "path": "skills/browser-input-action-system/TESTING.md",
+      "bytes": 513,
+      "sha256": "217560c835efba3fc22e8fc0be5dc0025c8ef2a46409d0d5e77ba17aa78de1d9"
+    },
+    {
+      "path": "skills/browser-input-action-system/tests/input.test.mjs",
+      "bytes": 7207,
+      "sha256": "7f9e0ab694861b3bff1903364228ca3e7f987052bcd4252e478b1391bb2578f0"
+    },
+    {
+      "path": "skills/browser-input-action-system/tsconfig.json",
+      "bytes": 195,
+      "sha256": "0bddc878c3cc46b52628d381fcab7cb9e1d5e6235a3bd432b1697dc444737937"
+    },
+    {
+      "path": "skills/browser-input-action-system/typecheck/example.mts",
+      "bytes": 478,
+      "sha256": "c09e49a8d783c37dfcb16f5f17c92426f5099f40ea906d399c9f81822ef8926c"
+    },
+    {
+      "path": "skills/browser-input-action-system/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/camera-debugging-qa/assets/camera-qa-report.md",
+      "bytes": 688,
+      "sha256": "b4ea6ad90c10c2fea6bd7ea80f2959818b473468ad0f034e4ce78090f2116f94"
+    },
+    {
+      "path": "skills/camera-debugging-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/camera-debugging-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/camera-debugging-qa/CHANGELOG.md",
+      "bytes": 563,
+      "sha256": "db37a9f60075b942ffc856fa4f52980b20b4fad06f2115eed8682140296ef631"
+    },
+    {
+      "path": "skills/camera-debugging-qa/examples/trace.jsonl",
+      "bytes": 399,
+      "sha256": "f4d6ef2cdf6dec35a7fe4988ae9414cae263ca653f7297d9a1220362706d9c45"
+    },
+    {
+      "path": "skills/camera-debugging-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/camera-debugging-qa/PROVENANCE.md",
+      "bytes": 1274,
+      "sha256": "74638372eecc2b1c0d3e0b76bd90740329ad3108bebba419ac67f47868205727"
+    },
+    {
+      "path": "skills/camera-debugging-qa/README.md",
+      "bytes": 566,
+      "sha256": "411cd9abf4d1cb16e97f4f71e37a3251ea84cdf26dd09895e24e0a5883323587"
+    },
+    {
+      "path": "skills/camera-debugging-qa/references/trace-schema.md",
+      "bytes": 2130,
+      "sha256": "0eeef3956bdab8d9026bb72f026a184ce44d5870a2d8024b876edc1014bdd5ac"
+    },
+    {
+      "path": "skills/camera-debugging-qa/scripts/camera_trace_qa.py",
+      "bytes": 9189,
+      "sha256": "0733b186a9b1709261dbba8e775e67ba54c57e3c76c33173b5f3a04421fc22f7"
+    },
+    {
+      "path": "skills/camera-debugging-qa/SKILL.md",
+      "bytes": 3102,
+      "sha256": "420458de1bcb19a2d09445dd85f8cf71e7a15beccc678d3910ab41a39a5cb2bd"
+    },
+    {
+      "path": "skills/camera-debugging-qa/tests/test_camera_trace_qa.py",
+      "bytes": 3344,
+      "sha256": "5d360191b816779481ba83cfc01db8fe33d81aa80238f86cc3024bdb95cb9756"
+    },
+    {
+      "path": "skills/destructible-world-engineering/CHANGELOG.md",
+      "bytes": 154,
+      "sha256": "bf3c487623300e505ee39c2efed2e8689c8eb12b42e1bbbf63a5f8a58dfe8d01"
+    },
+    {
+      "path": "skills/destructible-world-engineering/examples/demo.mjs",
+      "bytes": 448,
+      "sha256": "253c17a429c777984ef58c8d415e386147e55d20020b3d6ca10991a2df25b093"
+    },
+    {
+      "path": "skills/destructible-world-engineering/examples/typed.mts",
+      "bytes": 335,
+      "sha256": "3a58d68a1700ce94148da7034216eb67b711f07abfa38f49e07ddcd071b0fc24"
+    },
+    {
+      "path": "skills/destructible-world-engineering/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/destructible-world-engineering/PROVENANCE.md",
+      "bytes": 557,
+      "sha256": "c78aaab235591328932b0cbbb6f5a98ca7ebfe4781c387e1b7a5ec98fdf2a39c"
+    },
+    {
+      "path": "skills/destructible-world-engineering/README.md",
+      "bytes": 770,
+      "sha256": "66ee691920ad2946c697fb1ae207ae97b09315ccc6c617d47169ec501e5d9eb3"
+    },
+    {
+      "path": "skills/destructible-world-engineering/references/integration.md",
+      "bytes": 713,
+      "sha256": "dc8194f9b3fd26749ab4056fe070ec173bfb87588eaaa71421a5ae9c08961dc8"
+    },
+    {
+      "path": "skills/destructible-world-engineering/references/sources.md",
+      "bytes": 508,
+      "sha256": "93b8b615fe09f24af039901806f9512f398407217a5ef33f7b6c04d780d19dda"
+    },
+    {
+      "path": "skills/destructible-world-engineering/SKILL.md",
+      "bytes": 2509,
+      "sha256": "cec76e96dc326720a11000615d1b53cd561cdfa36e6a3c50355c4e54b8e608d5"
+    },
+    {
+      "path": "skills/destructible-world-engineering/src/destruction.d.mts",
+      "bytes": 1168,
+      "sha256": "8a7fd9c44856dd282ca8e6bdf907fe3215ad7cb417949ba5c728a0c172835815"
+    },
+    {
+      "path": "skills/destructible-world-engineering/src/destruction.mjs",
+      "bytes": 4923,
+      "sha256": "538b3655f0596ab98b13a20da6abb0fbb036c5635076a93e186c028c613d4bd9"
+    },
+    {
+      "path": "skills/destructible-world-engineering/tests/destruction.test.mjs",
+      "bytes": 3581,
+      "sha256": "646aea5152f671ec5a87c68fd2b15d90582a238f88328eb8840a1fd464890562"
+    },
+    {
+      "path": "skills/destructible-world-engineering/tsconfig.json",
+      "bytes": 185,
+      "sha256": "c9bfc2395429a227c92717052f8ff86797f10e865a296accdebb79ce97f49f9c"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/CHANGELOG.md",
+      "bytes": 412,
+      "sha256": "2a8efb6da440fb29eefa73cea7129f39c230a04c9e40e487a067b69e9b49e672"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/examples/steering-demo.mjs",
+      "bytes": 592,
+      "sha256": "dcb66ad7febc2ba9ed2a31b9fcf1e39a16d0b9fdaabfddd63f04fc6ffb1bb3b7"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/examples/typed-steering.mts",
+      "bytes": 369,
+      "sha256": "9d00e0ae62f5dbf293e2c8d1c374a4a1bc27aa037096a231765ac1f905121a59"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/PROVENANCE.md",
+      "bytes": 1550,
+      "sha256": "c285379b7c38c522c2577fbb4cd4078034d7d1acb56d91392f453e021dd47301"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/README.md",
+      "bytes": 672,
+      "sha256": "3ce21f24c92a01032dec80a234161305341f6251ec390d6359a60a046cbd888b"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/references/navmesh-adapters.md",
+      "bytes": 2289,
+      "sha256": "74b6f65ab8183ba7e67bb99cf6309d342ea4fa5f615ae7028429286c53cd928d"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/references/rapier-destruction.md",
+      "bytes": 1604,
+      "sha256": "cccb5923b3be9b610975d5a5870c02c6e17dbc4d58f59dbe4d73d9c303500ded"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/scripts/nav-steering.d.mts",
+      "bytes": 1468,
+      "sha256": "9e35edaea6641536707a535baaea34c3f0a24e1c8f99d4f5c7d128e4f6884f7e"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/scripts/nav-steering.mjs",
+      "bytes": 5674,
+      "sha256": "d087505e7ddd3571270db7a86c6d45646897330c33d5854f2c9868845bc57cf9"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/SKILL.md",
+      "bytes": 3807,
+      "sha256": "d7f9650b446a76e25d8c02dbc808214ef8feabe843ac36871c8859968fa77b05"
+    },
+    {
+      "path": "skills/dynamic-navmesh-steering/tests/nav.test.mjs",
+      "bytes": 4104,
+      "sha256": "c7c8cd7ab92f63f4e45262962fbbb99ff25da375d230305e0dc1ab24fa25a879"
+    },
+    {
+      "path": "skills/fps-shooter/assets/sample-combat-trace.jsonl",
+      "bytes": 453,
+      "sha256": "fb6454b6a0913301c4a49c6cdc1d2574eb5ff29848fc71fe0348f07383662636"
+    },
+    {
+      "path": "skills/fps-shooter/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/fps-shooter/attribution/upstream/LICENSE-APACHE-2.0",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/fps-shooter/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/fps-shooter/CHANGELOG.md",
+      "bytes": 627,
+      "sha256": "5578ddcfea0fcae6c0482208ddbd5bb90a46108f9b5d3b8b123a6b576ee8d7ee"
+    },
+    {
+      "path": "skills/fps-shooter/examples/integration.mjs",
+      "bytes": 1597,
+      "sha256": "1d6c77b1d81b3ecaa061868cb94937c7d86197a4b5c1afceb3ee7764ec3c004a"
+    },
+    {
+      "path": "skills/fps-shooter/examples/typescript-integration.mts",
+      "bytes": 716,
+      "sha256": "33daa04291a4e1486d19ae993e67b44d2df6f37a47856d395d6a564b1ff94b19"
+    },
+    {
+      "path": "skills/fps-shooter/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/fps-shooter/package.json",
+      "bytes": 293,
+      "sha256": "4128743dc0492c34f66b6a6ea6adafe1411630db929dae662742394c26e5e697"
+    },
+    {
+      "path": "skills/fps-shooter/PROVENANCE.md",
+      "bytes": 1196,
+      "sha256": "efad4b8c5f5bc145a12da49e9990f770291cc1d16641073532be1c953afb48a4"
+    },
+    {
+      "path": "skills/fps-shooter/QA_REPORT.md",
+      "bytes": 1558,
+      "sha256": "9cf2535b4f0aa6860bd02d463b1447b3b0164e0a9ea9c5a2c315eeae24f2505e"
+    },
+    {
+      "path": "skills/fps-shooter/README.md",
+      "bytes": 959,
+      "sha256": "fd31c96921710c0104f57a1e38b51e8ff4f1894c4a5eabc449414d70c72ee667"
+    },
+    {
+      "path": "skills/fps-shooter/references/ballistics-hit-detection.md",
+      "bytes": 2446,
+      "sha256": "047af1864cee0bad4f0faf21fc31439edf334596a7995da4bd34a450f400e343"
+    },
+    {
+      "path": "skills/fps-shooter/references/qa-and-integration.md",
+      "bytes": 2171,
+      "sha256": "96b4af907a4abd5cc8976ff03852bedeffa0e6bf471400c1206a183e7cf33f31"
+    },
+    {
+      "path": "skills/fps-shooter/references/threejs-rapier-integration.md",
+      "bytes": 3355,
+      "sha256": "7d7c6c1f9dc7f445748afe83c3f54d9e303be1ee8f947d1e362a4a42049d4f45"
+    },
+    {
+      "path": "skills/fps-shooter/references/weapon-feel-balancing.md",
+      "bytes": 1647,
+      "sha256": "c90c7d148f6ff77d47d2e64c4af998934da69a300d9acce19cc345f44daacdd0"
+    },
+    {
+      "path": "skills/fps-shooter/references/weapon-fsm.md",
+      "bytes": 2185,
+      "sha256": "e4ab19e0f2851ca20ac488d60e621ad8282014825e580fe0fde9ea0f815e2db4"
+    },
+    {
+      "path": "skills/fps-shooter/scripts/analyze_combat_trace.py",
+      "bytes": 2370,
+      "sha256": "d10b0ed05af2fa092f53dc3c4749bc1862b8f62fb57cfde669a735c4674d17e9"
+    },
+    {
+      "path": "skills/fps-shooter/scripts/validate_skill.py",
+      "bytes": 1398,
+      "sha256": "a489daa7a33e9a587073e3de4414ea8e2715362ac99567a142e2f8903c722085"
+    },
+    {
+      "path": "skills/fps-shooter/SKILL.md",
+      "bytes": 6144,
+      "sha256": "25cab4684d816635c81ab04828502e0024a7b2e102facec50e51b7a79bb10655"
+    },
+    {
+      "path": "skills/fps-shooter/src/adapters.mjs",
+      "bytes": 3941,
+      "sha256": "057eb7e02efccd756e073b4a0767044566cb641697386b5b35daa0a3d9adc214"
+    },
+    {
+      "path": "skills/fps-shooter/src/ballistics.mjs",
+      "bytes": 5062,
+      "sha256": "042e3baf90c54a2d013f62ade27100c147c84cde06f61c21e14e477acaddc665"
+    },
+    {
+      "path": "skills/fps-shooter/src/index.d.mts",
+      "bytes": 4185,
+      "sha256": "4eb71123d840f10c6abd5eda43e58eca19e16939f8339b130dd8112c8b67130e"
+    },
+    {
+      "path": "skills/fps-shooter/src/index.mjs",
+      "bytes": 124,
+      "sha256": "d1aa287e0d3a1746505313d206f4d369701de0c58120f76610e4bee549f0925b"
+    },
+    {
+      "path": "skills/fps-shooter/src/math.mjs",
+      "bytes": 2988,
+      "sha256": "08a18ddce2ee7158017b885b47136634709b1036eaa4d44450b1a0dd5f5bb947"
+    },
+    {
+      "path": "skills/fps-shooter/src/weapon.mjs",
+      "bytes": 5591,
+      "sha256": "96fd55fbf05790af072e5c27f722b1a87c66571bda9d757ee4db56dabcbd2890"
+    },
+    {
+      "path": "skills/fps-shooter/tests/combat.test.mjs",
+      "bytes": 8775,
+      "sha256": "b0c6b933c18100020bd0012bf274f602e415c6b8c985f1b800b73a0e1af26a72"
+    },
+    {
+      "path": "skills/fps-shooter/tests/test_trace.py",
+      "bytes": 1255,
+      "sha256": "565c9a126ed512d05e911b699bade14d24c6231db32556758f1d4be4c263d4f9"
+    },
+    {
+      "path": "skills/fps-shooter/tsconfig.json",
+      "bytes": 187,
+      "sha256": "a5624ff8ecd24115fd3e43f506ccafc57edfb9ef2a6ede7fd25d0d18f89bc9dc"
+    },
+    {
+      "path": "skills/game-build-release-engineering/CHANGELOG.md",
+      "bytes": 154,
+      "sha256": "bf3c487623300e505ee39c2efed2e8689c8eb12b42e1bbbf63a5f8a58dfe8d01"
+    },
+    {
+      "path": "skills/game-build-release-engineering/examples/release-demo/game.js",
+      "bytes": 53,
+      "sha256": "8c3043576e13c0b7e35e63415548abd759ad3db440257a220c5c78635e89341d"
+    },
+    {
+      "path": "skills/game-build-release-engineering/examples/release-demo/index.html",
+      "bytes": 145,
+      "sha256": "187268f558e85dd864d9c297c3ceec7672cb5ea1878949c5d23d2cc1aa1fd6c4"
+    },
+    {
+      "path": "skills/game-build-release-engineering/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-build-release-engineering/PROVENANCE.md",
+      "bytes": 557,
+      "sha256": "8d54c8e9bceb8f8e788a102a248023112e90dad680ff5e43eb9c2f00d862dca1"
+    },
+    {
+      "path": "skills/game-build-release-engineering/README.md",
+      "bytes": 835,
+      "sha256": "dcb5b3b3d00d04afe9de9c36e70ba827e33f1c3dcb62ff8d808a644011e2a67f"
+    },
+    {
+      "path": "skills/game-build-release-engineering/references/integration.md",
+      "bytes": 632,
+      "sha256": "3abf56e1eb68c29a667b8c22840682509deb7c17d270d7ea00f942eac59cfb38"
+    },
+    {
+      "path": "skills/game-build-release-engineering/references/sources.md",
+      "bytes": 474,
+      "sha256": "b8340a7bd8b1385e9180e01f93666db0e959528161e3ad930fbd8db0a52f7267"
+    },
+    {
+      "path": "skills/game-build-release-engineering/SKILL.md",
+      "bytes": 2379,
+      "sha256": "fe55f223bdf0f53b3b0add365c84a462c981fbca6281e392fe698d8820136f89"
+    },
+    {
+      "path": "skills/game-build-release-engineering/src/release.py",
+      "bytes": 4633,
+      "sha256": "07ae8bf15cbe4c925368fe322ccde77f39f7a6491990bb1c276b761cf280ad33"
+    },
+    {
+      "path": "skills/game-build-release-engineering/tests/test_release.py",
+      "bytes": 2469,
+      "sha256": "0b16c69cddba003b0dafc358643517a40d4569a7971e25bb48e27a47fd8e6ef3"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/CHANGELOG.md",
+      "bytes": 154,
+      "sha256": "bf3c487623300e505ee39c2efed2e8689c8eb12b42e1bbbf63a5f8a58dfe8d01"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/examples/demo.html",
+      "bytes": 345,
+      "sha256": "38750a56de8579ebc9c031f5bce68b37df4d26df54d100800307cf1c62a33f09"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/examples/scenario.json",
+      "bytes": 299,
+      "sha256": "81faaa4136c7ec75d2564f43f40b8e68dd4e1cb9da485f26741be7d59878bd49"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/PROVENANCE.md",
+      "bytes": 550,
+      "sha256": "e48a6860216eeaf8ffcc513834c91904d6e43392378259f791b2be2dde7e3bc2"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/README.md",
+      "bytes": 990,
+      "sha256": "42d1d89e1e2b444dd5c5423b56cb2d1a9183a161271d9612384258d19bb01c07"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/references/integration.md",
+      "bytes": 684,
+      "sha256": "74c58b2307154d79b6b5b7531f4d112d1345a3f0d1b716f7976e76cd4e5d9bc7"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/references/sources.md",
+      "bytes": 439,
+      "sha256": "01abeac40a0691d349b5c8be18d8cba399b5641f48f6a3dc0f5bd9d217fd418e"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/SKILL.md",
+      "bytes": 2378,
+      "sha256": "9872ec736d539e2cf70c6a6bba715e747ab01493a7979a67169082baa963d701"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/src/run_game_e2e.py",
+      "bytes": 3701,
+      "sha256": "9b5fc90c24de9f8e8b8192767bde50e6579cbd36ed53a04f484c952dbe0734ab"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/src/scenario.py",
+      "bytes": 2233,
+      "sha256": "e9ddcaf75df70091fd3fb118734536542526e490dc93661794d1f8afabac897d"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/tests/test_chromium_optional.py",
+      "bytes": 1568,
+      "sha256": "ee2b7a1fcba23636c942cf2fb0c356ffceca549d7fd8d94b969799401660a5cf"
+    },
+    {
+      "path": "skills/game-e2e-integration-qa/tests/test_scenario.py",
+      "bytes": 1284,
+      "sha256": "fcd7f4615628cee0cfa512a99fb3e4c5f00303a8b8a15b1a8f1b85f903ccdbc1"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/CHANGELOG.md",
+      "bytes": 154,
+      "sha256": "bf3c487623300e505ee39c2efed2e8689c8eb12b42e1bbbf63a5f8a58dfe8d01"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/examples/demo.mjs",
+      "bytes": 319,
+      "sha256": "02e5e183892ccdb92e24fb20aa0550ecb1b1303074d2bda629f0f1022587a229"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/examples/typed.mts",
+      "bytes": 204,
+      "sha256": "67bbfd7a4c5e0452234f880d1ed91049410d71e8e55d6956b83845c3c55c67fc"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/PROVENANCE.md",
+      "bytes": 554,
+      "sha256": "c6e98dc7627f00b784682946dea24a4d08cc1a43fc57fce6652c25f77e1c83d8"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/README.md",
+      "bytes": 761,
+      "sha256": "2f1c9348f2db43dc679a418c5d5937d6de70130d12cd2783cb4f9917a62a3785"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/references/integration.md",
+      "bytes": 701,
+      "sha256": "6ba69fafc9db77807002582618d627a2bd8df7cb22d833357869063c0fbb7d4d"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/references/sources.md",
+      "bytes": 512,
+      "sha256": "4f7fc6347ac974442e02da771c493d197d228e8d4e44f2f4fa65f37c8b9dbc9b"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/SKILL.md",
+      "bytes": 2236,
+      "sha256": "f8d526d325ce78803a12c7e75aa5f1b97255473d97fafd1cbd4a7b8f9a12645c"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/src/editor.d.mts",
+      "bytes": 1100,
+      "sha256": "26bae8f969eaff51ebcbfeaa90e53a697690d2a3b8ae3f358956a06f44c96a47"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/src/editor.mjs",
+      "bytes": 4860,
+      "sha256": "43e51a9e73a2e2e290d42cd10a19c3b039c966c10a2fd52b3302973be3f94c5f"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/tests/editor.test.mjs",
+      "bytes": 1922,
+      "sha256": "59ebf20e1d1cd865bee8b3114d160ad08233e341c3cdd82218fb994bbf7d55b9"
+    },
+    {
+      "path": "skills/game-editor-authoring-tools/tsconfig.json",
+      "bytes": 185,
+      "sha256": "c9bfc2395429a227c92717052f8ff86797f10e865a296accdebb79ce97f49f9c"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/CHANGELOG.md",
+      "bytes": 241,
+      "sha256": "d85b94578632f834e1eebd813ab92a35ef8e2b2366e89b344428e2fb69e5b732"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/examples/demo.mjs",
+      "bytes": 288,
+      "sha256": "1badf9e781770a311df3d7d72f762c270a4dbf33f7e49890273ac0576cc1c391"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/examples/typed.mts",
+      "bytes": 192,
+      "sha256": "ae3eae83d39dbfc507c6781510f5a82a2d980295179a526f978429a843ced063"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/package.json",
+      "bytes": 149,
+      "sha256": "34ece1a5defce0dd8a9ae89dafc9a14470070d878456f25cb11d1bf43a5b662b"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/PROVENANCE.md",
+      "bytes": 1274,
+      "sha256": "eabd5e632b81923da412f4f9a2a1e4a254f7e3dd4e80c5e2e4400a2e9dd306f5"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/README.md",
+      "bytes": 563,
+      "sha256": "a9aa5b06fc9c8b15d2091a6f96abde55d89e1f9c39e97e067f1735f526678396"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/references/qa-matrix.md",
+      "bytes": 1146,
+      "sha256": "42d19e92719115cc4f5fe01f3d7cb61160238043fec656ba105e0a8b3dfaa412"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/references/schema.md",
+      "bytes": 1234,
+      "sha256": "d4d0f883b9e8ec571b60d0ab463adbd9c676603d766b6899c5bb1b281ab16184"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/SKILL.md",
+      "bytes": 2288,
+      "sha256": "208ba7b51946babf23a8e288a688a1bf9bb9e2b4ecb74bf71dc93ad9c235e51a"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/src/feel_qa.py",
+      "bytes": 5521,
+      "sha256": "df9ef9390738cf7211a14857178e6e6907edbc70ed29214e27d5f269fb5df18a"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/src/trace.d.mts",
+      "bytes": 278,
+      "sha256": "46218d477c17e681d7c4b0c637778d64a55a0aebda50a7d56ed2c233c23da256"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/src/trace.mjs",
+      "bytes": 605,
+      "sha256": "8261e6531db841b184759156a2c2c567f54e644bfd1c3e4bf10f18f16d59b92f"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/tests/test_audit.py",
+      "bytes": 2912,
+      "sha256": "7cfef3b86ae5dd6a21c7ac5653c30212e5fb28e3271aa06cc84bf2f111c57ab8"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/tests/trace.test.mjs",
+      "bytes": 922,
+      "sha256": "4def3b0c0dc02b326ee1a7f89aad1d2c7370bd53e5745a48bd21b05f6b35ce88"
+    },
+    {
+      "path": "skills/game-feel-debugging-qa/tsconfig.json",
+      "bytes": 184,
+      "sha256": "e1548dc87856ed308482042cac20eba65bc59a91e2b6838f8ad86dba2b54a4ad"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/CHANGELOG.md",
+      "bytes": 248,
+      "sha256": "2f7092ca93e9710de5c7281facc599aa3df4384409c5f6596822d094aec29572"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/examples/demo.mjs",
+      "bytes": 461,
+      "sha256": "a0996acdc39d64af57c0cd5eb506612894f9ca09859619e355d2c8c84c65ea3d"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/examples/typed.mts",
+      "bytes": 246,
+      "sha256": "5362e23f0aafbc1a536df48bd7f7d736f993f9182430e06ffa51ce2918a25b8f"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/package.json",
+      "bytes": 156,
+      "sha256": "7369fd6a19a59cb5dc60e2fa78026faf73b50256de840e2a694432084609c303"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/PROVENANCE.md",
+      "bytes": 1281,
+      "sha256": "484c3cc1c6e6509c9a568e04f3b305dfb5b8f968853b84353d44ed5e2d1fb598"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/README.md",
+      "bytes": 577,
+      "sha256": "a3b583cc1b90d7df0ee642eefd99a94c965b1b51a8fb652280e94786da4324af"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/references/integration.md",
+      "bytes": 1891,
+      "sha256": "aafcd00f5116d9c10663b615b6da617e5ec07b10a7a4190fd8af3814e62a0aff"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/references/time-policy.md",
+      "bytes": 1538,
+      "sha256": "3df548d88a74deb21c7258fa036ac0d5c52c995cbb6178eb1dec3be94bbdfaed"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/SKILL.md",
+      "bytes": 3638,
+      "sha256": "0d85dddf837a4aaccee958c1c624dcb14645c73af710f24a9c84186fcfe8c6db"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/src/feedback.d.mts",
+      "bytes": 1877,
+      "sha256": "579c378023eeb853bae4de4626016dd57f7275fb4c984f3afda2a4ed9595ee25"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/src/feedback.mjs",
+      "bytes": 6174,
+      "sha256": "fcc2840b6092036a7e36efad46bf06a1093ae8ea136e37d2374cbb3a82d2aad2"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/tests/feedback.test.mjs",
+      "bytes": 3858,
+      "sha256": "72a7f535a956a5de112cf95cb72fb53b232be81139434acf1a6f0679cd9358b2"
+    },
+    {
+      "path": "skills/game-feel-event-orchestration/tsconfig.json",
+      "bytes": 184,
+      "sha256": "e1548dc87856ed308482042cac20eba65bc59a91e2b6838f8ad86dba2b54a4ad"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/CHANGELOG.md",
+      "bytes": 397,
+      "sha256": "9af5a570c6546a4f02edbecae2f64827eda757d81b7b1b62a27dd022d9c6958c"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/examples/canvas-hud.html",
+      "bytes": 1621,
+      "sha256": "6d192ea716b51030956fadc08e6b80f54efa4415145e0c1648a31d6ef0371930"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/PROVENANCE.md",
+      "bytes": 1062,
+      "sha256": "949a568376b6909a8acc2c07d6f0e4c74d799d44d45f9fa5906cf6ed724614f7"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/references/integration.md",
+      "bytes": 2474,
+      "sha256": "ee6f9736adc41c3fc7c5a9fbfba68c0873dd7c35f02b8a340ce1addbe9e74ef5"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/SKILL.md",
+      "bytes": 4212,
+      "sha256": "a59fe53de313a9835cfcc90775d8bf22d192b8909ff10f617d86cad50b593849"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/src/hud.css",
+      "bytes": 1069,
+      "sha256": "40c65a800e39e2d0b2b1b5eab943edcf19dcb8a46d7b927bcb9edb7a11e00923"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/src/hud.d.mts",
+      "bytes": 1665,
+      "sha256": "8fda598db8394c9aee5678a8a5315d2d0a3892a0669c4463c66bb2003383cf91"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/src/hud.d.ts",
+      "bytes": 1665,
+      "sha256": "8fda598db8394c9aee5678a8a5315d2d0a3892a0669c4463c66bb2003383cf91"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/src/hud.mjs",
+      "bytes": 5007,
+      "sha256": "196134c3b1d61c5d6ba274a325a52a522bbf97d23d34ebb029c3c93ef3590278"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/tests/hud.test.mjs",
+      "bytes": 2652,
+      "sha256": "769ad8e8381de0be8586a1f968a3f986ddd0d9991adb99ae831b2cd0ef354dce"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/tsconfig.json",
+      "bytes": 195,
+      "sha256": "55f623633d5ee1b408e0de09bd168e3e45286e39f570f14a01ae0fb6f283a721"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/typecheck/example.mts",
+      "bytes": 458,
+      "sha256": "22a479f9986fb8e1a757d5d04e43e5465bc97bf4e31a645b3c452f9419c6d882"
+    },
+    {
+      "path": "skills/game-hud-responsive-layout/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/CHANGELOG.md",
+      "bytes": 397,
+      "sha256": "9af5a570c6546a4f02edbecae2f64827eda757d81b7b1b62a27dd022d9c6958c"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/examples/menu-navigation.html",
+      "bytes": 1912,
+      "sha256": "11419506e4d5126da6c35df19d6d5e6874190a4a0d447cac27d9f09a985a6443"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/PROVENANCE.md",
+      "bytes": 1061,
+      "sha256": "3e09df5f30016888b610dc879b8e85fb818d59092dbdcb1c719be46b6708fff4"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/references/flow-and-devices.md",
+      "bytes": 2353,
+      "sha256": "8ce9d6e89b1dd629674e4bb5fe9e97c1d8cfe867b854da2576418a7fcfc10a17"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/SKILL.md",
+      "bytes": 3911,
+      "sha256": "7d232b4c4ce132376e274649724f445272c0da65242626713d9e22dbaf90ae10"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/src/menu.d.mts",
+      "bytes": 1130,
+      "sha256": "6cebec524a4c3e2b83e094778e774ea29ff5f206761abab351103cc74d4d2360"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/src/menu.d.ts",
+      "bytes": 1130,
+      "sha256": "6cebec524a4c3e2b83e094778e774ea29ff5f206761abab351103cc74d4d2360"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/src/menu.mjs",
+      "bytes": 5138,
+      "sha256": "50b9493665ead0dd486ee4d1c6789e8f96595d667666677b66607e8e0e1f42f1"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/tests/menu.test.mjs",
+      "bytes": 4472,
+      "sha256": "b2676f4a44f4f991653d798a826f3831e45aa347339c455dbe88f80e5261bc47"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/tsconfig.json",
+      "bytes": 195,
+      "sha256": "55f623633d5ee1b408e0de09bd168e3e45286e39f570f14a01ae0fb6f283a721"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/typecheck/example.mts",
+      "bytes": 615,
+      "sha256": "aa7b8a090acf85b3eb0ea1c988889cc9752cacbd77a7650308ed60824958744f"
+    },
+    {
+      "path": "skills/game-menu-navigation-flow/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/CHANGELOG.md",
+      "bytes": 397,
+      "sha256": "9af5a570c6546a4f02edbecae2f64827eda757d81b7b1b62a27dd022d9c6958c"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/examples/report.json",
+      "bytes": 113,
+      "sha256": "e105dd4ea01a7bd171bb42a44bf26329a3128b148741a79d81b1d2a854a64c37"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/examples/snapshot.json",
+      "bytes": 594,
+      "sha256": "5d34d32acd76378cdba382ec29bd71318f9996665c8e3037cd46bc522b2b368c"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/examples/usage.md",
+      "bytes": 565,
+      "sha256": "b3785c1c78b9425faa091fbd4e7c641122f944895215d74d4dbe6932967e876e"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/PROVENANCE.md",
+      "bytes": 1060,
+      "sha256": "1bb6539196b169b084dd5af244fe29b65ebb483c10999ff495cef7e0a6f0e23b"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/references/browser-matrix.md",
+      "bytes": 2224,
+      "sha256": "f7f148041e6a6cac684cd16cc5d519266dec6f71581553b0fe6b0e94d1e4d3bf"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/SKILL.md",
+      "bytes": 3531,
+      "sha256": "a3ea84e2020314d12a4c2abdfc92621e70803fec5d141d0ba72323a1c4e55f63"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/src/audit_ui.py",
+      "bytes": 6210,
+      "sha256": "c71e2e66e6ac11af42f98f3fb735db3b53c05924ea87bf31c871e5b03c05498c"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/src/browser_probe.d.mts",
+      "bytes": 605,
+      "sha256": "e2a78fbc7b881cc1e9e74154c3b8d2d2aa411899d75e119d3f286418c75141c8"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/src/browser_probe.d.ts",
+      "bytes": 605,
+      "sha256": "e2a78fbc7b881cc1e9e74154c3b8d2d2aa411899d75e119d3f286418c75141c8"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/src/browser_probe.mjs",
+      "bytes": 1783,
+      "sha256": "10ee0ba33f72f1885fdf44a06ccc740f8e69ee32472c0cf93f369b029c056d37"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/tests/browser_probe.test.mjs",
+      "bytes": 1030,
+      "sha256": "bfa2dc844d613f4a7ef7501e16d1b20a373799edd6c2d056db5ade9fb2c5b2fa"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/tests/test_audit.py",
+      "bytes": 3643,
+      "sha256": "523d21c89728a8208eb6bbc77780d17c248f48dbe23ab541c33f2f260e5100df"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/tsconfig.json",
+      "bytes": 195,
+      "sha256": "55f623633d5ee1b408e0de09bd168e3e45286e39f570f14a01ae0fb6f283a721"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/typecheck/example.mts",
+      "bytes": 212,
+      "sha256": "44510e9c7337091c663e398ab144f0914cb005c815fa5c7c982b3bc62b79868b"
+    },
+    {
+      "path": "skills/game-ui-accessibility-qa/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/assets/REPORT_TEMPLATE.md",
+      "bytes": 783,
+      "sha256": "e15fe3cd29ad23c00a9281b9e68bcf06c2bbe469ae3bfe30c2e06bb067ec9ff3"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/CHANGELOG.md",
+      "bytes": 318,
+      "sha256": "16c1286513341210dde99deb06300033e949140de7721c3575238d6fbe4d95d6"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/LICENSE",
+      "bytes": 1071,
+      "sha256": "5067e6c28a1a36bab62839b20daf9ec154ddb7f86a5f336b832c78e05911bf49"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/PROVENANCE.md",
+      "bytes": 1305,
+      "sha256": "b782b7cd20ecd28711358e2897113e26cbef4474a10f454bf3013cea22844498"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/QA_REPORT.md",
+      "bytes": 1386,
+      "sha256": "1b7273d252b06ef176532d7f984cf1dc66523b8c59082bb3c485c8f79dfd3096"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/README.md",
+      "bytes": 989,
+      "sha256": "62bba3572a5b9b5dc708851a7dc1c25880db8f4167347432524c3c5367452e97"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/references/asset-optimization.md",
+      "bytes": 1790,
+      "sha256": "03539c80314de851968652f6816fb935c55c94f753fee0729e86607479b14684"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/references/blender-export.md",
+      "bytes": 1189,
+      "sha256": "fb13b2ac7efd21ecbe01f928576e48fb34e9ba3597bf7995375da66e557a1731"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/scripts/inspect_gltf.py",
+      "bytes": 8227,
+      "sha256": "fc5f190f6511d6c305ee3ee8731d17a579a089f324c92baaf03fe843ebd0e9a6"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/scripts/khronos-validate.mjs",
+      "bytes": 1438,
+      "sha256": "57203860ecaa8061d76579394a9c85b94bdc64c19b11e307d4a800c7f3012dd3"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/SKILL.md",
+      "bytes": 3072,
+      "sha256": "c17bca11eb2895f52637c854b2c51f493eb73414ffe85b6f1290fff252ab73bc"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/tests/fixtures/triangle.glb",
+      "bytes": 600,
+      "sha256": "44a40e684e571cfccb662ab76d8115697d542626e8bdaed1392ef193b5429c4e"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/tests/fixtures/triangle.gltf",
+      "bytes": 1128,
+      "sha256": "9fde03b19737066d2adbf8a6f05e080ab181d1df2a205fbd852eda1c0f7f63f2"
+    },
+    {
+      "path": "skills/gltf-asset-pipeline-qa/tests/test_inspector.py",
+      "bytes": 3248,
+      "sha256": "da042fe759bf51903b1028a13928c849633999eb92ecdbc654b6bae78a0def1d"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/CHANGELOG.md",
+      "bytes": 413,
+      "sha256": "429e77e6e76c966b5103f2025b499c6b61c1f5e4d91aa1b16e45b5e40779cbbd"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/examples/grid-demo.mjs",
+      "bytes": 462,
+      "sha256": "d80b58d086b94bae2ab570ea170ae61d91673c3af93f336f218bd6175889efdf"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/examples/typed-grid.mts",
+      "bytes": 268,
+      "sha256": "5a61ddcf7d1d301dc25cbdf54330609b022231931397ef66ef2994a024c966f9"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/PROVENANCE.md",
+      "bytes": 1551,
+      "sha256": "2a6786648b16244d956ba2db3aac5967ede6d9a6d0203b26d5b63aa4b272f95d"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/README.md",
+      "bytes": 673,
+      "sha256": "c7cc20804d55eb8be6deb4cb3b0d9bd2755c65b2b4a763bfc2c6e1ece67873fa"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/references/algorithm-policy.md",
+      "bytes": 1898,
+      "sha256": "a77fbdb5feb3dddaddaacfd84b946c52f31819e756e69d0174e03c51f6c5833d"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/references/destructible-maps.md",
+      "bytes": 1777,
+      "sha256": "2145230d025f7b18bd2820701034780c107cb7584be577811660ef108e30f429"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/scripts/grid-navigation.d.mts",
+      "bytes": 1321,
+      "sha256": "a0ec45724cb00c212390fe2147babbdb75d7e75efb8175f57c02ab5bb52e286b"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/scripts/grid-navigation.mjs",
+      "bytes": 8454,
+      "sha256": "b8d6b0e930733b3c514a1b44fbf6cc25fb8397f762e8e88019c67a5760d28bc8"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/SKILL.md",
+      "bytes": 3601,
+      "sha256": "e203329d7808f7ef5d994a2360d5a9c6063116bafce97544c86ee620f5b1a340"
+    },
+    {
+      "path": "skills/grid-pathfinding-strategy/tests/grid.test.mjs",
+      "bytes": 2886,
+      "sha256": "2563bb454d0d6099ca3ff6e5229a96b995a1762f9655aaaa83f63714a93c69ce"
+    },
+    {
+      "path": "skills/impact-animation-vfx/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/impact-animation-vfx/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/impact-animation-vfx/CHANGELOG.md",
+      "bytes": 239,
+      "sha256": "8b32b84c01aab34ded3438d39235dc21004e4923b9e1cec790a07496bc18b4f0"
+    },
+    {
+      "path": "skills/impact-animation-vfx/examples/demo.mjs",
+      "bytes": 342,
+      "sha256": "15836ce7b38eb8b4b52651f7cd29c7fd11469f7660af09003efa651910323da2"
+    },
+    {
+      "path": "skills/impact-animation-vfx/examples/typed.mts",
+      "bytes": 335,
+      "sha256": "30e3e45325325e1dd976c31f95168dc7d6374c04bf924e71a52d3af9f48bc503"
+    },
+    {
+      "path": "skills/impact-animation-vfx/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/impact-animation-vfx/package.json",
+      "bytes": 147,
+      "sha256": "7d8346d9d147ad7b15efcab4b86c8b5a0612548bd6059d40c0368335022c00e8"
+    },
+    {
+      "path": "skills/impact-animation-vfx/PROVENANCE.md",
+      "bytes": 1272,
+      "sha256": "32832e113130efdd45c8fe0a4115f193e518037607e55704b15a055b170a4fd5"
+    },
+    {
+      "path": "skills/impact-animation-vfx/README.md",
+      "bytes": 559,
+      "sha256": "e133831b6ed21b54ef7d32261e6ce115dac225b89b200e12f4189ac0b15e07e6"
+    },
+    {
+      "path": "skills/impact-animation-vfx/references/easing-lifecycle.md",
+      "bytes": 1368,
+      "sha256": "4410aa48c68baf72c215f8276da948535dffec431919f5ce9baaba809a345e2b"
+    },
+    {
+      "path": "skills/impact-animation-vfx/references/render-adapters.md",
+      "bytes": 1523,
+      "sha256": "7d39c6eea1d448a0d76e2a9ccf71ac994fe336d14c43c82366125c4b6f8d79b2"
+    },
+    {
+      "path": "skills/impact-animation-vfx/SKILL.md",
+      "bytes": 2691,
+      "sha256": "c4a2c4be166845c7f9e4b697dc9a305b894545ce7702634ef745fc232e448b50"
+    },
+    {
+      "path": "skills/impact-animation-vfx/src/vfx.d.mts",
+      "bytes": 1651,
+      "sha256": "6f3d577b66ea26f63d13c264cb36f729261522dc6a8ff9e278bf8e5d29898478"
+    },
+    {
+      "path": "skills/impact-animation-vfx/src/vfx.mjs",
+      "bytes": 4912,
+      "sha256": "1cf1e4740254f292c69075a6bba6b49b7be8b5dfca6bca4243c10e3935db2ae6"
+    },
+    {
+      "path": "skills/impact-animation-vfx/tests/vfx.test.mjs",
+      "bytes": 3817,
+      "sha256": "0461fe07673af80ebccfc18d57e75a4ccd5cac899adc227299138df9841bfa14"
+    },
+    {
+      "path": "skills/impact-animation-vfx/tsconfig.json",
+      "bytes": 184,
+      "sha256": "e1548dc87856ed308482042cac20eba65bc59a91e2b6838f8ad86dba2b54a4ad"
+    },
+    {
+      "path": "skills/input-accessibility-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/input-accessibility-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/input-accessibility-qa/CHANGELOG.md",
+      "bytes": 157,
+      "sha256": "23c6d20e200db24e66e051ae3e31cbd7badaba69a72b9c0e0466a146f3f893aa"
+    },
+    {
+      "path": "skills/input-accessibility-qa/examples/run-qa.md",
+      "bytes": 346,
+      "sha256": "bd3b428a0dbd1467b604eae4a7fdd3c63db83fb50b0e1ff1256603632e744899"
+    },
+    {
+      "path": "skills/input-accessibility-qa/examples/trace.jsonl",
+      "bytes": 437,
+      "sha256": "017cf5e13f299ca4b9e5004190ca82739df95273df2df61b493e25c7471905ff"
+    },
+    {
+      "path": "skills/input-accessibility-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/input-accessibility-qa/PROVENANCE.md",
+      "bytes": 877,
+      "sha256": "420a664f57c2b37b18fab8d15d40f80926ed75e0ee19ada6a03a914cc4b63853"
+    },
+    {
+      "path": "skills/input-accessibility-qa/references/test-matrix.md",
+      "bytes": 1475,
+      "sha256": "f08addbbeb1504372144e3cd516c812a87b0620f601a21b0d21a88d9c3b7e406"
+    },
+    {
+      "path": "skills/input-accessibility-qa/SKILL.md",
+      "bytes": 4021,
+      "sha256": "d95fe4f6d3112c34a370e09166f13d48c9412a4ef73562bc6028f30c207dab5d"
+    },
+    {
+      "path": "skills/input-accessibility-qa/src/audit_input.py",
+      "bytes": 4756,
+      "sha256": "db0d41b684d7469c3030b8d5d4f45c0fa027ad43f23057a5d705585549d9d7ce"
+    },
+    {
+      "path": "skills/input-accessibility-qa/src/recorder.d.mts",
+      "bytes": 391,
+      "sha256": "378a0053216d5f2ce370d60b0e611ea15bfcf124e4228a87ef4b788d2f5ca5aa"
+    },
+    {
+      "path": "skills/input-accessibility-qa/src/recorder.mjs",
+      "bytes": 875,
+      "sha256": "4ed461630b553f3a5e2409c46f4124d6e7efd438db4acea5a6940eeb11ad01c0"
+    },
+    {
+      "path": "skills/input-accessibility-qa/TESTING.md",
+      "bytes": 513,
+      "sha256": "217560c835efba3fc22e8fc0be5dc0025c8ef2a46409d0d5e77ba17aa78de1d9"
+    },
+    {
+      "path": "skills/input-accessibility-qa/tests/recorder.test.mjs",
+      "bytes": 919,
+      "sha256": "738bef36d52343006c482ae15af28a37637fb9222dc646d2c2b3811acf97cb45"
+    },
+    {
+      "path": "skills/input-accessibility-qa/tests/test_audit.py",
+      "bytes": 3091,
+      "sha256": "c865572232e1a8c909b92bc81d0c01858781b126f922a8718208979a7327f9ba"
+    },
+    {
+      "path": "skills/input-accessibility-qa/tsconfig.json",
+      "bytes": 195,
+      "sha256": "0bddc878c3cc46b52628d381fcab7cb9e1d5e6235a3bd432b1697dc444737937"
+    },
+    {
+      "path": "skills/input-accessibility-qa/typecheck/example.mts",
+      "bytes": 258,
+      "sha256": "923696c309cad46a37a1379fccc16b58cdb165cfee848058d986c9de0a715c1d"
+    },
+    {
+      "path": "skills/input-accessibility-qa/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/level-blockout-playability/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/level-blockout-playability/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/level-blockout-playability/CHANGELOG.md",
+      "bytes": 248,
+      "sha256": "a877ec7b181a4e74ac5d61e7719e3594390bc2048e8e3b6ede09b457c44f7c52"
+    },
+    {
+      "path": "skills/level-blockout-playability/examples/canvas-blockout-demo.html",
+      "bytes": 987,
+      "sha256": "5281b3ad987040be005eca4c11bde60c21ed1614bfdfa16179644140e11b73fa"
+    },
+    {
+      "path": "skills/level-blockout-playability/examples/platforms.json",
+      "bytes": 410,
+      "sha256": "cc08bebbc06af9f55e0fc8f95cf4179f703589b2a1fa627c7f303209c5e7d812"
+    },
+    {
+      "path": "skills/level-blockout-playability/examples/three-blockout.mjs",
+      "bytes": 579,
+      "sha256": "0d6ed147dfbbc59b2148d11a47ca4cc4a358ec4d73b1d5ae98a906a47a4ca2e7"
+    },
+    {
+      "path": "skills/level-blockout-playability/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/level-blockout-playability/package.json",
+      "bytes": 167,
+      "sha256": "b70f5cf6ba8996ddb34e5ed3d92cebd43af30b484e06f71b32bb8103b1384524"
+    },
+    {
+      "path": "skills/level-blockout-playability/PROVENANCE.md",
+      "bytes": 1260,
+      "sha256": "6f2378f1b33e4e45400090747c843b898ff02d7996542ec8560928a47d527f17"
+    },
+    {
+      "path": "skills/level-blockout-playability/README.md",
+      "bytes": 938,
+      "sha256": "21efadaeca9231100321796e8088cfb4d82cd3be8df29647fa69dc3cfe5d568c"
+    },
+    {
+      "path": "skills/level-blockout-playability/references/physics-integration.md",
+      "bytes": 2050,
+      "sha256": "ebe833c026b08a0f384d36e3cc7aff53aa27f3aab60f1949398e533255057f0b"
+    },
+    {
+      "path": "skills/level-blockout-playability/references/whitebox-workflow.md",
+      "bytes": 1342,
+      "sha256": "26c5319b684e4dfdbd73c2f6f072b1bf9072778dcca2c630604831ea402568a6"
+    },
+    {
+      "path": "skills/level-blockout-playability/SKILL.md",
+      "bytes": 2987,
+      "sha256": "645fb55ceff4ef011c7b36eeec57dd6e98a4dcf9bb91683564b64861049cd15a"
+    },
+    {
+      "path": "skills/level-blockout-playability/src/blockout.d.mts",
+      "bytes": 1635,
+      "sha256": "f6ea6595681cbba0180f6ed357263cec4f4a89cc2a41ed244d894c5cc2b58b9b"
+    },
+    {
+      "path": "skills/level-blockout-playability/src/blockout.mjs",
+      "bytes": 5741,
+      "sha256": "488d617de978c6c6ab901b4824cc706a8dbc1078fa425067f2aae692f9e025b8"
+    },
+    {
+      "path": "skills/level-blockout-playability/TESTING.md",
+      "bytes": 703,
+      "sha256": "7aa47cd252798d0ad59ed85eed83561a1022e265e5df0382a1698ddcd2576417"
+    },
+    {
+      "path": "skills/level-blockout-playability/tests/blockout.test.mjs",
+      "bytes": 2980,
+      "sha256": "3713b446d7d3db8ceb54939c3de9848112d9f6181d886e594f270dd39461528a"
+    },
+    {
+      "path": "skills/level-blockout-playability/tsconfig.json",
+      "bytes": 275,
+      "sha256": "3f6918974dc481d01fd9dd134c74f4b5b0aba964bf6ae8f2737e9edeffad5662"
+    },
+    {
+      "path": "skills/level-blockout-playability/typecheck/example.mts",
+      "bytes": 397,
+      "sha256": "8c5d9b5a455f2cb5bd6fa911f0ae7e14fbb8c1fc2cd9dafffe93c108eec7c6c4"
+    },
+    {
+      "path": "skills/level-blockout-playability/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/CHANGELOG.md",
+      "bytes": 248,
+      "sha256": "a877ec7b181a4e74ac5d61e7719e3594390bc2048e8e3b6ede09b457c44f7c52"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/examples/broken-level.json",
+      "bytes": 1256,
+      "sha256": "e69b5476555ea2deed8a616debd65e8d11c6a9d5dd9cc4b51cc6ed5523547db2"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/examples/solvable-level.json",
+      "bytes": 1367,
+      "sha256": "c5a1b92d7d0d19083ff8a92a6e93c2f6c7a18c7076a804e2428a4f941bf373fd"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/examples/trace-demo.mjs",
+      "bytes": 264,
+      "sha256": "5cced26ebd3239bfd9295693b3d3bb2519bd3e9f8cb323fe3d5eca942d642a65"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/package.json",
+      "bytes": 166,
+      "sha256": "21aedf558fd514ddb5c6a4f3b76cacde69afd10a7603d17fdb8c0c969d08c9c9"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/PROVENANCE.md",
+      "bytes": 1260,
+      "sha256": "6f2378f1b33e4e45400090747c843b898ff02d7996542ec8560928a47d527f17"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/README.md",
+      "bytes": 935,
+      "sha256": "45dea8abb4b116731ef27e23a8b5ca524ec798b5707ecf2fb7c0865ce8db85b0"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/references/level-schema.md",
+      "bytes": 1969,
+      "sha256": "3c14f29a57634772c99f90e1ae24799d9d8391b85aa65ec4168221f77a8b23cd"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/references/qa-matrix.md",
+      "bytes": 1272,
+      "sha256": "b3223f5da5d42e4599be8821dea099b3ea4003345c3897cca137fd523e46948c"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/SKILL.md",
+      "bytes": 2676,
+      "sha256": "7ffd78b3ab31d52594304ace348f97cc623ce3abb4ed644730c816974a1d1714"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/src/level_qa.py",
+      "bytes": 9414,
+      "sha256": "fa5ad808be44ad1134cd4353116e027506ee3480a4fe0fc66a73d36644929278"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/src/telemetry.d.mts",
+      "bytes": 340,
+      "sha256": "89550bb8020355c4431ea93842f39804a578c606a07fcbdc4205e8be1474558c"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/src/telemetry.mjs",
+      "bytes": 1126,
+      "sha256": "fa8b520007e62a78654e1b8192ea284be4c02ce6fb37d8c3c41cd05e91ae0166"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/TESTING.md",
+      "bytes": 756,
+      "sha256": "00885bfe685d9b4926de83c03e879a9e55d7419fb96e62de83068ccee339d16b"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/tests/telemetry.test.mjs",
+      "bytes": 1092,
+      "sha256": "3b1a3f388d1ed8dd699a11b067253ea2b284d3e4ce9eb0bce21cefd33d059630"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/tests/test_qa.py",
+      "bytes": 3545,
+      "sha256": "10ab1b5728475c2355b3389f25a038c573bd9e86bc89840bd64173c5e86e2777"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/tsconfig.json",
+      "bytes": 275,
+      "sha256": "3f6918974dc481d01fd9dd134c74f4b5b0aba964bf6ae8f2737e9edeffad5662"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/typecheck/example.mts",
+      "bytes": 242,
+      "sha256": "b1587e0ce079dd05d40c93e057407f1c27bc3c1dfffa0412f2b2cdb42735acbe"
+    },
+    {
+      "path": "skills/level-design-debugging-qa/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/level-progression-pacing/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/level-progression-pacing/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/level-progression-pacing/CHANGELOG.md",
+      "bytes": 248,
+      "sha256": "a877ec7b181a4e74ac5d61e7719e3594390bc2048e8e3b6ede09b457c44f7c52"
+    },
+    {
+      "path": "skills/level-progression-pacing/examples/broken-level.json",
+      "bytes": 1256,
+      "sha256": "e69b5476555ea2deed8a616debd65e8d11c6a9d5dd9cc4b51cc6ed5523547db2"
+    },
+    {
+      "path": "skills/level-progression-pacing/examples/progression-demo.mjs",
+      "bytes": 352,
+      "sha256": "8eb0d96442ba3a06612826289eb256fd73772292e785f701f7653a4a441c0c81"
+    },
+    {
+      "path": "skills/level-progression-pacing/examples/solvable-level.json",
+      "bytes": 1367,
+      "sha256": "c5a1b92d7d0d19083ff8a92a6e93c2f6c7a18c7076a804e2428a4f941bf373fd"
+    },
+    {
+      "path": "skills/level-progression-pacing/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/level-progression-pacing/package.json",
+      "bytes": 165,
+      "sha256": "5fc810f01668704b05712ca6550300340a4c8ecbbe303ee8bc8601b8f3436336"
+    },
+    {
+      "path": "skills/level-progression-pacing/PROVENANCE.md",
+      "bytes": 1260,
+      "sha256": "6f2378f1b33e4e45400090747c843b898ff02d7996542ec8560928a47d527f17"
+    },
+    {
+      "path": "skills/level-progression-pacing/README.md",
+      "bytes": 932,
+      "sha256": "deec28443fc20a392e5c85bd42ce685605f102c25122754e9db8fa442bd7fdc4"
+    },
+    {
+      "path": "skills/level-progression-pacing/references/level-schema.md",
+      "bytes": 1969,
+      "sha256": "3c14f29a57634772c99f90e1ae24799d9d8391b85aa65ec4168221f77a8b23cd"
+    },
+    {
+      "path": "skills/level-progression-pacing/references/pacing-playtests.md",
+      "bytes": 1014,
+      "sha256": "b771e4592d1374c62c61c83101d2246b03c6f866c808615ef3bebca897ea7def"
+    },
+    {
+      "path": "skills/level-progression-pacing/SKILL.md",
+      "bytes": 2916,
+      "sha256": "3d785bda9a39c7677884569d4243d559ffcea9167b286324520ec18ec1ed0733"
+    },
+    {
+      "path": "skills/level-progression-pacing/src/progression.d.mts",
+      "bytes": 1964,
+      "sha256": "01e31046b91f4965d9396d7dbdf306b79ca88268e3013676c09af1569bb37ad9"
+    },
+    {
+      "path": "skills/level-progression-pacing/src/progression.mjs",
+      "bytes": 8824,
+      "sha256": "310e0fb464930deefac2b5dea56cf69931648dd78a890325528a9fbec3368f23"
+    },
+    {
+      "path": "skills/level-progression-pacing/TESTING.md",
+      "bytes": 703,
+      "sha256": "7aa47cd252798d0ad59ed85eed83561a1022e265e5df0382a1698ddcd2576417"
+    },
+    {
+      "path": "skills/level-progression-pacing/tests/progression.test.mjs",
+      "bytes": 4250,
+      "sha256": "0c1eb8219b9225017fa6195e6379ebe57ffa33cfc72c0013c2da843a294219fb"
+    },
+    {
+      "path": "skills/level-progression-pacing/tsconfig.json",
+      "bytes": 275,
+      "sha256": "3f6918974dc481d01fd9dd134c74f4b5b0aba964bf6ae8f2737e9edeffad5662"
+    },
+    {
+      "path": "skills/level-progression-pacing/typecheck/example.mts",
+      "bytes": 422,
+      "sha256": "947080909f5fd1ecc4b62d541bda760c82b0b02f6dba3540b785e25dd778b934"
+    },
+    {
+      "path": "skills/level-progression-pacing/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/native-game-saves/assets/qa-report.md",
+      "bytes": 765,
+      "sha256": "f47bfc141243ce70fdf2b67d0a868692ce6d50b9413d5815f49c6b1ec9dd3f00"
+    },
+    {
+      "path": "skills/native-game-saves/attribution/APACHE-2.0-UPSTREAM-LICENSE.txt",
+      "bytes": 11362,
+      "sha256": "5b18b7660a16d6a804b927935d8a21fcacef1daa680c90756903a2bed4bcff9b"
+    },
+    {
+      "path": "skills/native-game-saves/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/native-game-saves/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/native-game-saves/attribution/UPSTREAM-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/native-game-saves/CHANGELOG.md",
+      "bytes": 268,
+      "sha256": "6853d142affddbf52ef01cf4ded63f0c7e67af61795fd3d2cfb8b3e8ff96700d"
+    },
+    {
+      "path": "skills/native-game-saves/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/native-game-saves/PROVENANCE.md",
+      "bytes": 931,
+      "sha256": "26f4cd6f0ecb9978b7052156b2c7a8183d0653083208933ecd19becd2cf0ec43"
+    },
+    {
+      "path": "skills/native-game-saves/README.md",
+      "bytes": 573,
+      "sha256": "8dd571d2d7333cd15fb1572aad2a8721fcb4d8010b56c09fb697a5d459bbf787"
+    },
+    {
+      "path": "skills/native-game-saves/references/native-durability.md",
+      "bytes": 1397,
+      "sha256": "2f7114c54a57087262bf7af7b8fff1ece3d781eb0161fe77509d01fa0abafeba"
+    },
+    {
+      "path": "skills/native-game-saves/references/platform-compat.md",
+      "bytes": 1022,
+      "sha256": "c9218708c9a07d3f2580fe822b0fedbe0ef2bae7fe0c9fddd87a800d4654db2e"
+    },
+    {
+      "path": "skills/native-game-saves/references/sources.md",
+      "bytes": 510,
+      "sha256": "fa64895f2d218046a41b5e36fd0db45dc886dcd98047a08ddf931f9257454209"
+    },
+    {
+      "path": "skills/native-game-saves/scripts/native_save_store.py",
+      "bytes": 7647,
+      "sha256": "fba17cfb3e85a2dbd1fd18f8b4f6da336217d14e3b2693e5b875810384a12c1e"
+    },
+    {
+      "path": "skills/native-game-saves/scripts/save_cli.py",
+      "bytes": 1681,
+      "sha256": "b531cbd6426f69f8ef45a99f201132fda7435bf379656df6afa31c24e324b74c"
+    },
+    {
+      "path": "skills/native-game-saves/scripts/tests/test_native.py",
+      "bytes": 4667,
+      "sha256": "a665910354df6cb9a5633c91caf44cf641bcf6020d5cb099c260bdfac65c687b"
+    },
+    {
+      "path": "skills/native-game-saves/SKILL.md",
+      "bytes": 2643,
+      "sha256": "0fdbe4db62196818c8af5fa5de926826519c415410608ce0b4ef7cfbc128385c"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/assets/navigation-qa-report.md",
+      "bytes": 677,
+      "sha256": "e53ade6ca91dc7635b2cad3dd6459c45d89660e1d225e19b50d21e005aad5b6a"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/CHANGELOG.md",
+      "bytes": 411,
+      "sha256": "9cc08fac15559c38cacd21aece4e4f6a1590b5ce755177cf078dbb5938b7d8d9"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/examples/routes.json",
+      "bytes": 279,
+      "sha256": "eff13e0a97a2975c939cf775fe7e780af57135b1b887d5fd4ff83c243f453cd4"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/examples/trace.jsonl",
+      "bytes": 319,
+      "sha256": "6ac42e739fab84daf31a1c3a74017c299184b27a1c229ef4c9ca7cfd42a47631"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/PROVENANCE.md",
+      "bytes": 1549,
+      "sha256": "ab28f7d32919d81a94bc98adae9226e2501fd3daae56a49f91540281c0ede653"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/README.md",
+      "bytes": 671,
+      "sha256": "90f87776e7dd9cd5be3c24271af170cffc28c71a741432737bf21889db402a87"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/references/test-matrix.md",
+      "bytes": 1172,
+      "sha256": "cfb717ad84c8817d0a7ea52bc54c8b1286f4e3379143d50228f676134cbbef4f"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/references/trace-schema.md",
+      "bytes": 1634,
+      "sha256": "224cfd47c1781e8e9d14e3c5a88e18f1f82215739f5b3477cb5f0c7263d8a569"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/scripts/navigation_qa.py",
+      "bytes": 7757,
+      "sha256": "0bb8f4b0717da0e7b4bc8725ab65fb83fe5863bd34ed5144dce42497cd57776b"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/SKILL.md",
+      "bytes": 2794,
+      "sha256": "088a4e8e9e1dc0ee4f1be2698ebb034804c45ce2b200c3bc587a4545da3e70fc"
+    },
+    {
+      "path": "skills/navigation-debugging-qa/tests/test_navigation_qa.py",
+      "bytes": 3199,
+      "sha256": "ad16cfcd044687097df83d7c1a508d61d8346187a1caec8d91fcf55cf701e93d"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/assets/AI_QA_REPORT_TEMPLATE.md",
+      "bytes": 400,
+      "sha256": "064ae7b5ce4e2bb3a2c023b1dc8ca4e5eaed5da8539cfa907ad9ecc296edd089"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/CHANGELOG.md",
+      "bytes": 254,
+      "sha256": "6b674c848ba229133c7327c170bb8ed1f9ddd2542770b413e43f7f7f5b1d5271"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/examples/bad_trace.jsonl",
+      "bytes": 305,
+      "sha256": "8b752848e11a7bd46e93457d81ff0a7f4903a34e4bedd71a0002ef12078d5660"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/examples/guard_trace.jsonl",
+      "bytes": 476,
+      "sha256": "12fba2f022969b6f3ba4422bbfe6c71a425d52df15d27f521f8d7a0a75e187d7"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/PROVENANCE.md",
+      "bytes": 819,
+      "sha256": "bbfc2c3d808d209141a6d3dd9b888cd3b6433b868d8c34ca90cb4310b1396867"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/QA_REPORT.md",
+      "bytes": 496,
+      "sha256": "71f6bf4db96cb82b7d0390dc00b18c9a323091ca6337c5276bf211e32fa8d023"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/references/csharp-instrumentation.md",
+      "bytes": 1338,
+      "sha256": "a17e0ab576565de848fe93506107a37e770a12c584ae2a0424407490a81a9640"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/references/scenarios.md",
+      "bytes": 963,
+      "sha256": "3d7c145dd570ce48b0ed7c1b5e7a3fca381faf3e77cf2df80f40c6f498a14cce"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/references/sources.md",
+      "bytes": 715,
+      "sha256": "f32bee5e0ed0f1aedf8e1ed029ad9305b5796e9f9669e022b2ad44ee7d9c722c"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/references/trace-schema.md",
+      "bytes": 1535,
+      "sha256": "8a2788777baea7189b89d05f7a28aaf03be1cbd62996047f6a6bc1af697e4e34"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/scripts/analyze_trace.py",
+      "bytes": 5613,
+      "sha256": "8413b7e128343c0f9bc1b1c095fc40eb136f644739469d80844c8bd9b9e38493"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/SKILL.md",
+      "bytes": 2243,
+      "sha256": "da051893527dfd321b734f10f19db8be499dd5900464b422d8ba35391ffcb765"
+    },
+    {
+      "path": "skills/npc-ai-debugging-qa/tests/test_analyze_trace.py",
+      "bytes": 2828,
+      "sha256": "98313b420d6bb2d9e2cf4da1a033574643b63a8eb903726a6b64aad2d291a286"
+    },
+    {
+      "path": "skills/performance-optimization/assets/performance-report.md",
+      "bytes": 2603,
+      "sha256": "45aec161a054f922685f7ca96b148250620cd2499f08759b477c4b4c49fb1a7e"
+    },
+    {
+      "path": "skills/performance-optimization/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/performance-optimization/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/performance-optimization/CHANGELOG.md",
+      "bytes": 865,
+      "sha256": "01dd8bbc94999d26efe390dfe4328ac7d64ac4b1d56ab2210fcd552df3f1b670"
+    },
+    {
+      "path": "skills/performance-optimization/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/performance-optimization/LICENSES/APACHE-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/performance-optimization/NOTICE",
+      "bytes": 953,
+      "sha256": "2b6a91d7e76ca681424dd5896c0e7aa7c696c1fc99e0904ef20eb462e5a5a20e"
+    },
+    {
+      "path": "skills/performance-optimization/PROVENANCE.md",
+      "bytes": 563,
+      "sha256": "0888eeb918258cc3658f554e0b8d2c27b9d36d6793677a89e7844f43c72382b1"
+    },
+    {
+      "path": "skills/performance-optimization/README.md",
+      "bytes": 1811,
+      "sha256": "e5d22ed952e54da3c7f209aaab144170d00063f7c3e17d0bb458cd3c9ea23047"
+    },
+    {
+      "path": "skills/performance-optimization/references/benchmark-protocol.md",
+      "bytes": 7885,
+      "sha256": "f721bdd887df7885e0a3fdb0dc4bbd7031caab761c619c6d03a1d3e609b1f0b0"
+    },
+    {
+      "path": "skills/performance-optimization/references/browser-threejs.md",
+      "bytes": 8915,
+      "sha256": "14cde59236e005ff94e30b64b1b5826562c66e701d5f0c86e343f4562b48f3e1"
+    },
+    {
+      "path": "skills/performance-optimization/references/canvas2d-performance.md",
+      "bytes": 6662,
+      "sha256": "885434604999921254c15b6464a2d97b975f544436e281b17484f77bc21b6660"
+    },
+    {
+      "path": "skills/performance-optimization/references/profiling-and-budgets.md",
+      "bytes": 9714,
+      "sha256": "950a789c48762a9f6431b8c3f4ac930236c05b4260e51b630fd5fadc865688fd"
+    },
+    {
+      "path": "skills/performance-optimization/scripts/analyze_frame_times.py",
+      "bytes": 6744,
+      "sha256": "50fc25ae6ab936d1cf1c4c03486e8c0b5ebd926cb595fa761977eec71f482783"
+    },
+    {
+      "path": "skills/performance-optimization/SKILL.md",
+      "bytes": 11102,
+      "sha256": "8c1ac5fdb87d12b2011d35216b04129f317366cd0d59443f00386b1e7b75f804"
+    },
+    {
+      "path": "skills/performance-optimization/tests/test_analyze_frame_times.py",
+      "bytes": 2410,
+      "sha256": "9080488176f73a43efd4a2fc4eb06dba41c1a377039df807691136db38070455"
+    },
+    {
+      "path": "skills/performance-optimization/tests/test_skill_package.py",
+      "bytes": 1695,
+      "sha256": "f18d965d30d54da7ab92190dc374b7f0f8047256b0d0c5ace668fbc8da3a571f"
+    },
+    {
+      "path": "skills/performance-optimization/THIRD_PARTY_NOTICES.md",
+      "bytes": 1731,
+      "sha256": "6bd16a2fd32d04a524811d1bbc9c49230d32464df935fc8bc1766a9ff45063cd"
+    },
+    {
+      "path": "skills/physics-core/assets/physics-qa-report.md",
+      "bytes": 1586,
+      "sha256": "7a6fae062fef4e3f56000b1c3c5cf41bd7e9b1b2df77fe357412aa90c29edc88"
+    },
+    {
+      "path": "skills/physics-core/assets/sample_trace.json",
+      "bytes": 711,
+      "sha256": "2b8a14f697b2a416127dda42543897c0f46cdc1af97a4af9a47bcd0779e2b3d3"
+    },
+    {
+      "path": "skills/physics-core/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/physics-core/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/physics-core/CHANGELOG.md",
+      "bytes": 380,
+      "sha256": "be9e8ae7efd0a0aa91970395add5af3657342619443aeb08ffecc400886f8d83"
+    },
+    {
+      "path": "skills/physics-core/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/physics-core/PROVENANCE.md",
+      "bytes": 551,
+      "sha256": "1ecc5fcc3f8e1acfcf6f516198fa54290592aba172a40b9642f4e83649bb6c68"
+    },
+    {
+      "path": "skills/physics-core/README.md",
+      "bytes": 1485,
+      "sha256": "6312520261bb903119e8f22142e9f154955d38d199b2edbfd6bd1f64089709fe"
+    },
+    {
+      "path": "skills/physics-core/references/diagnostic-playbook.md",
+      "bytes": 2531,
+      "sha256": "0ccfa9149b75e69162ce857715361a84fef2903d4a1a9a4aa07f56863a4787de"
+    },
+    {
+      "path": "skills/physics-core/references/integration-and-state.md",
+      "bytes": 3368,
+      "sha256": "2dded12a1067d8f2bbaf1cebb4ab947bcc1f523b26c53739ac9ba053d057c5a9"
+    },
+    {
+      "path": "skills/physics-core/references/qa-telemetry.md",
+      "bytes": 3015,
+      "sha256": "aadd00dc13165695b44c31af11be5e2f88de332a6467250a2515136f28e4effc"
+    },
+    {
+      "path": "skills/physics-core/scripts/physics_trace_qa.py",
+      "bytes": 6811,
+      "sha256": "745f159a460fa3e811502f8f2fd2dcc871c85fe636ffb702a4506dc9534b239a"
+    },
+    {
+      "path": "skills/physics-core/SKILL.md",
+      "bytes": 5308,
+      "sha256": "e006ceeab53091b1ecd322a9fce799dad52f262520123cda6bd989b08b082700"
+    },
+    {
+      "path": "skills/physics-core/SOURCES.md",
+      "bytes": 2789,
+      "sha256": "1d356b0f7c84aae77794c0139c0b54fd5f025df320247d8379963fbec2592db4"
+    },
+    {
+      "path": "skills/physics-core/tests/test_physics_trace_qa.py",
+      "bytes": 4624,
+      "sha256": "bcc86b7bebf728e9324bcc4ad8fb198d471c19a6642af77704be027aa2e4560c"
+    },
+    {
+      "path": "skills/physics-core/third_party/upstream-apache-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/physics-core/third_party/upstream-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/physics-core/THIRD_PARTY_NOTICES.md",
+      "bytes": 1158,
+      "sha256": "87ad255b80704333fa86ec01bdf009f62ed73fa59cbbd43e7c510e4b3ac0b002"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/assets/physics-qa-report.md",
+      "bytes": 1586,
+      "sha256": "7a6fae062fef4e3f56000b1c3c5cf41bd7e9b1b2df77fe357412aa90c29edc88"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/assets/sample_trace.json",
+      "bytes": 711,
+      "sha256": "2b8a14f697b2a416127dda42543897c0f46cdc1af97a4af9a47bcd0779e2b3d3"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/CHANGELOG.md",
+      "bytes": 392,
+      "sha256": "790f72ee3671e5c7bea375a910fdba949695e737c7781f46b2caf62838758329"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/PROVENANCE.md",
+      "bytes": 563,
+      "sha256": "82a75ad42b1ad6a7b552f912b8f6eb54ac990a5ee3c26293842abe4d7e681bad"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/README.md",
+      "bytes": 1521,
+      "sha256": "f64d634ce55255ab75d18d21ef6e8aa6d2a988211bbc6083ad1723551c5af676"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/references/grid-and-fluid-coupling.md",
+      "bytes": 3209,
+      "sha256": "88bbac54c04b916c41ba0317c78d515c0f696511811d2feb20535e4fa4bcf319"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/references/joints-and-contacts.md",
+      "bytes": 2751,
+      "sha256": "b156767ba3adff53bfc50bc4a3d18ae1c391dfad2ecfb6845237378a4c80ce5d"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/references/rope-destructible-terrain.md",
+      "bytes": 2148,
+      "sha256": "a4bff1dc1f4879af08d111bbed1160bdebdfc9c17d46fa1ee3ac1b715fb0e3ce"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/references/step-and-qa.md",
+      "bytes": 1785,
+      "sha256": "8765d0a6a3b34df61a8941ff53d59ce80603f0d17a9d80c683663b3fbc53a9fb"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/scripts/physics_trace_qa.py",
+      "bytes": 6811,
+      "sha256": "745f159a460fa3e811502f8f2fd2dcc871c85fe636ffb702a4506dc9534b239a"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/SKILL.md",
+      "bytes": 5075,
+      "sha256": "425497f226620f11e2491aa3072ac369db451e1a67e773c24b6974f7df69d6df"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/SOURCES.md",
+      "bytes": 2789,
+      "sha256": "1d356b0f7c84aae77794c0139c0b54fd5f025df320247d8379963fbec2592db4"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/tests/test_physics_trace_qa.py",
+      "bytes": 4624,
+      "sha256": "bcc86b7bebf728e9324bcc4ad8fb198d471c19a6642af77704be027aa2e4560c"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/third_party/upstream-apache-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/third_party/upstream-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/planck-custom-physics-2d/THIRD_PARTY_NOTICES.md",
+      "bytes": 1158,
+      "sha256": "87ad255b80704333fa86ec01bdf009f62ed73fa59cbbd43e7c510e4b3ac0b002"
+    },
+    {
+      "path": "skills/procedural-generation-qa/assets/PCG_QA_REPORT.md",
+      "bytes": 666,
+      "sha256": "90885bef1bf02c3eb5dec88578dff04d115eb23f4b868dc524793a0cb748884a"
+    },
+    {
+      "path": "skills/procedural-generation-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/procedural-generation-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/procedural-generation-qa/attribution/UPSTREAM-APACHE-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/procedural-generation-qa/attribution/UPSTREAM-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/procedural-generation-qa/CHANGELOG.md",
+      "bytes": 465,
+      "sha256": "ff1befb86d4f47a917dc4516474c5fa75cdb61297e4187077844600dbfb92c48"
+    },
+    {
+      "path": "skills/procedural-generation-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/procedural-generation-qa/PROVENANCE.md",
+      "bytes": 1715,
+      "sha256": "c3dd3928a09499e8e2b4708a00793ba04eb91bbc7722de61b12e362508aac781"
+    },
+    {
+      "path": "skills/procedural-generation-qa/references/qa-contract.md",
+      "bytes": 2254,
+      "sha256": "bade9b8744032b40cf26331f697eb7f86f93a29b4062642e8d76e4afba0bd5f8"
+    },
+    {
+      "path": "skills/procedural-generation-qa/references/sources.md",
+      "bytes": 1397,
+      "sha256": "a41a4410930f5709d3dd17e92afb34f718ad1daef8a038d53a7ba4d4a40d25ed"
+    },
+    {
+      "path": "skills/procedural-generation-qa/references/strategies-and-metrics.md",
+      "bytes": 2871,
+      "sha256": "cfe09382620559786869c64107b844c1fbdacdecf53d53fb198a0375d9b58ff8"
+    },
+    {
+      "path": "skills/procedural-generation-qa/scripts/qa_sweep.py",
+      "bytes": 10582,
+      "sha256": "82c12348ec434e9a84fe45a0f0b28a2987d28c615f7fc37670557b0e71984d6b"
+    },
+    {
+      "path": "skills/procedural-generation-qa/SKILL.md",
+      "bytes": 5337,
+      "sha256": "000bd9e7ee1ddd196eba053f03c77b1e3de7694329d3d147023107a21693fe64"
+    },
+    {
+      "path": "skills/procedural-generation-qa/tests/test_qa_sweep.py",
+      "bytes": 3707,
+      "sha256": "96899f4d0cacf7f9c2b1fd4104c0a9a5e74c1f43f0db28e4eec099bce2dfd127"
+    },
+    {
+      "path": "skills/procedural-level-design/assets/LEVEL_ACCEPTANCE_REPORT.md",
+      "bytes": 609,
+      "sha256": "0ca7b5db8a76df4e6fe8a4be14aeef598bb1b36b47a71f0c224933fe7913cacb"
+    },
+    {
+      "path": "skills/procedural-level-design/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/procedural-level-design/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/procedural-level-design/attribution/UPSTREAM-APACHE-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/procedural-level-design/attribution/UPSTREAM-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/procedural-level-design/CHANGELOG.md",
+      "bytes": 464,
+      "sha256": "33dcb2711ad5835e4cc04386c8984320d604657d061431e3b81fccffa309a23b"
+    },
+    {
+      "path": "skills/procedural-level-design/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/procedural-level-design/PROVENANCE.md",
+      "bytes": 1714,
+      "sha256": "4243010db6e878c1d8ba8c6a1b2231e56e570930d56990099ed541a595e8c6a3"
+    },
+    {
+      "path": "skills/procedural-level-design/references/constraints-and-wfc.md",
+      "bytes": 2137,
+      "sha256": "4a00a29e1f9d0b9d82b70e4ec905597b06a97e4c21b7d8d27b6415a613cb7bec"
+    },
+    {
+      "path": "skills/procedural-level-design/references/dungeons-and-graphs.md",
+      "bytes": 2154,
+      "sha256": "863caa2018f901cda99d142f50a4985a948475a9447aea676c847ddfe2bd6651"
+    },
+    {
+      "path": "skills/procedural-level-design/references/map-data-contract.md",
+      "bytes": 1049,
+      "sha256": "96211101505d1a56e79e26240808d3e2a43ccc71dc387a5d16867c6b2f75eb4c"
+    },
+    {
+      "path": "skills/procedural-level-design/references/solvability-and-physics.md",
+      "bytes": 1973,
+      "sha256": "cd1ccf8fc98f97101c352e722505b2c79ead05f33151176cb6d789c49ba19c16"
+    },
+    {
+      "path": "skills/procedural-level-design/references/sources.md",
+      "bytes": 1397,
+      "sha256": "a41a4410930f5709d3dd17e92afb34f718ad1daef8a038d53a7ba4d4a40d25ed"
+    },
+    {
+      "path": "skills/procedural-level-design/scripts/constraint_tiles.py",
+      "bytes": 4915,
+      "sha256": "932763da785c93ec966b6580667f47a8f72bdcacd22307ee963059c81fc0c883"
+    },
+    {
+      "path": "skills/procedural-level-design/scripts/levelgen.py",
+      "bytes": 6913,
+      "sha256": "6e488a4226f2d175c931fbe2ff397dc9b4ebcbc84324cbff41b7ede213eca015"
+    },
+    {
+      "path": "skills/procedural-level-design/SKILL.md",
+      "bytes": 6568,
+      "sha256": "f994c7612514b0dc246856668a2afa638fd03873e7c77f91efe8a504d00984d3"
+    },
+    {
+      "path": "skills/procedural-level-design/tests/test_levelgen.py",
+      "bytes": 2869,
+      "sha256": "2e09d07cb0cb4e9f2ea312e4858342e42618ec34505672bf89238c2c8ec6dd9e"
+    },
+    {
+      "path": "skills/procedural-world-generation/assets/WORLD_QA_REPORT.md",
+      "bytes": 722,
+      "sha256": "fa0b04fa39c25f7fd80c24b26922abd59814462b8b846df0e56212b3ed7255aa"
+    },
+    {
+      "path": "skills/procedural-world-generation/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/procedural-world-generation/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/procedural-world-generation/attribution/UPSTREAM-APACHE-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/procedural-world-generation/attribution/UPSTREAM-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/procedural-world-generation/CHANGELOG.md",
+      "bytes": 468,
+      "sha256": "d8e1d79be09fb8e083f0d3afe94aa5f11ab21b4606954a6616931a12a5de290b"
+    },
+    {
+      "path": "skills/procedural-world-generation/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/procedural-world-generation/PROVENANCE.md",
+      "bytes": 1718,
+      "sha256": "6d7ae9c1859f66dfb86f6d299df737a5b91d658742a5d7dcf40f57ce320ccb71"
+    },
+    {
+      "path": "skills/procedural-world-generation/references/chunks-and-reproducibility.md",
+      "bytes": 2675,
+      "sha256": "214db5029d512a5c38eda9a254e9400e14e883c576849dcb8d03d9178149c09f"
+    },
+    {
+      "path": "skills/procedural-world-generation/references/map-data-contract.md",
+      "bytes": 1397,
+      "sha256": "2620f35e66423d4dcfe02ed897d155d619e9960b4893cf8b3f7e27288a540943"
+    },
+    {
+      "path": "skills/procedural-world-generation/references/sources.md",
+      "bytes": 1397,
+      "sha256": "a41a4410930f5709d3dd17e92afb34f718ad1daef8a038d53a7ba4d4a40d25ed"
+    },
+    {
+      "path": "skills/procedural-world-generation/references/terrain-and-biomes.md",
+      "bytes": 4165,
+      "sha256": "8055b43c2d89f0fce0c0d41f365fc80f2b035c17feb21eb2f412723799ee7f2b"
+    },
+    {
+      "path": "skills/procedural-world-generation/scripts/worldgen.py",
+      "bytes": 7664,
+      "sha256": "f84ff2f57bea753b3835fd23ea0887663f76f09a8d1d33f199864241581299ee"
+    },
+    {
+      "path": "skills/procedural-world-generation/SKILL.md",
+      "bytes": 6243,
+      "sha256": "dbb6e050f35e6725a5714cc462295a3b89f67020fc58ccdbce52eed035cccd24"
+    },
+    {
+      "path": "skills/procedural-world-generation/tests/test_worldgen.py",
+      "bytes": 2856,
+      "sha256": "0ad5d1b865204f1a1c11caf4d48ace0dfe667f42245d976b7f38d2784841af82"
+    },
+    {
+      "path": "skills/rapier-physics-3d/assets/physics-qa-report.md",
+      "bytes": 1586,
+      "sha256": "7a6fae062fef4e3f56000b1c3c5cf41bd7e9b1b2df77fe357412aa90c29edc88"
+    },
+    {
+      "path": "skills/rapier-physics-3d/assets/sample_trace.json",
+      "bytes": 711,
+      "sha256": "2b8a14f697b2a416127dda42543897c0f46cdc1af97a4af9a47bcd0779e2b3d3"
+    },
+    {
+      "path": "skills/rapier-physics-3d/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/rapier-physics-3d/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/rapier-physics-3d/CHANGELOG.md",
+      "bytes": 385,
+      "sha256": "40ff02f44af6137d786d04cdc5c98a65b48d5216ab9ba38ea854d66f2d496589"
+    },
+    {
+      "path": "skills/rapier-physics-3d/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/rapier-physics-3d/PROVENANCE.md",
+      "bytes": 556,
+      "sha256": "8cc7261d94a7a41622ecb45f8e93784b8c2bf9a6932a1ee632e100cedb43ebf4"
+    },
+    {
+      "path": "skills/rapier-physics-3d/README.md",
+      "bytes": 1500,
+      "sha256": "df7b4c8efb216c504a25e4325a80244cfdbf7b2379608080d0621f6d8a6aa3bd"
+    },
+    {
+      "path": "skills/rapier-physics-3d/references/fracture-and-debris.md",
+      "bytes": 2390,
+      "sha256": "d3b1455736c6052e10a43a90edeb05e3cb6dcb9808a6c31b32b3dc5621b04687"
+    },
+    {
+      "path": "skills/rapier-physics-3d/references/rapier-api-and-ccd.md",
+      "bytes": 3552,
+      "sha256": "1d31f21ca2b6ac5cff35f4518ca9e544344fb7a7915dc2e444964c841c45ba08"
+    },
+    {
+      "path": "skills/rapier-physics-3d/references/rigging-and-constraints.md",
+      "bytes": 2590,
+      "sha256": "de5d07b8780a4f7ef075f8e447821d70c818a33cec7d71c46e5fa3edbb9dea48"
+    },
+    {
+      "path": "skills/rapier-physics-3d/references/step-and-qa.md",
+      "bytes": 1831,
+      "sha256": "77c94f6dba3e5d3140745a537fe00f8aad44f821d5af09879c050ef7ca0c960b"
+    },
+    {
+      "path": "skills/rapier-physics-3d/scripts/physics_trace_qa.py",
+      "bytes": 6811,
+      "sha256": "745f159a460fa3e811502f8f2fd2dcc871c85fe636ffb702a4506dc9534b239a"
+    },
+    {
+      "path": "skills/rapier-physics-3d/SKILL.md",
+      "bytes": 5019,
+      "sha256": "94142ed84c759982d3b36221b03c245e3c91f2e96418c3d9bb3ddbffe29a6a08"
+    },
+    {
+      "path": "skills/rapier-physics-3d/SOURCES.md",
+      "bytes": 2789,
+      "sha256": "1d356b0f7c84aae77794c0139c0b54fd5f025df320247d8379963fbec2592db4"
+    },
+    {
+      "path": "skills/rapier-physics-3d/tests/test_physics_trace_qa.py",
+      "bytes": 4624,
+      "sha256": "bcc86b7bebf728e9324bcc4ad8fb198d471c19a6642af77704be027aa2e4560c"
+    },
+    {
+      "path": "skills/rapier-physics-3d/third_party/upstream-apache-2.0.txt",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/rapier-physics-3d/third_party/upstream-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/rapier-physics-3d/THIRD_PARTY_NOTICES.md",
+      "bytes": 1158,
+      "sha256": "87ad255b80704333fa86ec01bdf009f62ed73fa59cbbd43e7c510e4b3ac0b002"
+    },
+    {
+      "path": "skills/responsive-input-timing/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/responsive-input-timing/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/responsive-input-timing/CHANGELOG.md",
+      "bytes": 157,
+      "sha256": "23c6d20e200db24e66e051ae3e31cbd7badaba69a72b9c0e0466a146f3f893aa"
+    },
+    {
+      "path": "skills/responsive-input-timing/examples/platformer-integration.mjs",
+      "bytes": 1015,
+      "sha256": "7882824435060090ca535f67f9eadf823aa39928722489bce1675a7c81a7e113"
+    },
+    {
+      "path": "skills/responsive-input-timing/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/responsive-input-timing/PROVENANCE.md",
+      "bytes": 878,
+      "sha256": "eb3c44d92c2cd830040f582f29f06df6161eb89657c00732b2b5057113ba576d"
+    },
+    {
+      "path": "skills/responsive-input-timing/references/clock-and-physics.md",
+      "bytes": 1651,
+      "sha256": "1b73e47a996edef633da02826ce6050347cba625f3879d9a21d06eb97fc13b80"
+    },
+    {
+      "path": "skills/responsive-input-timing/SKILL.md",
+      "bytes": 3774,
+      "sha256": "c9bb7a0ba45c0282bdfbbb4abb6dc1f9827731e4a6928a41e0737e3659646e26"
+    },
+    {
+      "path": "skills/responsive-input-timing/src/timing.d.mts",
+      "bytes": 1019,
+      "sha256": "c8b16972b0848aeb4f530cb8ba9a93e30bc1958d6cf7c155abaef52e7baa0418"
+    },
+    {
+      "path": "skills/responsive-input-timing/src/timing.mjs",
+      "bytes": 3629,
+      "sha256": "1861c76269824d0311da36bbd95e2b6b63d1842cac3710bc6701e5e0c91747c4"
+    },
+    {
+      "path": "skills/responsive-input-timing/TESTING.md",
+      "bytes": 513,
+      "sha256": "217560c835efba3fc22e8fc0be5dc0025c8ef2a46409d0d5e77ba17aa78de1d9"
+    },
+    {
+      "path": "skills/responsive-input-timing/tests/timing.test.mjs",
+      "bytes": 4037,
+      "sha256": "81e1b1945fe7e4b596c4d9b06157a26f7af507b3e03b52486181f31c884c560d"
+    },
+    {
+      "path": "skills/responsive-input-timing/tsconfig.json",
+      "bytes": 195,
+      "sha256": "0bddc878c3cc46b52628d381fcab7cb9e1d5e6235a3bd432b1697dc444737937"
+    },
+    {
+      "path": "skills/responsive-input-timing/typecheck/example.mts",
+      "bytes": 397,
+      "sha256": "9071ebd72ebfbed3eb04adc67500af52d8fbc37600aaad45162f2cd3369e16f2"
+    },
+    {
+      "path": "skills/responsive-input-timing/VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/assets/qa-report.md",
+      "bytes": 773,
+      "sha256": "bbbbef5b1f2352b368fa1da8eb125ff250dfb4ceb5be4331bfb04b4442e282f5"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/attribution/APACHE-2.0-UPSTREAM-LICENSE.txt",
+      "bytes": 11362,
+      "sha256": "5b18b7660a16d6a804b927935d8a21fcacef1daa680c90756903a2bed4bcff9b"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/attribution/UPSTREAM-NOTICE.txt",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/CHANGELOG.md",
+      "bytes": 276,
+      "sha256": "18b9f3e47cafc4b77c6ecbdddadd88881b090723a180e51550fc62817e86b4b7"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/corrupt_text.json",
+      "bytes": 20,
+      "sha256": "a8530a511bd06e418f4bc6562d9f5345ad3aa12916bdc1988c3b80dd62ef14f7"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/current_v3.json",
+      "bytes": 180,
+      "sha256": "94fed0617950fb26cb222eb6cd8f175ca9ac10770f02d42585c868c234b347b0"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/duplicate_keys.json",
+      "bytes": 77,
+      "sha256": "6a398e2f47a715ebe8b3f77239da93442b0223f9f23a908c056e96d8c72c81ee"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/future_v4.json",
+      "bytes": 21,
+      "sha256": "59fb656a9d48d622deaf15079643cac274f9f8a0832b31cce3c0a07a461487a1"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/invalid_health.json",
+      "bytes": 66,
+      "sha256": "6f94278daaa53561652fb7769cffc6673b3d0712d481c79c814ff73308caf51a"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/legacy_v1.json",
+      "bytes": 95,
+      "sha256": "5a1faddd84685f9e09e5d76a1aee33196ade9449287d66ff75477738189f2567"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/legacy_v2.json",
+      "bytes": 87,
+      "sha256": "b169919a005bceed353446a28ea67ff6cc7a7b6732436753f3850363d88bd0c5"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/manifest.json",
+      "bytes": 616,
+      "sha256": "22d5ee8ab7bbe6606fc73910d47180c062e11a46f2618bfcc68100f0987784c5"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/fixtures/missing_version.json",
+      "bytes": 46,
+      "sha256": "ee8e0d8f39e30bd72badcf59df2bdcc070c09fb51718b321bdb793a6e6a48f06"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/PROVENANCE.md",
+      "bytes": 939,
+      "sha256": "19e5e2fa1430728e21f4224948816f3f93948bffb557fc8da66418b87279bed1"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/README.md",
+      "bytes": 589,
+      "sha256": "b5b7418517610fcf58c97517aa938fb6fb8db368312350ff23d5abcfb091dd46"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/references/qa-playbook.md",
+      "bytes": 1180,
+      "sha256": "a156581b3c87b487f79d81ba9d92b286309b181ce16d33261f33bb0128f03552"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/references/schema-evolution.md",
+      "bytes": 1630,
+      "sha256": "d300231ec81995cb9a2bc7e1bdffd38afbac11c2d193adccc66287d4dd5591cd"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/references/sources.md",
+      "bytes": 409,
+      "sha256": "bd82efe13b19a471d7cc0f047b02f0e1c6f75f237cd6d1a76f04ef3670c24856"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/scripts/audit_saves.py",
+      "bytes": 2237,
+      "sha256": "cbc8c6cbd01177f1a6dfeb185e37e7697449c4df893393c3a048116b4f3a9d4b"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/scripts/schema_pipeline.py",
+      "bytes": 6441,
+      "sha256": "614aa63191ecfdb1010c4b53cc392b3431132e584c2b406180020cdbadc7a84b"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/scripts/tests/test_schema.py",
+      "bytes": 3179,
+      "sha256": "a3ff826c57712704e5d50dab35640020b6566ac94b35cb411a1db3813ab1dd7b"
+    },
+    {
+      "path": "skills/save-schema-migrations-qa/SKILL.md",
+      "bytes": 2862,
+      "sha256": "e35dcab2de2b2ed9c48205c1182594279ca494f4ec235fe2f8c9863c9fcb003e"
+    },
+    {
+      "path": "skills/shader-core-glsl/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/shader-core-glsl/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/shader-core-glsl/CHANGELOG.md",
+      "bytes": 361,
+      "sha256": "326d6b053f8d3dd3e3c6de44dcc8d07c011ad2a94873833d2cea4310d5dfe45d"
+    },
+    {
+      "path": "skills/shader-core-glsl/examples/threejs-shadermaterial.mjs",
+      "bytes": 648,
+      "sha256": "c8c721bce08d5f4f9cc58255b733a40b156ab56f3c2c719403a54bc6ac2b65d1"
+    },
+    {
+      "path": "skills/shader-core-glsl/examples/webgl1/basic.frag",
+      "bytes": 100,
+      "sha256": "741d61406eaf1aeb24e29783832d1a97ddfde3e07f52fcc265b7de22901c68ec"
+    },
+    {
+      "path": "skills/shader-core-glsl/examples/webgl1/basic.vert",
+      "bytes": 142,
+      "sha256": "a8a93626ea0013f72fb4c7a041af7cbf779587396bafed9be203bc0b6c7a08e1"
+    },
+    {
+      "path": "skills/shader-core-glsl/examples/webgl2/basic.frag",
+      "bytes": 124,
+      "sha256": "6d0a5d673cab174f3e1369a2eb51acfdba888cc7cf57b4803c321d5762af052b"
+    },
+    {
+      "path": "skills/shader-core-glsl/examples/webgl2/basic.vert",
+      "bytes": 140,
+      "sha256": "056e23b63ab7c263700f454c7209c51fa9c57314143d522bb50bc487ea39320d"
+    },
+    {
+      "path": "skills/shader-core-glsl/examples/webgl2/dissolve.frag",
+      "bytes": 531,
+      "sha256": "61f23ab3896b5543e6b2bcb575cb2379014615ce7695cc958856b6ac8c49e37b"
+    },
+    {
+      "path": "skills/shader-core-glsl/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/shader-core-glsl/PROVENANCE.md",
+      "bytes": 2356,
+      "sha256": "def940303c2e77f4c00255c684ed04726f8843330bae19496656e4a855cb7026"
+    },
+    {
+      "path": "skills/shader-core-glsl/README.md",
+      "bytes": 961,
+      "sha256": "8e795568d1d62c2bb32d1e6656ddba288892ee07c8bd08445336c39e8ed45818"
+    },
+    {
+      "path": "skills/shader-core-glsl/references/debug-and-performance.md",
+      "bytes": 1504,
+      "sha256": "f41523f6f2e0c24e74bd9cebc4b6a519071708a72d31ef7507f70e6d3cc58f1a"
+    },
+    {
+      "path": "skills/shader-core-glsl/references/threejs-material-contract.md",
+      "bytes": 1658,
+      "sha256": "40f9287709a6c07bf848166a3e1c5657eb857634a8a6bf5994f5673eeb66ae5e"
+    },
+    {
+      "path": "skills/shader-core-glsl/references/webgl-dialects.md",
+      "bytes": 1846,
+      "sha256": "f9762fc5f648374c502f79a9107863a4c88d211a3346faa614b3691a359d1457"
+    },
+    {
+      "path": "skills/shader-core-glsl/scripts/check_glsl.py",
+      "bytes": 2483,
+      "sha256": "fcf11cc4a057c9645665e5f7cee8d0ff3f8301722cf3be8629840a0558cd9be5"
+    },
+    {
+      "path": "skills/shader-core-glsl/SKILL.md",
+      "bytes": 4321,
+      "sha256": "2886ac16dc70a2ec2245cbb1bbfaf1d535f186037fda88023fd7c8b36e33e83c"
+    },
+    {
+      "path": "skills/shader-core-glsl/tests/browser_compile.html",
+      "bytes": 2156,
+      "sha256": "4f29d62f364f468c64781ca6b350202865ea339e29c7a20f08d98ea8a013c4ef"
+    },
+    {
+      "path": "skills/shader-core-glsl/tests/README.md",
+      "bytes": 430,
+      "sha256": "e41f86292fce7ea4dbdc1848809569aa967849c84561191b2314f5c7faa2bd8a"
+    },
+    {
+      "path": "skills/shader-core-glsl/tests/test_check_glsl.py",
+      "bytes": 1219,
+      "sha256": "a06b5e51f80793093c29f2da79cb752d3d02efa963fda44bc3ec4c66f24b15b0"
+    },
+    {
+      "path": "skills/shader-effects-qa/assets/QA_REPORT_TEMPLATE.md",
+      "bytes": 627,
+      "sha256": "b3ab3a23e944e8bc436a134a0f98a97e99cb30db3b0fa3c85a12d05e00724328"
+    },
+    {
+      "path": "skills/shader-effects-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/shader-effects-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/shader-effects-qa/CHANGELOG.md",
+      "bytes": 355,
+      "sha256": "5257b1b93148a0e04729f675d539c067754449ccdece06f83f2b22cd1721b424"
+    },
+    {
+      "path": "skills/shader-effects-qa/examples/fullscreen-300es.vert",
+      "bytes": 150,
+      "sha256": "daa911137c54a6238e5b879591e67a4a1c13c483467c33a76917972ebd577b9c"
+    },
+    {
+      "path": "skills/shader-effects-qa/examples/vignette-300es.frag",
+      "bytes": 585,
+      "sha256": "700e4b5394f12561f1ba82dec98fd96079846f6c646ae57394c95c96e3ba4f5b"
+    },
+    {
+      "path": "skills/shader-effects-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/shader-effects-qa/PROVENANCE.md",
+      "bytes": 2356,
+      "sha256": "def940303c2e77f4c00255c684ed04726f8843330bae19496656e4a855cb7026"
+    },
+    {
+      "path": "skills/shader-effects-qa/README.md",
+      "bytes": 957,
+      "sha256": "aeb917dbfae3f377af0f4ea14ebdc56f77d265c0cff367681c627d30445f7145"
+    },
+    {
+      "path": "skills/shader-effects-qa/references/effect-patterns.md",
+      "bytes": 2345,
+      "sha256": "81040098e00c25878990aa88c075d9c71a32da063ba834a23bfc96639cdd0003"
+    },
+    {
+      "path": "skills/shader-effects-qa/references/gpu-benchmark.md",
+      "bytes": 1167,
+      "sha256": "244773cfd2dce43753506b2e53ba87a3eb1df454ce84fe11374dda40be38c3a9"
+    },
+    {
+      "path": "skills/shader-effects-qa/references/visual-regression.md",
+      "bytes": 1449,
+      "sha256": "1f08b7e5fef50908fa93fd718c91df85194eeecb696c76be1a1e12f12615243e"
+    },
+    {
+      "path": "skills/shader-effects-qa/scripts/compare_images.py",
+      "bytes": 3429,
+      "sha256": "f5fcfaec487f9bca3f90cf6d2f21d661b6942f784fcce2a6baab4df8b19d13ca"
+    },
+    {
+      "path": "skills/shader-effects-qa/scripts/effect_math.py",
+      "bytes": 1933,
+      "sha256": "b902f24780f94ae408a155b25359eb6b3c7df8fe35c17c8098f0e818136596e3"
+    },
+    {
+      "path": "skills/shader-effects-qa/SKILL.md",
+      "bytes": 3791,
+      "sha256": "457f28eafb3cada4d2cc5290c6f34562a17530baa7e386b9156191e0df5b4b6f"
+    },
+    {
+      "path": "skills/shader-effects-qa/tests/browser_compile.html",
+      "bytes": 1968,
+      "sha256": "7ecd93c8188bcc11b7a7e632727e862376bbce35e1837b65a3056bef7f8ac908"
+    },
+    {
+      "path": "skills/shader-effects-qa/tests/README.md",
+      "bytes": 459,
+      "sha256": "99828062ca65b65ce853379b96cffaa10cf5f23ce6c4eaa7d8d64437a1fb4a6a"
+    },
+    {
+      "path": "skills/shader-effects-qa/tests/test_compare_images.py",
+      "bytes": 1920,
+      "sha256": "82c7c140a4b78766fcf8e46ffb56f6cd362ddac4fbde943a3f7c26ae9c207cbd"
+    },
+    {
+      "path": "skills/shader-effects-qa/tests/test_effect_math.py",
+      "bytes": 1338,
+      "sha256": "56c474016f65a73e57c5311a11ba6aad503e880b960d063357bf9dc222ba7d20"
+    },
+    {
+      "path": "skills/threejs-animation-systems/assets/REPORT_TEMPLATE.md",
+      "bytes": 783,
+      "sha256": "e15fe3cd29ad23c00a9281b9e68bcf06c2bbe469ae3bfe30c2e06bb067ec9ff3"
+    },
+    {
+      "path": "skills/threejs-animation-systems/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-animation-systems/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-animation-systems/CHANGELOG.md",
+      "bytes": 321,
+      "sha256": "6b08eaa36c4bca391d9bb7cd4904e6f164ea8fbfc19de81f86e92305bcda6b3b"
+    },
+    {
+      "path": "skills/threejs-animation-systems/examples/animation-controller.mjs",
+      "bytes": 2507,
+      "sha256": "9490c8c6377de9d8875ad4df20bbd106fd21f76b94883eb5047ff69390175be5"
+    },
+    {
+      "path": "skills/threejs-animation-systems/examples/integrate-three.mjs",
+      "bytes": 937,
+      "sha256": "8e66ce92a49a84e679b62284df206c6ea62292b0b8822f543ec10dfefc764ecc"
+    },
+    {
+      "path": "skills/threejs-animation-systems/LICENSE",
+      "bytes": 1071,
+      "sha256": "5067e6c28a1a36bab62839b20daf9ec154ddb7f86a5f336b832c78e05911bf49"
+    },
+    {
+      "path": "skills/threejs-animation-systems/PROVENANCE.md",
+      "bytes": 1308,
+      "sha256": "da49be6e00981661d9d73aeb8963b418ce7d9076d8c0b9030a3bbef552456911"
+    },
+    {
+      "path": "skills/threejs-animation-systems/QA_REPORT.md",
+      "bytes": 1389,
+      "sha256": "220c047278b2e9ebad2f4e46ff36fb4d75a2b40fa06f806a95753af2718a49a8"
+    },
+    {
+      "path": "skills/threejs-animation-systems/README.md",
+      "bytes": 906,
+      "sha256": "01a8914a18f8165c18a9437c2912ede0bc42022ace80432780da896c10b972d9"
+    },
+    {
+      "path": "skills/threejs-animation-systems/references/animation-fsm.md",
+      "bytes": 1978,
+      "sha256": "9aa233e9397d0da0a182ec2ab8bffb28618a9f95abcaa18c23afaf600af69a84"
+    },
+    {
+      "path": "skills/threejs-animation-systems/references/animation-qa.md",
+      "bytes": 996,
+      "sha256": "6c1d5b77124ef15e60f9fc71e0f3a95e921404699dced328588af09320f5e89c"
+    },
+    {
+      "path": "skills/threejs-animation-systems/SKILL.md",
+      "bytes": 3155,
+      "sha256": "2c41ab30dde1bdb0864f32a758494c4da1e03e9bad4f6705bfe5d42fb1102dfb"
+    },
+    {
+      "path": "skills/threejs-animation-systems/tests/controller.test.mjs",
+      "bytes": 3874,
+      "sha256": "0e02a9db1366e33cedab47d48496269473df9c39c3ed2b2f801dc48dc4fcc9d1"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/CHANGELOG.md",
+      "bytes": 563,
+      "sha256": "db37a9f60075b942ffc856fa4f52980b20b4fad06f2115eed8682140296ef631"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/examples/rig-integration.mts",
+      "bytes": 558,
+      "sha256": "f3862f172bcc0ac5185a41a9fba59790d65d6d691b22617d64586844fd197b8c"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/PROVENANCE.md",
+      "bytes": 1277,
+      "sha256": "c69d119ef43d071a61ec5f2a2d8e1d6576dd3c22bb47f77ff940ce58294629ba"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/README.md",
+      "bytes": 678,
+      "sha256": "27ba35d7b7b9aa123a67c073039cd7a677e8cde8f6d315b6f09ee13bb4646dca"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/references/godot-unity.md",
+      "bytes": 1088,
+      "sha256": "8fabf3e7955763f9be5ccfd9084b30655c7b010fae19cf53cece116fd325f3c4"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/references/rapier-and-threejs.md",
+      "bytes": 2433,
+      "sha256": "b84e9dc8e1b2d8a417f4906dc90b093ec444616efbd657c2313b2c76cca4d337"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/scripts/rig3d.d.mts",
+      "bytes": 1449,
+      "sha256": "d0fff72d09d5029b9a9be60f4a524f38fff1252a8759c030869eb949c7f14299"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/scripts/rig3d.d.ts",
+      "bytes": 1449,
+      "sha256": "d0fff72d09d5029b9a9be60f4a524f38fff1252a8759c030869eb949c7f14299"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/scripts/rig3d.mjs",
+      "bytes": 5697,
+      "sha256": "1da611995282759c0dcc1230b884230ebd3ed9b8a15633680f4e3a4dc02a7558"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/SKILL.md",
+      "bytes": 3423,
+      "sha256": "93c0763ad4a4307afdf74526366cd2b867d9ab66fc55753e7544297b5e8c9f1a"
+    },
+    {
+      "path": "skills/threejs-camera-rigs-3d/tests/rig3d.test.mjs",
+      "bytes": 3851,
+      "sha256": "df9cf96fa2fffe7890dc5979da0a5b1e232f2301ae040f7c75a4881b77c05b01"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/assets/COLOR_VISUAL_REVIEW_TEMPLATE.md",
+      "bytes": 599,
+      "sha256": "c1676ed10e0ed2b493d56d4d5058fb5b53ff5a57cf85e364e0343bed6bb0c04e"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/CHANGELOG.md",
+      "bytes": 361,
+      "sha256": "a7b1e31aca3943e2ef9427936bae976083c4a3e33f5333171bf24f8ec349ef87"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/examples/environment-owner.mjs",
+      "bytes": 2440,
+      "sha256": "9bbce0460f4e59a711c14e3778474be2f9e312d0379a2f9098840ab582803cd5"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/examples/integrate-room-environment.mjs",
+      "bytes": 766,
+      "sha256": "bfa5342e02fedcf30098dc593b323b9614d12f215a742d276b146497edfdc89c"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/PROVENANCE.md",
+      "bytes": 1166,
+      "sha256": "a605b9d512279c38304cc0cbf980e5a785e46a887a92c1a92f67907724bfe742"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/QA_REPORT.md",
+      "bytes": 1044,
+      "sha256": "d090c91fe48e936d6ab4b232b07931150aa18e5c39bc8086e0ff393435578263"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/README.md",
+      "bytes": 544,
+      "sha256": "73b78373255300dd7772d1b6ca3d44d715d7ee4b7f50cdb9aabf60779fed9ecb"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/references/color-workflow.md",
+      "bytes": 1391,
+      "sha256": "023bbe29ebf41cc1bcc4a073bf96445f781a08ced09286354635625c8499ed83"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/references/ibl-lifecycle.md",
+      "bytes": 2264,
+      "sha256": "9c4f4cc3cd916cac68e54bc2ff34ee51a0d38ba579a5c351b74031d964843d10"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/references/visual-qa.md",
+      "bytes": 1407,
+      "sha256": "79b3d93b84ef88964ff4cfae0f36833f1a1bd6f7117def829785045ebbc0da03"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/scripts/color_pipeline_audit.mjs",
+      "bytes": 2433,
+      "sha256": "ddbd82d5cbc191f317aedb222fb38e007154310d0c1b77683b40a5469c36bcc4"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/scripts/compare_images.py",
+      "bytes": 2720,
+      "sha256": "f58238ae8ef536513c7fa43a076862cadca1a45f519d0a3422d5404f6b85af91"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/SKILL.md",
+      "bytes": 3785,
+      "sha256": "1905f8cd3c925b7fce50390f8aabac19469d5db3bb1614bbd13fd1b3bdabd588"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/tests/environment.test.mjs",
+      "bytes": 3862,
+      "sha256": "bbc18b0ff2325c3e3f3dde27724383277c755a4608a85e16ac74030ed7134591"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/tests/pipeline.json",
+      "bytes": 361,
+      "sha256": "60afde8940364e44c25c89160b6c25929114ed815f3137f32fb72430e22ec999"
+    },
+    {
+      "path": "skills/threejs-environment-color-qa/tests/test_compare_images.py",
+      "bytes": 1820,
+      "sha256": "6981292b55cb7becc3e4f8b06c2ada3985c957f9e91ce33f157b26e705d85719"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/assets/REPORT_TEMPLATE.md",
+      "bytes": 783,
+      "sha256": "e15fe3cd29ad23c00a9281b9e68bcf06c2bbe469ae3bfe30c2e06bb067ec9ff3"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/CHANGELOG.md",
+      "bytes": 316,
+      "sha256": "d02d025848521ba055a1d0fbdb63bfab95de86f6017c7cfeb5df13218950486a"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/examples/asset-store.mjs",
+      "bytes": 4410,
+      "sha256": "719dea02e5355ce902c6c882611de61b80feee48ae51220f9b23c7a9f9565b01"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/examples/integrate-three.mjs",
+      "bytes": 1631,
+      "sha256": "6483efb745270eef1c387502627cab9a204fdc211c855b311821caec7a45f0d6"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/examples/progress.mjs",
+      "bytes": 630,
+      "sha256": "2835d8db7bc7774526a87500ddac9ffa6e48e266efda09dca40379be3a21eb3f"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/LICENSE",
+      "bytes": 1071,
+      "sha256": "5067e6c28a1a36bab62839b20daf9ec154ddb7f86a5f336b832c78e05911bf49"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/PROVENANCE.md",
+      "bytes": 1303,
+      "sha256": "092b0b963a054fe286fdae28e6da3b14c99f5c804c04e59363bd2d003c4fbb2b"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/QA_REPORT.md",
+      "bytes": 1384,
+      "sha256": "a4db711337d1368df65234a2b8bfadaf3e09b08eb0b3dedab0ba72899be028f3"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/README.md",
+      "bytes": 896,
+      "sha256": "17d90b0a9a9353d8c5c82b3b86684a1edd1f311e75ef867a208fce65e78b28ea"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/references/decoder-compatibility.md",
+      "bytes": 1163,
+      "sha256": "769082c1d0f1971d8704e65e8990e12f4c6b5d378c91751527923d161aee2b6a"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/references/runtime-lifecycle.md",
+      "bytes": 2685,
+      "sha256": "8c0e5b1a162bd0c8e9ee28aa9cdeaf2291068f36130c9aa0b9c01b3ca3952f34"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/SKILL.md",
+      "bytes": 4074,
+      "sha256": "1e662e89853436ad7ac5885a05fa3c47fb57b57e3f2bdd3305a92f29907a8fd6"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/tests/progress.test.mjs",
+      "bytes": 508,
+      "sha256": "fd123ec6029a94760374e162a18570ee9ae840e29ee0f4568390783292c9a987"
+    },
+    {
+      "path": "skills/threejs-gltf-runtime/tests/store.test.mjs",
+      "bytes": 2892,
+      "sha256": "28aa4e70ab5996b7c65df4bc13d417cbac47da63462cd13c21f8eeb5a0e63a03"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/assets/LIGHTING_REVIEW_TEMPLATE.md",
+      "bytes": 549,
+      "sha256": "a3fbbd7c98eaa2c87bb49cf32a736916ebc140754b653e3fec8dc233bf65045d"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/CHANGELOG.md",
+      "bytes": 357,
+      "sha256": "0480ea3d0959a1b478645dffe42d999f70e81084b0223a2f3447faf907974f4a"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/examples/configure-shadows.mjs",
+      "bytes": 2018,
+      "sha256": "78926975a03a02c65b18f9bbc1dda0685c2b8812a4c594d859555a3a50563fcc"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/examples/integrate-directional.mjs",
+      "bytes": 614,
+      "sha256": "7db38c0edc80b2850bbcc519f1734f02349a6401063234b8df2d4a0affeef31f"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/PROVENANCE.md",
+      "bytes": 1162,
+      "sha256": "896b090570940acacca21fd94b418a7bbc99283a410c7c8dc41ea53d4647d03f"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/QA_REPORT.md",
+      "bytes": 1040,
+      "sha256": "7e3ca4a1b9e968d90c243744be0396542d894f95efe79343448271ca1af2ad56"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/README.md",
+      "bytes": 536,
+      "sha256": "802185f15674f81771fdbe28125bf7e285dec38033aca547e89140b4a3d00a3c"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/references/dynamic-scenes.md",
+      "bytes": 1159,
+      "sha256": "c04088bdd40cdf7bd17fcb7f66162fc03137dbe47f8bbacf3e3593727d86a07d"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/references/lighting-and-cost.md",
+      "bytes": 1567,
+      "sha256": "5a59dc24634aae04dbf772fefb1df78f49aeda6b8bc21fa2cce4f1e703d20392"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/references/shadow-frusta.md",
+      "bytes": 1594,
+      "sha256": "623301331ab6f2bdf2aa66b686cc39a6231f3d93de40379f987ea429e26e1fda"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/scripts/shadow_budget.mjs",
+      "bytes": 2043,
+      "sha256": "c63da734e6b8cca2c972b6a3ff2cb0bd97c69306b86e0da1d69d50d7326a3fe8"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/SKILL.md",
+      "bytes": 3953,
+      "sha256": "89352aee11b68633e4ff7c28d4e7a19fed772bd42f417f0ac2f29cb34ced4d7d"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/tests/shadows.json",
+      "bytes": 215,
+      "sha256": "47dd78c2f7ea4c126d213ad173abef8eba5369683a442d6ac7df434a9cb64cde"
+    },
+    {
+      "path": "skills/threejs-lighting-shadows/tests/shadows.test.mjs",
+      "bytes": 2556,
+      "sha256": "19f6410da75181e6b71210e4e4ebcb8a1bd610e139eb59bd17e5fe5331b2dfbb"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/assets/MATERIAL_REVIEW_TEMPLATE.md",
+      "bytes": 709,
+      "sha256": "923b2de9a60c415c8ac8a912ddc9ba73c1ff38fb996378f0092c1fed26462bee"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/CHANGELOG.md",
+      "bytes": 354,
+      "sha256": "d167742bd5c5eda7fe69896984e29b24d28f495e7a4d6c069bd39aa628697ee9"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/examples/create-material.mjs",
+      "bytes": 3127,
+      "sha256": "368f688ecd2135b2bc451bd7d7c0b2a6105cd255ed3e96a800f2281ddfc69260"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/examples/integrate-material.mjs",
+      "bytes": 546,
+      "sha256": "f1301c9feb3c1bb10ede8c7958ebe05e147299abfaf80e94cf2d5ecce31ca988"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/examples/reference-swatches.mjs",
+      "bytes": 997,
+      "sha256": "1e23b155199bb012b565f524caf147032c0150d625c58a9fb68456bb186b6778"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/PROVENANCE.md",
+      "bytes": 1159,
+      "sha256": "88d8e1aa8fb184943a46a29a69db4b545915763f64c22ce47ba0237d991c9b99"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/QA_REPORT.md",
+      "bytes": 1037,
+      "sha256": "5a66262975416db4703e8428a2c2be7320f1c3ee834ca31cdb4b918a3c34621e"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/README.md",
+      "bytes": 530,
+      "sha256": "05aa467abef781281b5af1c7f45c6664297508fe92ee889447c0161f9c21dd68"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/references/compatibility-and-qa.md",
+      "bytes": 1699,
+      "sha256": "d39af64989154bab7cc56ff12a677e108aee48ab8a4539558bfec0ba3d0a375f"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/references/pbr-workflow.md",
+      "bytes": 2765,
+      "sha256": "e0fbf834a79d8a6c269690da4e1fb47901bee5f376fea23ac5f3ed8fb3153aa7"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/references/texture-and-transparency.md",
+      "bytes": 2559,
+      "sha256": "ce26815738a07e3c924cf71f2b84d9d355c5a3c4e1d645926fd4383ced082f12"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/scripts/audit_materials.mjs",
+      "bytes": 3056,
+      "sha256": "e5863308d8850922a1e45b84250888cfff57816945fccf36d4adc285c18bedfe"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/SKILL.md",
+      "bytes": 4693,
+      "sha256": "6cbcf60b036eeec267e41db752f35d5c8121fee7fb052b1726581abf0f03a13f"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/tests/materials.json",
+      "bytes": 419,
+      "sha256": "b6252fe934e66e19c91a8b52821673d149358b846836621b6289b4314a98cfac"
+    },
+    {
+      "path": "skills/threejs-pbr-materials/tests/materials.test.mjs",
+      "bytes": 2608,
+      "sha256": "39887a622f83a429cde2502eeb5ce332f654f90aa2970f83ddf8b71d501cbf98"
+    },
+    {
+      "path": "skills/threejs-scene-setup/assets/QA_REPORT_TEMPLATE.md",
+      "bytes": 792,
+      "sha256": "971db485889bca6cb7f87dfb278341437cf9c823091922df66670e0cb6275638"
+    },
+    {
+      "path": "skills/threejs-scene-setup/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-scene-setup/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-scene-setup/CHANGELOG.md",
+      "bytes": 817,
+      "sha256": "65e4490e238d8d02b2bd56c662200bb0633002d44fb477050d718e385b09ecb4"
+    },
+    {
+      "path": "skills/threejs-scene-setup/examples/demo/index.html",
+      "bytes": 1487,
+      "sha256": "8319afa00a31923a43b92e299e4ae68192f64db8afaf17ea8ac76eaf7059d537"
+    },
+    {
+      "path": "skills/threejs-scene-setup/examples/demo/main.mjs",
+      "bytes": 2410,
+      "sha256": "352a414b5c02cc47cadd505fe93252d034e468d585bd4276cdba0fd46e249bc7"
+    },
+    {
+      "path": "skills/threejs-scene-setup/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/threejs-scene-setup/PROVENANCE.md",
+      "bytes": 1277,
+      "sha256": "cf1020825bb1992f00499dd8f67096226ea9ab85516303a86b2b4acb7caab6c8"
+    },
+    {
+      "path": "skills/threejs-scene-setup/QA_REPORT.md",
+      "bytes": 1692,
+      "sha256": "5896bc98fcf326fbeb381b37b07824b196fc15ee01a66cbbf1bbd19ee8942ff4"
+    },
+    {
+      "path": "skills/threejs-scene-setup/README.md",
+      "bytes": 2229,
+      "sha256": "ed75c2b5734529aaa5ad62421ff2f860124c643a313daf8347ca1546d92339e7"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/frame-loop-and-lifecycle.md",
+      "bytes": 3336,
+      "sha256": "012939df84193e5fb5375e4970c4d532f2d3e5a0020d8016975eb82b22a5b19f"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/qa-protocol.md",
+      "bytes": 2507,
+      "sha256": "500917e03e8f47a409fc3b109b223dbd78db16f8d3a11f6e8e2b75ac1a091abd"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/resource-ownership.md",
+      "bytes": 2279,
+      "sha256": "530774320b7b8b8c19795c8af5443d090992b9ea02f3144207724a78828beb8e"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/scenegraph-and-editor.md",
+      "bytes": 2142,
+      "sha256": "5cc1cbd18ddf44a63bed1430c3d73653d927dc89e039889d29f9dcad8957b053"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/sources.md",
+      "bytes": 1278,
+      "sha256": "26dac835955c72c7e709f9f89eacb87d922e957b435d9ce3ad9ebda83e15acb6"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/version-and-integration.md",
+      "bytes": 3360,
+      "sha256": "295161e369593542b42e0a444f9b15658dbe549d80374ab369c2cb84034b55f8"
+    },
+    {
+      "path": "skills/threejs-scene-setup/references/viewports-cameras-input.md",
+      "bytes": 2499,
+      "sha256": "6652cc8a6fb3b183b27b4d401a7d3bfb1034abf5abac302fc88ea60b1003c276"
+    },
+    {
+      "path": "skills/threejs-scene-setup/scripts/frame-coordinator.mjs",
+      "bytes": 3800,
+      "sha256": "9bbb89d85374722d283d1cd7064e6277d187dc6899a42875507d519f34156738"
+    },
+    {
+      "path": "skills/threejs-scene-setup/scripts/resource-scope.mjs",
+      "bytes": 2158,
+      "sha256": "5a517b3433e50ec96b83c699c32978ef9ac6ae4418dabeac18300bd4e7e13092"
+    },
+    {
+      "path": "skills/threejs-scene-setup/scripts/scenegraph-helpers.mjs",
+      "bytes": 1274,
+      "sha256": "d7842a28b21368a934327defd4839adefb829ccf79510a46b06a7d8ff8e6de2c"
+    },
+    {
+      "path": "skills/threejs-scene-setup/scripts/validate_skill.py",
+      "bytes": 3013,
+      "sha256": "883f03e5964563c1762af14d9e1394f80381907e82222ab98e7a34e637af8f24"
+    },
+    {
+      "path": "skills/threejs-scene-setup/scripts/version-audit.mjs",
+      "bytes": 2456,
+      "sha256": "0dce2f9b590ed5820edf947a0744afc6b3fb98f94ab41b19cc88ce3e8ebc48f1"
+    },
+    {
+      "path": "skills/threejs-scene-setup/scripts/viewport-controller.mjs",
+      "bytes": 2984,
+      "sha256": "8294c84d82ba5d02488d32febafc4b49b99f8e48ba4398a6d55016bfc7376c23"
+    },
+    {
+      "path": "skills/threejs-scene-setup/SKILL.md",
+      "bytes": 7798,
+      "sha256": "0faae27d4ce520ce9285e741b778af083152f5a9c5616517f17e3103036a3220"
+    },
+    {
+      "path": "skills/threejs-scene-setup/tests/real-three-optional.test.mjs",
+      "bytes": 775,
+      "sha256": "cbced6327846a9db8fbaafc800e9e94d19133e1df43c8ae171afb278c2490176"
+    },
+    {
+      "path": "skills/threejs-scene-setup/tests/scene-runtime.test.mjs",
+      "bytes": 9727,
+      "sha256": "e79c87c961637a27983dbf2155bd63b3f74041ab98e2b79fd3311499d7fadda3"
+    },
+    {
+      "path": "skills/threejs-scene-setup/tests/version-audit.test.mjs",
+      "bytes": 2068,
+      "sha256": "c2fec6109458b3bd02c1ff5929f8d5b41ba15aba49302c1e36d82f1aeacdb382"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/CHANGELOG.md",
+      "bytes": 343,
+      "sha256": "fd28dc86043d1d091b6e4fb8f6379c7b50c13a6ab48e63d43973fc75867aa68e"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/examples/tsl-color-material.mjs",
+      "bytes": 749,
+      "sha256": "e888b073a15345583701bdeeed33c4d731b13a95a6a61c13f04e908f132d9df2"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/examples/webgpu-compile-wgsl.mjs",
+      "bytes": 525,
+      "sha256": "2533649964caba3ac383acec50a4b6eb8a7398ebf5c6e97a6bf203d2c1123212"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/examples/wgsl/basic.wgsl",
+      "bytes": 369,
+      "sha256": "506a80c7258cc005eb41425a25bfe5d7a26387ec3151cb48323ade67b9e53e8b"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/examples/wgsl/compute-add-one.wgsl",
+      "bytes": 297,
+      "sha256": "3ba31d0731dc47efecb31b4524841609620317e1a22bab3cd8f68a48f0d6ea15"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/examples/wgsl-browser-check.html",
+      "bytes": 1495,
+      "sha256": "084f567ddfc5e65583b9c595ac06485127069d80497dbfc301bbe94b0dba7df0"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/PROVENANCE.md",
+      "bytes": 2356,
+      "sha256": "def940303c2e77f4c00255c684ed04726f8843330bae19496656e4a855cb7026"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/README.md",
+      "bytes": 947,
+      "sha256": "f6bc3065d8ce88b618ff379e4339a48f9c833ae6c5acc08db4d86b821513f04f"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/references/migration.md",
+      "bytes": 1578,
+      "sha256": "bb02c8048f9f756d521126ac75dbe3ffd5755f620478aee6c1418c83ba9b19c4"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/references/tsl-patterns.md",
+      "bytes": 1576,
+      "sha256": "b6229d127233314a923af25c002b56770f0ab5901f139965e8d89bb5900acda1"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/references/verification.md",
+      "bytes": 1119,
+      "sha256": "c2b2ae98893bfe4474577d6637a637f306fcf27da68a149d0cc2989034aa2fa2"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/references/wgsl-compute.md",
+      "bytes": 1724,
+      "sha256": "5a0cfd0a5a679484a02b0c7f5ac8ca6fb02fc74f2137105b1085e592052faa9c"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/scripts/audit_wgsl.mjs",
+      "bytes": 2440,
+      "sha256": "fdcf82b7a6721e026557bd50d43084e88005e951878e68e7fabcb614f79b3eb5"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/SKILL.md",
+      "bytes": 3833,
+      "sha256": "8086c6bad2285f3f9c35d15351b417c2abd7c7dc8403596936db0a162c30775d"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/tests/check_wgsl.test.mjs",
+      "bytes": 1196,
+      "sha256": "f3a1c72c91c441f8696bf27e3f26a4ef387ad273ed46b081b4205a293682b4e5"
+    },
+    {
+      "path": "skills/threejs-tsl-webgpu/tests/README.md",
+      "bytes": 400,
+      "sha256": "27cb2caab674ef08f2720d5822d8f76a936c4bc6cbd72a2a5fdf264c882376dc"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/attribution/upstream/LICENSE",
+      "bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/attribution/upstream/NOTICE",
+      "bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/CHANGELOG.md",
+      "bytes": 254,
+      "sha256": "6b674c848ba229133c7327c170bb8ed1f9ddd2542770b413e43f7f7f5b1d5271"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/examples/combat.mjs",
+      "bytes": 551,
+      "sha256": "4196c16da77dd2c91839cd037187137f188382f43536a46d67b66c67173dc62a"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/examples/typed-example.mts",
+      "bytes": 260,
+      "sha256": "ae98032f7d7aa19487c209dff006d6f7d899a5c57bc36db9a3d01500e38a4afa"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/LICENSE",
+      "bytes": 1072,
+      "sha256": "498cff12cec0900d258fcacf770fc2e84e1838f1dd262fbd0f807975fe3f3dd4"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/PROVENANCE.md",
+      "bytes": 827,
+      "sha256": "e14e071e6f1b4a65cbe761a3a9e12533d8033943518627ec2dbf92443f9c0a44"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/QA_REPORT.md",
+      "bytes": 482,
+      "sha256": "8ff28e5cab56d6037130f4126a694e55883a5370264b1af3c9569d519d543626"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/references/csharp-interop.md",
+      "bytes": 881,
+      "sha256": "ca06b21251eb2d7b28b2c9f7e63328ff8518e448e2e756d165b1bb7089f936ab"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/references/hybrid-bt.md",
+      "bytes": 1145,
+      "sha256": "c891e520a29868da5311ed59d2c317a5859af5a47610646ecfed1bfa8f70184c"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/references/scoring-policy.md",
+      "bytes": 1308,
+      "sha256": "e3b4dc221d7ea32d5a550a12512ec6129f4b6d8424bfcd41524f77ac61a83b7c"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/references/sources.md",
+      "bytes": 715,
+      "sha256": "f32bee5e0ed0f1aedf8e1ed029ad9305b5796e9f9669e022b2ad44ee7d9c722c"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/scripts/utility.d.mts",
+      "bytes": 1118,
+      "sha256": "a7eac2c98757dda2fb02da1c3c6c98425b5b4954ab3a44623d00697ecc418a1b"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/scripts/utility.mjs",
+      "bytes": 3738,
+      "sha256": "b1454e109d760a795d986ce0cd8791fda74f3a36a2dacf47c952b2bde61b0bed"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/SKILL.md",
+      "bytes": 2349,
+      "sha256": "68c3341a2c42567559f0b843c2a6d4b2376550f7338964da89d121dd87a8e38f"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/tests/utility.test.mjs",
+      "bytes": 2471,
+      "sha256": "dc211f479b6a8e6680cecf8300d883c5200968989f7aebdf76cd2b0470cbeaf9"
+    },
+    {
+      "path": "skills/utility-ai-decision-systems/tsconfig.json",
+      "bytes": 179,
+      "sha256": "2013de7a9b840228f239af23aecbd4cfa8ce7502e64e3e1e752c14b7b85877b4"
+    }
+  ]
+}

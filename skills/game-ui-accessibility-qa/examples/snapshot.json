@@ -1,0 +1,7 @@
+{
+  "viewport":{"width":390,"height":844,"insets":{"top":44,"right":0,"bottom":24,"left":0}},
+  "controls":[
+    {"id":"pause","name":"Pause","rect":{"x":318,"y":60,"width":56,"height":56},"visible":true,"interactive":true,"keyboardReachable":true,"focusIndicator":true,"critical":true,"text":"Pause","foreground":"#ffffff","background":"#142e46","largeText":false},
+    {"id":"health","name":"Health","rect":{"x":16,"y":60,"width":180,"height":44},"visible":true,"interactive":false,"critical":true,"text":"Health 80/100","foreground":"#ffffff","background":"#142e46","largeText":false}
+  ]
+}

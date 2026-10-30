@@ -1,0 +1,8 @@
+{"agent":"guard01","t":0,"kind":"start","node":"patrol","seed":42}
+{"agent":"guard01","t":0.5,"kind":"decision","action":"patrol"}
+{"agent":"guard01","t":1.0,"kind":"decision","action":"chase"}
+{"agent":"guard01","t":1.0,"kind":"abort","node":"patrol"}
+{"agent":"guard01","t":1.0,"kind":"start","node":"chase"}
+{"agent":"guard01","t":2.4,"kind":"complete","node":"chase"}
+{"agent":"guard01","t":2.4,"kind":"cost","ms":0.12}
+{"agent":"guard01","t":2.5,"kind":"cost","ms":0.18}

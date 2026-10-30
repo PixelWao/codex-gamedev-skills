@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three.js Scene Engineering r180 Demo</title>
+  <style>
+    html,body {margin:0;height:100%;background:#111821;color:#d8e4f2;font:14px/1.45 system-ui,sans-serif}
+    #shell {display:grid;grid-template-columns:220px minmax(0,1fr);height:100%}
+    aside {padding:16px;box-sizing:border-box;border-right:1px solid #445;overflow:auto}
+    #viewport {min-width:0;min-height:0;position:relative;overflow:hidden;resize:horizontal}
+    #scene-canvas {display:block;width:100%;height:100%;touch-action:none}
+    button {padding:8px;cursor:pointer;margin:4px 0}
+    @media(max-width:600px) {#shell {grid-template-columns:125px minmax(0,1fr)} aside{padding:8px}}
+  </style>
+  <script type="importmap">
+    {"imports":{
+      "three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+<div id="shell"><aside><strong>Scene demo</strong><p>Move the camera with drag/pinch. Change the sidebar width by dragging its border; the viewport will respond without window resize.</p><button id="pause">Pause</button><button id="resume">Resume</button><p id="status" role="status">Loading…</p></aside><div id="viewport"><canvas id="scene-canvas"></canvas></div></div>
+<script type="module" src="./main.mjs"></script>
+</body>
+</html>

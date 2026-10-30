@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"/><title>Browser save integration tests</title>
+<main id="result">RUNNING</main>
+<script type="module">
+import {BrowserSaveStore,SaveConflictError,SaveCorruptError,UnsupportedSchemaError} from '../indexeddb_save_store.mjs';
+const outcomes=[];
+async function test(name,fn){try{await fn();outcomes.push({name,pass:true});}catch(e){outcomes.push({name,pass:false,error:String(e.stack||e)});}}
+const assert=(ok,msg='assert failed')=>{if(!ok)throw new Error(msg)};
+async function throws(fn,Cls){try{await fn();throw new Error('Expected rejection');}catch(e){if(!(e instanceof Cls))throw e;}}
+const dbName='browser-save-test-'+Date.now()+'-'+Math.random().toString(16).slice(2);
+const s=new BrowserSaveStore({dbName,supportedSchemaVersion:3,maxBytes:50000});
+try{
+await s.open();
+await test('write revision 1',async()=>assert((await s.write('manual_1',{schemaVersion:1,hp:50})).revision===1));
+await test('load state',async()=>assert((await s.load('manual_1')).state.hp===50));
+await test('stale save refused',async()=>throws(()=>s.write('manual_1',{schemaVersion:1,hp:0},{expectedRevision:0}),SaveConflictError));
+await test('write revision 2',async()=>assert((await s.write('manual_1',{schemaVersion:1,hp:60},{expectedRevision:1})).revision===2));
+await test('backup has previous state',async()=>{
+ const raws=await s.rawRecords('manual_1');assert(raws.backup.revision===1);assert(JSON.parse(raws.backup.payload).hp===50);
+});
+await test('primary checksum fallback',async()=>{
+ const db=s.db;
+ await new Promise((resolve,reject)=>{
+   const tx=db.transaction('records','readwrite');const store=tx.objectStore('records');
+   const query=store.get('primary:manual_1');
+   query.onsuccess=()=>{const record=query.result;record.payload='{"schemaVersion":1,"hp":9999}';store.put(record);};
+   tx.oncomplete=resolve;tx.onabort=()=>reject(tx.error||new Error('aborted'));
+ });
+ const read=await s.load('manual_1');assert(read.source==='backup');assert(read.state.hp===50);assert(read.recoveryRequired===true);
+});
+await test('no unrequested recovery',async()=>throws(()=>s.load('manual_1',{allowBackup:false}),SaveCorruptError));
+await test('invalid slot refused',async()=>throws(()=>s.write('../evil',{schemaVersion:1}),TypeError));
+await test('nonfinite refused',async()=>throws(()=>s.write('bad',{schemaVersion:1,x:Infinity}),TypeError));
+await test('unknown version refused',async()=>throws(()=>s.write('bad',{schemaVersion:4}),UnsupportedSchemaError));
+await test('export and import',async()=>{
+ await s.write('exportable',{schemaVersion:3,inventory:['💎']});
+ const exported=await s.exportJson('exportable');await s.importJson('imported',exported);
+ assert((await s.load('imported')).state.inventory[0]==='💎');
+});
+await test('listSlots',async()=>assert((await s.listSlots()).some(x=>x.slot==='imported')));
+await test('two writers CAS',async()=>{
+ const outcomes=await Promise.allSettled([
+   s.write('race',{schemaVersion:1,token:'a'},{expectedRevision:0}),
+   s.write('race',{schemaVersion:1,token:'b'},{expectedRevision:0})
+ ]);
+ assert(outcomes.filter(x=>x.status==='fulfilled').length===1);
+ assert(outcomes.filter(x=>x.status==='rejected').length===1);
+});
+await test('future version on load',async()=>{
+ await s.write('newer',{schemaVersion:3,foo:1});
+ const old=new BrowserSaveStore({dbName,supportedSchemaVersion:2});await old.open();
+ try{await throws(()=>old.load('newer'),UnsupportedSchemaError);}finally{old.close();}
+});
+await test('missing returns null',async()=>assert(await s.load('missing')===null));
+await test('oversized payload refused',async()=>throws(()=>s.write('oversize',{schemaVersion:1,x:'x'.repeat(60000)}),RangeError));
+}catch(e){outcomes.push({name:'fatal',pass:false,error:String(e.stack||e)})}
+finally{s.close()}
+const pass=outcomes.filter(x=>x.pass).length;
+const root=document.getElementById('result');root.textContent='BROWSER_TEST_RESULTS '+JSON.stringify({pass,total:outcomes.length,outcomes});
+document.documentElement.setAttribute('data-finished','true');
+</script></html>

@@ -1,0 +1,6 @@
+{"time":0.0,"type":"shot","actor":"player","weapon":"rifle","shotId":"p1"}
+{"time":0.01,"type":"hit","actor":"player","weapon":"rifle","shotId":"p1"}
+{"time":0.2,"type":"shot","actor":"player","weapon":"rifle","shotId":"p2"}
+{"time":0.201,"type":"hit","actor":"player","weapon":"rifle","shotId":"p2"}
+{"time":0.4,"type":"shot","actor":"player","weapon":"rifle","shotId":"p3"}
+{"time":0.401,"type":"kill","actor":"player","weapon":"rifle","shotId":"p3"}

@@ -1,0 +1,1 @@
+{"maxEstimatedMB":64,"lights":[{"name":"sun","type":"DirectionalLight","castShadow":true,"mapSize":[2048,2048],"bytesPerPixelEstimate":4},{"name":"lamp","type":"PointLight","castShadow":false,"mapSize":[512,512]}]}

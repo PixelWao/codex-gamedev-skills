@@ -1,0 +1,1 @@
+import {TweenDirector,ParticlePool,damagePop} from '../src/vfx.mjs';const o={scale:[1,1]},t=new TweenDirector();t.play(o,'scale',{from:[1.25,.8],to:[1,1],durationMs:180,atMs:0});t.tick(180);console.log(o);const p=new ParticlePool({capacity:8});console.log(p.spawn({count:5}));console.log(damagePop({x:0,y:0,value:42,startedMs:0,nowMs:300}));

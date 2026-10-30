@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Game Menu Flow</title><style>body{font:18px system-ui;background:#10243c;color:white;text-align:center;padding:4vh}button{font:inherit;min-width:120px;min-height:48px;padding:8px 18px;margin:6px;color:white;background:#24547a;border:2px solid white;border-radius:9px}button:focus-visible{outline:4px solid gold;outline-offset:4px}#pause[hidden]{display:none}dialog{background:#163a56;color:white;border:2px solid white}dialog::backdrop{background:#000a}</style></head><body><main><h1>Game screen</h1><button id="open">Pause</button><section id="pause" hidden inert><h2>Paused</h2><button id="resume">Resume</button><button id="settings">Settings</button></section><dialog id="modal" aria-labelledby="modal-title"><h2 id="modal-title">Settings</h2><button id="done">Close</button></dialog></main><script type="module">
+import {ScreenStack,domScreen,createModalController,createInputRouter} from '../src/menu.mjs';
+const stack=new ScreenStack(),panel=document.querySelector('#pause');const pause=domScreen(panel,{defaultFocus:()=>document.querySelector('#resume')});const modal=createModalController(document.querySelector('#modal'));
+document.querySelector('#open').onclick=()=>stack.push(pause);
+document.querySelector('#resume').onclick=()=>{stack.pop();document.querySelector('#open').focus();};
+document.querySelector('#settings').onclick=()=>modal.open();
+document.querySelector('#done').onclick=()=>modal.close();
+const input=createInputRouter({onAction:action=>{if(action==='back'){if(modal.isOpen)modal.close();else if(stack.size)stack.pop();}}});
+// Demo is not a running game. A real engine MUST call input.poll() in its existing frame tick.
+window.addEventListener('pagehide',()=>{input.dispose();modal.dispose();stack.clear();},{once:true});
+</script></body></html>

@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {safeRect,layoutForViewport,healthFraction,bindHud,makeHudStore,configureCanvas,watchViewport,projectThreeToCss} from '../src/hud.mjs';
+test('safe area viewport coordinates',()=>assert.deepEqual(safeRect({width:390,height:844},{left:12,right:8,top:44,bottom:24}),{x:12,y:44,width:370,height:776,insets:{left:12,right:8,top:44,bottom:24}}));
+test('small safe area clamps',()=>assert.equal(safeRect({width:100,height:80},{left:75,right:75}).width,0));
+test('safe invalid',()=>{assert.throws(()=>safeRect({width:0,height:5}));assert.throws(()=>safeRect({width:1,height:1},{top:-1}));});
+test('dpr layout',()=>assert.deepEqual([layoutForViewport({width:390,height:844,dpr:2.5}).backingWidth,layoutForViewport({width:390,height:844,dpr:2.5}).backingHeight],[975,2110]));
+test('dpr invalid',()=>assert.throws(()=>layoutForViewport({width:1,height:1,dpr:0})));
+test('health zero and clamp',()=>{assert.equal(healthFraction(8,0),0);assert.equal(healthFraction(200,100),1);assert.equal(healthFraction(-4,100),0);});
+test('initial HUD snapshot, no duplicate, unsubscribed',()=>{const s=makeHudStore({hp:80});const seen=[];const stop=bindHud({store:s,select:x=>x.hp,render:x=>seen.push(x)});s.patch({hp:80});s.patch({hp:40});stop();s.patch({hp:3});assert.deepEqual(seen,[80,40]);});
+test('canvas DPR transform no accumulation',()=>{let transforms=[];const canvas={style:{},getContext:()=>({setTransform:(...a)=>transforms.push(a)})};configureCanvas(canvas,100,20,2);configureCanvas(canvas,100,20,2);assert.deepEqual(transforms,[[2,0,0,2,0,0],[2,0,0,2,0,0]]);assert.equal(canvas.width,200);});
+test('viewport observer teardown',()=>{let ended=false;const events=[];class Obs{constructor(fn){this.fn=fn;}observe(){}disconnect(){ended=true;}}const el={getBoundingClientRect:()=>({width:100,height:200})};const stop=watchViewport(el, v=>events.push(v),{observerCtor:Obs,windowObject:{devicePixelRatio:2}});assert.equal(events.length,1);stop();assert.equal(ended,true);});
+test('project three world point uses injected adapter',()=>{class V{constructor(x,y,z){Object.assign(this,{x,y,z});}applyMatrix4(m){return m(this);}}const p=projectThreeToCss({x:0,y:0,z:-1},{matrixWorldInverse:x=>x,projectionMatrix:x=>x},{left:10,top:20,width:100,height:80},V);assert.deepEqual(p,{x:60,y:60,visible:true,behind:false});});
+test('project behind is invisible',()=>{class V{constructor(x,y,z){Object.assign(this,{x,y,z});}applyMatrix4(m){return m(this);}}assert.equal(projectThreeToCss({x:0,y:0,z:1},{matrixWorldInverse:x=>x,projectionMatrix:x=>x},{left:0,top:0,width:10,height:10},V).visible,false);});

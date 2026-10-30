@@ -1,0 +1,12 @@
+/* MIT © 2026 Waldemar Soroka. Safe-area in CSS viewport coordinates. */
+.game-ui-root {position:absolute;inset:0;pointer-events:none;container-type:size;}
+.game-ui-root .game-hud {position:absolute;inset:0;box-sizing:border-box;
+  padding:calc(env(safe-area-inset-top,0px) + 12px) calc(env(safe-area-inset-right,0px) + 12px)
+          calc(env(safe-area-inset-bottom,0px) + 12px) calc(env(safe-area-inset-left,0px) + 12px);
+  display:flex;justify-content:space-between;align-items:flex-start;gap:12px;min-width:0;}
+.game-hud .hud-panel {min-width:0;max-width:min(44%,34rem);overflow-wrap:anywhere;pointer-events:auto;}
+.game-hud .hud-actions {display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;}
+.game-hud button {min-inline-size:44px;min-block-size:44px;font:inherit;}
+.game-hud :focus-visible {outline:3px solid #ffd166;outline-offset:3px;}
+@container (max-width: 540px) {.game-hud {gap:6px;flex-wrap:wrap;} .game-hud .hud-panel {max-width:100%;}}
+@media (prefers-reduced-motion:reduce) {.game-ui-root * {scroll-behavior:auto;transition:none!important;}}

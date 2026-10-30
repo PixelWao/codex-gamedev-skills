@@ -1,0 +1,18 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {LevelDocument,snap,applyTransformToThreeNode} from '../src/editor.mjs';
+const d=()=>{const x=new LevelDocument();x.add({id:'root'});return x};
+test('add and export',()=>assert.equal(d().export().nodes.length,1));
+test('snap works with negatives',()=>assert.equal(snap(-1.2,1),-1));
+test('bad snap rejected',()=>assert.throws(()=>snap(3,0)));
+test('duplicate id rejected',()=>assert.throws(()=>d().add({id:'root'})));
+test('dangling parent rejected',()=>assert.throws(()=>d().add({id:'child',parent:'missing'})));
+test('update and undo',()=>{let x=d();x.update('root',{position:{x:1,y:2,z:3}});x.undo();assert.equal(x.nodes.get('root').position.x,0)});
+test('redo restores',()=>{let x=d();x.update('root',{position:{x:5,y:0,z:0}});x.undo();x.redo();assert.equal(x.nodes.get('root').position.x,5)});
+test('edit clears redo',()=>{let x=d();x.add({id:'other'});x.undo();x.add({id:'next'});assert.equal(x.redo(),false)});
+test('removing parent removes children',()=>{let x=d();x.add({id:'child',parent:'root'});x.remove('root');assert.equal(x.nodes.size,0)});
+test('self parenting prohibited',()=>assert.throws(()=>d().update('root',{parent:'root'})));
+test('cycle prohibited',()=>{let x=d();x.add({id:'child',parent:'root'});assert.throws(()=>x.update('root',{parent:'child'}))});
+test('round-trip document',()=>{let x=d();let y=LevelDocument.fromObject(x.export());assert.deepEqual(y.export(),x.export())});
+test('malformed scale rejected',()=>assert.throws(()=>d().update('root',{scale:{x:1,y:0,z:1}})));
+test('Three adapter uses existing object',()=>{let a=[],obj={position:{set:(...v)=>a.push(v)},rotation:{set:(...v)=>a.push(v)},scale:{set:(...v)=>a.push(v)}};applyTransformToThreeNode(d().nodes.get('root'),obj);assert.equal(a.length,3)});
+test('duplicate prefab id',()=>{let x=d();x.duplicate('root','clone');assert.equal(x.nodes.size,2)});

@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Level blockout probe</title><style>body{background:#0d1728;color:#e2e8f0;font:15px system-ui;padding:16px}canvas{border:1px solid #64748b;width:min(100%,760px);height:auto}</style><h1>Canvas 2D blockout</h1><canvas id="view" width="760" height="360"></canvas><pre id="result" role="status"></pre><script type="module">
+import {checkJump,drawCanvasPlatforms} from '../src/blockout.mjs';
+const ctx=document.getElementById('view').getContext('2d');const platforms=[{id:'start',x:20,y:260,width:70,height:12},{id:'high',x:225,y:170,width:80,height:12}];
+ctx.translate(0,0);drawCanvasPlatforms(ctx,platforms);const sample=checkJump({runSpeed:250,jumpSpeed:480,gravity:1200,deltaX:135,deltaY:90});
+document.getElementById('result').textContent=JSON.stringify({possible:sample.possible,margin:sample.margin},null,2);window.__LEVEL_DEMO_READY__=true;
+</script></html>

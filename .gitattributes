@@ -1,0 +1,2 @@
+# Preserve package, fixture and license bytes exactly across platforms.
+* -text

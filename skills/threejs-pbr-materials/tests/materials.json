@@ -1,0 +1,6 @@
+{
+  "materials": [
+    {"name":"rough_brick","type":"MeshStandardMaterial","parameters":{"metalness":0,"roughness":0.72},"maps":{"map":{"colorSpace":"SRGBColorSpace"},"normalMap":{"colorSpace":"NoColorSpace"},"roughnessMap":{"colorSpace":"NoColorSpace"}}},
+    {"name":"vehicle_glass","type":"MeshPhysicalMaterial","parameters":{"metalness":0,"roughness":0.1,"transmission":0.92,"opacity":1,"ior":1.5},"maps":{}}
+  ]
+}

@@ -1,0 +1,3 @@
+{"agent":"guard-1","t":0,"x":0,"z":0,"goalX":5,"goalZ":0,"state":"moving","revision":1,"pathRevision":1}
+{"agent":"guard-1","t":0.5,"x":0.5,"z":0,"goalX":5,"goalZ":0,"state":"moving","revision":1,"pathRevision":1}
+{"agent":"guard-1","t":1,"x":1,"z":0,"goalX":5,"goalZ":0,"state":"moving","revision":1,"pathRevision":1}

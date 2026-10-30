@@ -1,0 +1,5 @@
+{"time":0.05,"event":"voice_start","id":"laser-1"}
+{"time":0.10,"event":"voice_start","id":"laser-1"}
+{"time":0.15,"event":"duck","gain":-1}
+{"time":0.40,"event":"music_event","scheduled":0.375,"actual":0.500}
+{"time":0.60,"event":"voice_end","id":"unknown"}

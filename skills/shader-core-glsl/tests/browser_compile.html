@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<title>GLSL browser compile and link QA</title>
+<h1>WebGL compile/link smoke test</h1><p>Needs an active WebGL context. A missing context is NOT TESTED, not PASS.</p>
+<pre id="report">Starting...</pre><script>
+const pairs = [{"profile": "webgl1", "vert": "attribute vec2 a_position;\nattribute vec2 a_uv;\nvarying vec2 v_uv;\nvoid main() {\n  v_uv = a_uv;\n  gl_Position = vec4(a_position, 0.0, 1.0);\n}\n", "frag": "precision mediump float;\nvarying vec2 v_uv;\nvoid main() {\n  gl_FragColor = vec4(v_uv, 0.25, 1.0);\n}\n"}, {"profile": "webgl2", "vert": "#version 300 es\nin vec2 a_position;\nin vec2 a_uv;\nout vec2 v_uv;\nvoid main() {\n  v_uv = a_uv;\n  gl_Position = vec4(a_position, 0.0, 1.0);\n}\n", "frag": "#version 300 es\nprecision highp float;\nin vec2 v_uv;\nout vec4 outColor;\nvoid main() {\n  outColor = vec4(v_uv, 0.25, 1.0);\n}\n"}];
+const records = [];
+function compile(gl,type,source){
+  const shader=gl.createShader(type); gl.shaderSource(shader,source);gl.compileShader(shader);
+  const ok=gl.getShaderParameter(shader,gl.COMPILE_STATUS);
+  const log=gl.getShaderInfoLog(shader); return {shader,ok,log};
+}
+for(const sample of pairs){
+ const canvas=document.createElement('canvas');
+ const gl=canvas.getContext(sample.profile==='webgl1'?'webgl':'webgl2');
+ if(!gl){records.push({profile:sample.profile,status:'NOT_TESTED',reason:'No WebGL context'});continue;}
+ const v=compile(gl,gl.VERTEX_SHADER,sample.vert);
+ const f=compile(gl,gl.FRAGMENT_SHADER,sample.frag);
+ let linked=false,linkLog='';
+ if(v.ok && f.ok){
+   const program=gl.createProgram();gl.attachShader(program,v.shader);gl.attachShader(program,f.shader);
+   gl.linkProgram(program);linked=!!gl.getProgramParameter(program,gl.LINK_STATUS);
+   linkLog=gl.getProgramInfoLog(program)||'';gl.deleteProgram(program);
+ }
+ gl.deleteShader(v.shader);gl.deleteShader(f.shader);
+ records.push({profile:sample.profile,status:(v.ok&&f.ok&&linked)?'PASS':'FAIL',vertex:v.log,fragment:f.log,link:linkLog});
+}
+document.querySelector('#report').textContent=JSON.stringify(records,null,2);
+window.__shaderQA=records;
+</script></html>

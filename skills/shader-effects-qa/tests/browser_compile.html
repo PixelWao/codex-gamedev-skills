@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Effect shader compile smoke test</title>
+<h1>Vignette program compile and link</h1><p>A missing WebGL 2 context means NOT TESTED.</p>
+<pre id="report">Starting...</pre><script>
+const vertex="#version 300 es\nin vec2 a_position;\nout vec2 v_uv;\nvoid main() {\n  v_uv = a_position * 0.5 + vec2(0.5);\n  gl_Position = vec4(a_position, 0.0, 1.0);\n}\n";const fragment="#version 300 es\nprecision highp float;\nin vec2 v_uv;\nuniform sampler2D uScene;\nuniform float uInnerRadius;\nuniform float uOuterRadius;\nuniform float uStrength;\nuniform float uAspect;\nout vec4 outColor;\nvoid main() {\n  vec4 scene = texture(uScene, v_uv);\n  vec2 p = (v_uv - vec2(0.5)) * vec2(max(uAspect, 0.001), 1.0);\n  float d = length(p);\n  float inner = max(0.0, uInnerRadius);\n  float outer = max(inner + 0.0001, uOuterRadius);\n  float falloff = smoothstep(inner, outer, d);\n  vec3 rgb = scene.rgb * (1.0 - clamp(uStrength, 0.0, 1.0) * falloff);\n  outColor = vec4(rgb, scene.a);\n}\n";
+function compile(gl,kind,source){ const s=gl.createShader(kind);gl.shaderSource(s,source);gl.compileShader(s);return {s,ok:!!gl.getShaderParameter(s,gl.COMPILE_STATUS),log:gl.getShaderInfoLog(s)}; }
+const gl=document.createElement('canvas').getContext('webgl2');
+let report;
+if(!gl)report={status:'NOT_TESTED',reason:'WebGL2 unavailable'};
+else {
+ const v=compile(gl,gl.VERTEX_SHADER,vertex),f=compile(gl,gl.FRAGMENT_SHADER,fragment);
+ let linked=false, log='';
+ if(v.ok && f.ok){const pr=gl.createProgram();gl.attachShader(pr,v.s);gl.attachShader(pr,f.s);gl.linkProgram(pr);linked=!!gl.getProgramParameter(pr,gl.LINK_STATUS);log=gl.getProgramInfoLog(pr)||'';gl.deleteProgram(pr);}
+ gl.deleteShader(v.s);gl.deleteShader(f.s);
+ report={status:v.ok&&f.ok&&linked?'PASS':'FAIL',vertex:v.log,fragment:f.log,link:log};
+}
+window.__shaderQA=report;document.querySelector('#report').textContent=JSON.stringify(report,null,2);
+</script></html>

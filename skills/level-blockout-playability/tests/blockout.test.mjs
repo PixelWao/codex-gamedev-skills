@@ -1,0 +1,17 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {jumpEnvelope,checkJump,checkAabbClearance,validatePlatforms,sampleTraversal,drawCanvasPlatforms,addThreeBlockout} from '../src/blockout.mjs';
+test('0-height 200 unit nominal',()=>assert.equal(jumpEnvelope({runSpeed:250,jumpSpeed:480,gravity:1200}).maxDistance,200));
+test('90 higher is 125',()=>assert.equal(checkJump({runSpeed:250,jumpSpeed:480,gravity:1200,deltaX:140,deltaY:90}).possible,false));
+test('125 marginal at +90',()=>assert.equal(checkJump({runSpeed:250,jumpSpeed:480,gravity:1200,deltaX:125,deltaY:90}).possible,true));
+test('beyond peak',()=>assert.equal(checkJump({runSpeed:250,jumpSpeed:480,gravity:1200,deltaX:1,deltaY:97}).reason,'HEIGHT_UNREACHABLE'));
+test('downhill landing increases range',()=>assert.ok(jumpEnvelope({runSpeed:250,jumpSpeed:480,gravity:1200,deltaY:-50}).maxDistance>200));
+test('clearance reduces reach',()=>assert.ok(jumpEnvelope({runSpeed:250,jumpSpeed:480,gravity:1200,clearance:10}).maxDistance<200));
+test('invalid params fail',()=>{for(const x of [{runSpeed:0,jumpSpeed:20,gravity:100},{runSpeed:10,jumpSpeed:20,gravity:0}])assert.throws(()=>jumpEnvelope(x));});
+test('bad margin fails',()=>assert.throws(()=>checkJump({runSpeed:10,jumpSpeed:20,gravity:10,deltaX:12,tolerance:-1})));
+test('2D platform links',()=>{const r=validatePlatforms([{id:'a',x:0,y:0,width:20},{id:'b',x:100,y:90,width:20}],{runSpeed:250,jumpSpeed:480,gravity:1200});assert.equal(r.issues.length,0);assert.equal(r.links.find(l=>l.from==='a').possible,true)});
+test('duplicate ids',()=>assert.equal(validatePlatforms([{id:'x',x:0,y:0,width:1},{id:'x',x:2,y:0,width:1}],{runSpeed:1,jumpSpeed:2,gravity:5}).issues[0].code,'DUPLICATE_PLATFORM'));
+test('3d clearance',()=>{assert.equal(checkAabbClearance({min:{x:0,y:0,z:0},max:{x:1,y:2,z:3}},{x:1,y:3,z:1}).fits,false);assert.throws(()=>checkAabbClearance({min:{x:2,y:0,z:0},max:{x:1,y:2,z:3}},{x:1,y:1,z:1}))});
+test('simulation reached',()=>assert.equal(sampleTraversal({initialState:{x:0},controls:{step:1},advance:(s,c)=>({x:s.x+c.step}),isGoal:s=>s.x>=5,maxSteps:10}).steps,5));
+test('simulation inconclusive not impossible',()=>assert.equal(sampleTraversal({initialState:{x:0},controls:0,advance:s=>s,isGoal:s=>s.x===10,maxSteps:2}).status,'inconclusive'));
+test('canvas save restore',()=>{let s=0;drawCanvasPlatforms({save:()=>s++,restore:()=>s--,fillRect(){},fillText(){},fillStyle:''},[{id:'p',x:0,y:0,width:2}]);assert.equal(s,0)});
+test('threejs injected adapter',()=>{const meshes=[];class BoxGeometry{dispose(){this.done=true}}class Mesh{constructor(g,m){this.geometry=g;this.position={set(){}};this.userData={}}};const THREE={BoxGeometry,Mesh};const scene={add:x=>meshes.push(x),remove:x=>meshes.splice(meshes.indexOf(x),1)};const instance=addThreeBlockout({THREE,scene,material:{},boxes:[{id:'a',x:0,y:0,z:0,width:1,height:1,depth:1}]});assert.equal(meshes.length,1);instance.dispose();assert.equal(meshes.length,0)});

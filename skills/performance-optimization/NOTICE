@@ -1,0 +1,19 @@
+Performance Optimization — browser-game performance QA skill
+2026-10-22 release (v2.1)
+
+New code, tests, original reference prose and supporting documentation:
+Copyright (c) 2026 Waldemar Soroka. Licensed under MIT (see LICENSE).
+
+Source lineage acknowledgment:
+The work was developed using the supplied "awesome-gamedev-agent-skills"
+performance-optimization skill as a technical starting point. The upstream
+project and its authors retain rights to their own contributions. No claim
+of ownership over the upstream project is made here.
+
+To preserve upstream attribution and redistribution conditions wherever
+portions of the release qualify as adaptations, the upstream Apache-2.0
+license is supplied in LICENSES/APACHE-2.0.txt and its original notice in
+THIRD_PARTY_NOTICES.md. These upstream notices do not turn the author's
+new contributions into Apache-licensed works.
+
+No affiliation with or endorsement by the upstream maintainers is implied.
